@@ -1,7 +1,9 @@
 #ifndef ROAD_H
 #define ROAD_H
 
-class Road {
+#include "cell.h"
+
+class Road: public Facility {
 	public:
 		// ctor
 		Road();
@@ -14,7 +16,11 @@ class Road {
 		// dtor
 		~Road();
 
+		bool getIsEntrance();
+		bool getIsExit();
+
 	protected:
+		bool facilityType = "Road";
 		bool isEntrance;
 		bool isExit;
 
