@@ -1,7 +1,7 @@
 #ifndef ROAD_H
 #define ROAD_H
 
-#include "cell.h"
+#include "facility.h"
 
 class Road: public Facility {
 	public:
@@ -20,7 +20,7 @@ class Road: public Facility {
 		bool getIsExit();
 
 	protected:
-		bool facilityType = "Road";
+		string facilityType = "Road";
 		bool isEntrance;
 		bool isExit;
 

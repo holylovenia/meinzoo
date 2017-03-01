@@ -1,6 +1,7 @@
 #ifndef FACILITY_H
 #define FACILITY_H
 
+#include <string>
 #include "cell.h"
 
 class Facility: public Cell {
@@ -22,6 +23,5 @@ class Facility: public Cell {
 	private:
 		const string defFaciltyType = "Road";
 }
-
 
 #endif
