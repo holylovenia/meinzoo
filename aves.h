@@ -16,7 +16,6 @@ class Aves: public Animal {
 
 	private:
 		const int defLimbCount;
-		const int defWeight;
 		const std::string defSkinType;
 }
 

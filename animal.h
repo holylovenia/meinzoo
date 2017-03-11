@@ -17,12 +17,16 @@ class Animal {
 		~Animal();
 		// others
 		virtual void Interact() = 0;
+		virtual void Move() = 0;
 
 	protected:
 		bool wild;
 		int limbCount;
 		int weight;
 		std::string skinType;
+		bool isLandAnimal;
+		bool isWaterAnimal;
+		bool isAirAnimal;
 
 	private:
 		const bool defWild;
