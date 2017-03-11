@@ -7,15 +7,10 @@ class Pisces: public Animal {
 	public:
 		// ctor
 		Pisces();
-		// cctor
-		Pisces(Pisces& P);
-		// operator=
-		Pisces& operator=(Pisces& P);
-		// dtor
-		~Pisces();
 
 	private:
-		const string skinType = "Scale";
-}
+		const int defLimbCount;
+		const std::string defSkinType;
+};
 
 #endif
