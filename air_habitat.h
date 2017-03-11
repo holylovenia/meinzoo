@@ -9,7 +9,8 @@ class AirHabitat : public Habitat {
 		AirHabitat(int _x, int _y, bool isAccessible);
 		
 	private:
-		char type = 'A';
+		const char defType;
+
 };
 
 #endif
