@@ -8,7 +8,7 @@ class Animal {
 		// ctor
 		Animal();
 		// ctor with parameter
-		Animal(boolean wild, int limbCount, int weight);
+		Animal(bool _wild, int _limbCount, int _weight, std::string _skinType);
 		// cctor
 		Animal(const Animal& A);
 		// operator=
@@ -16,19 +16,19 @@ class Animal {
 		// dtor
 		~Animal();
 		// others
-		virtual void Interact();
+		virtual void Interact() = 0;
 
 	protected:
 		bool wild;
 		int limbCount;
 		int weight;
-		string skinType;
+		std::string skinType;
 
 	private:
-		const int defLimbCount = 4;
-		const int defWeight = 60;
-		const bool defWild = false;
-		const string defSkinType = "Hair";
-}
+		const int defLimbCount;
+		const int defWeight;
+		const bool defWild;
+		const std::string defSkinType;
+};
 
 #endif
