@@ -1,6 +1,6 @@
 #include "mammalia.h"
 #include "carnivora.h"
-#include "behaviortame.h"
+#include "behavior_tame.h"
 
 #ifndef WOLF_H
 #define WOLF_H
