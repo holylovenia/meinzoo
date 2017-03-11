@@ -5,13 +5,8 @@
 
 
 // ctor
-Aves::Aves();
-
-// cctor
-Aves::Aves(Aves& A);
-
-// operator=
-Aves& Aves::operator=(Aves& A);
-
-// dtor
-Aves::~Aves();
+Aves::Aves(): defLimbCount(2), defSkinType("Feather")
+{
+	limbCount = defLimbCount;
+	skinType = defSkinType;
+}
