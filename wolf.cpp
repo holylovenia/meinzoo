@@ -18,5 +18,5 @@ Wolf::Wolf(const Wolf& W) : ID(1), ratioMeat(0.5), ratioPlant(0)
 
 void Wolf::interact()
 {
-	std::cout << "Howl" << std::endl;
+	std::cout << "The wolf is howling" << std::endl;
 }
