@@ -7,16 +7,10 @@ class Herbivora: public AnimalDiet {
 	public:
 		// ctor
 		Herbivora();
-		// cctor
-		Herbivora(Herbivora& H);
-		// operator=
-		Herbivora& operator=(Herbivora& H);
-		// dtor
-		~Herbivora();
 
-	protected:
-		bool eatMeat = false;
-		bool eatPlants = true;
-}
+	private:
+		const bool defEatMeat;
+		const bool defEatPlants;
+};
 
 #endif
