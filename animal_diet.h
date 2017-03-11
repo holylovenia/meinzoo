@@ -3,12 +3,22 @@
 
 class AnimalDiet {
 	public:
-		bool CanEatMeat();
-		bool CanEatPlants();
+		bool isHerbivore();
+		bool isCarnivore();
+		bool isOmnivore();
+
+		int getTotalMeat();
+		int getTotalPlant();
 
 	protected:
+		int reqMeat;
+		int reqPlant;
 		bool eatMeat;
-		bool eatPlants;
+		bool eatPlant;
+
+	private:
+		static int totalReqMeat;
+		static int totalReqPlant;
 };
 
 #endif
