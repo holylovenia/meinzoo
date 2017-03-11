@@ -9,6 +9,7 @@ Python::Python(int _weight) : defID(9), defRatioMeat(40), defRatioPlant(0) {
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
+	limbCount = 0;
 	weight = _weight;
 }
 
