@@ -24,8 +24,8 @@ Restaurant& Restaurant::operator=(const Restaurant& R)
 	isAccessible = R.isAccessible;
 	return *this;
 }
-// dtor
-Restaurant::~Restaurant()
+// get Restaurant's name
+std::string getRestaurantName();
 {
 	return name;
 }
