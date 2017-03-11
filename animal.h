@@ -11,7 +11,7 @@ class Animal {
 		virtual void Move() = 0;
 
 	protected:
-		int ID;
+		const int ID;
 		int limbCount;
 		std::string skinType;
 		bool isLandAnimal;

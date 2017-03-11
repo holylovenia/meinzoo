@@ -14,10 +14,10 @@ Omnivora::Omnivora(): defEatMeat(true), defEatPlant(true)
 
 Carnivora::getTotalMeat()
 {
-	return(weight);
+	return(ratioMeat * weight / 100);
 }
 
 Carnivora::getTotalPlant()
 {
-	return (weight);
+	return (ratioPlant * weight / 100);
 }

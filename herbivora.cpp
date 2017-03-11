@@ -18,5 +18,5 @@ Herbivora::getTotalMeat()
 
 Herbivora::getTotalPlant()
 {
-	return(weight);
+	return(ratioPlant * weight / 100);
 }

@@ -17,6 +17,8 @@ class AnimalDiet {
 		int weight;
 		bool eatMeat;
 		bool eatPlant;
+		const int ratioMeat;
+		const int ratioPlant;
 		static int totalReqMeat;
 		static int totalReqPlant;
 };
