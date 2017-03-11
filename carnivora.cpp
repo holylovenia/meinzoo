@@ -4,8 +4,19 @@
 #include "carnivora.h"
 
 
-Carnivora::Carnivora(): defEatMeat(true), defEatPlants(false)
+Carnivora::Carnivora(): defEatMeat(true), defEatPlant(false)
 {
 	eatMeat = defEatMeat;
-	eatPlants = defEatPlants;
+	eatPlant = defEatPlant;
+	totalReqMeat += getTotalMeat();
+}
+
+Carnivora::getTotalMeat()
+{
+	return(weight);
+}
+
+Carnivora::getTotalPlant()
+{
+	return 0;
 }

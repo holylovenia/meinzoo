@@ -7,10 +7,12 @@ class Herbivora: public AnimalDiet {
 	public:
 		// ctor
 		Herbivora();
+		getTotalMeat();
+		getTotalPlant();
 
 	private:
 		const bool defEatMeat;
-		const bool defEatPlants;
+		const bool defEatPlant;
 };
 
 #endif

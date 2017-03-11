@@ -6,19 +6,17 @@
 class Restaurant: public Facility {
 	public:
 		// ctor with parameter
-		Restaurant(string name);
+		Restaurant(int _x, int _y, bool _isAccessible, std::string _name);
 		// cctor
-		Restaurant(Restaurant& R);
+		Restaurant(const Restaurant& R);
 		// operator=
-		Restaurant& operator=(Restaurant& R);
+		Restaurant& operator=(const Restaurant& R);
 		// dtor
-		~Restaurant();
+		std::string getRestaurantName();
 
 	protected:
-		string facilityType = "Restaurant";
-
-	private:
-		string name;
+		std::string name;
+		const std::string defFacilityType;
 };
 
 
