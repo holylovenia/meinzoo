@@ -7,21 +7,10 @@
 class Facility: public Cell {
 	public:
 		// ctor
-		Facility();
-		// ctor with parameter
-		Facility(string _type);
-		// cctor
-		Facility(Facility& F);
-		// operator=
-		Facility& operator=(Facility& F);
-		// dtor
-		~Facility();
+		Facility(int _x, int _y, bool isAccessible);
 
 	protected:
-		string facilityType;
-
-	private:
-		const string defFaciltyType = "Road";
+		std::string facilityType;
 };
 
 #endif
