@@ -18,8 +18,11 @@ class Animal {
 		// others
 		virtual void Interact() = 0;
 		virtual void Move() = 0;
+		bool IsWild();
+
 
 	protected:
+		int ID;
 		bool wild;
 		int limbCount;
 		int weight;
@@ -27,9 +30,6 @@ class Animal {
 		bool isLandAnimal;
 		bool isWaterAnimal;
 		bool isAirAnimal;
-
-	private:
-		const bool defWild;
 };
 
 #endif
