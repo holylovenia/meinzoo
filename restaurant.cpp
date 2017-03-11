@@ -25,7 +25,7 @@ Restaurant& Restaurant::operator=(const Restaurant& R)
 	return *this;
 }
 // get Restaurant's name
-std::string getRestaurantName();
+std::string Restaurant::getRestaurantName();
 {
 	return name;
 }
