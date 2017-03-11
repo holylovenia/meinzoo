@@ -4,7 +4,7 @@
 #include "land_habitat.h"
 
 
-LandHabitat::LandHabitat(): defType('L')
+LandHabitat::LandHabitat(int _x, int _y, bool isAccessible): Habitat(_x, _y, isAccessible), defType('L')
 {
 	type = defType;
 }

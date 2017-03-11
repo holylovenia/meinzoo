@@ -4,6 +4,9 @@
 #include "cell.h"
 
 class Habitat: public Cell {
+	public:
+		Habitat(int _x, int _y, bool isAccessible);
+		
 	protected:
 		char type;
 };

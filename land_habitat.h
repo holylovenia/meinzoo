@@ -6,7 +6,7 @@
 class LandHabitat: public Habitat {
 	public:
 		// ctor
-		LandHabitat();
+		LandHabitat(int _x, int _y, bool isAccessible);
 
 	private:
 		const char defType;
