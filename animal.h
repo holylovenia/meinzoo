@@ -13,7 +13,6 @@ class Animal {
 	protected:
 		int ID;
 		int limbCount;
-		int weight;
 		std::string skinType;
 		bool isLandAnimal;
 		bool isWaterAnimal;

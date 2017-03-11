@@ -7,16 +7,16 @@ class AnimalDiet {
 		bool isCarnivore();
 		bool isOmnivore();
 
-		int getTotalMeat();
-		int getTotalPlant();
+		virtual int getReqMeat() = 0;
+		virtual int getReqPlant() = 0;
+
+		static int getTotalMeat();
+		static int getTotalPlant();
 
 	protected:
-		int reqMeat;
-		int reqPlant;
+		int weight;
 		bool eatMeat;
 		bool eatPlant;
-
-	private:
 		static int totalReqMeat;
 		static int totalReqPlant;
 };

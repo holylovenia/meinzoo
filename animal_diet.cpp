@@ -1,3 +1,6 @@
+int AnimalDiet::totalReqMeat = 0;
+int AnimalDiet::totalReqPlant = 0;
+
 #include "animal_diet.h"
 
 bool AnimalDiet::isHerbivore() {
@@ -11,8 +14,8 @@ bool AnimalDiet::isOmnivore() {
 }
 
 int AnimalDiet::getTotalMeat() {
-	return totalMeat;
+	return totalReqMeat;
 }
 int AnimalDiet::getTotalPlant() {
-	return totalPlant;
+	return totalReqPlant;
 }

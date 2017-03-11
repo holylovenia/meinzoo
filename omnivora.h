@@ -7,10 +7,12 @@ class Omnivora: public AnimalDiet {
 	public:
 		// ctor
 		Omnivora();
+		getTotalMeat();
+		getTotalPlant();
 
 	private:
 		const bool defEatMeat;
-		const bool defEatPlants;
+		const bool defEatPlant;
 };
 
 #endif

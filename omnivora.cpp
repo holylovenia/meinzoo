@@ -4,8 +4,20 @@
 #include "omnivora.h"
 
 
-Omnivora::Omnivora(): defEatMeat(true), defEatPlants(true)
+Omnivora::Omnivora(): defEatMeat(true), defEatPlant(true)
 {
 	eatMeat = defEatMeat;
-	eatPlants = defEatPlants;
+	eatPlant = defEatPlant;
+	totalReqMeat += getTotalMeat();
+	totalReqPlant += getTotalPlant();
+}
+
+Carnivora::getTotalMeat()
+{
+	return(weight);
+}
+
+Carnivora::getTotalPlant()
+{
+	return (weight);
 }
