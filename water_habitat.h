@@ -3,21 +3,13 @@
 
 #include "habitat.h"
 
-class WaterHabitat : public Habitat {
+class WaterHabitat: public Habitat {
 	public:
 		// ctor
-		WaterHabitat();
-		// ctor with parameter
-		WaterHabitat(char type);
-		// cctor
-		WaterHabitat(const WaterHabitat& WH);
-		// operator=
-		WaterHabitat& operator=(WaterHabitat& WH);
-		// dtor
-		~WaterHabitat();
-		
+		WaterHabitat(int _x, int _y, bool isAccessible);
+
 	private:
-		char type = 'W';
-}
+		const char defType;
+};
 
 #endif
