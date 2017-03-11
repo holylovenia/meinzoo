@@ -9,7 +9,6 @@ class Tiger: public Mammalia, public Carnivora, public BehaviorTame
 {
 	public:
 		Tiger(int _weight);
-		Tiger(const Tiger&);
 		void Interact();
 
 	private:

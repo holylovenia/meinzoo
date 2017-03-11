@@ -9,7 +9,6 @@ class Wolf: public Mammalia, public Carnivora, public BehaviorTame
 {
 	public:
 		Wolf(int _weight);
-		Wolf(const Wolf&);
 		void Interact();
 
 	private:

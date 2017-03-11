@@ -9,7 +9,6 @@ class Lion: public Mammalia, public Carnivora, public BehaviorTame
 {
 	public:
 		Lion(int _weight);
-		Lion(const Lion&);
 		void Interact();
 
 	private:
