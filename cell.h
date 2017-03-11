@@ -11,15 +11,8 @@ class Cell {
 		// operator=
 		Cell& operator=(Cell& C);
 
-		void setPosition (int _x, int _y);
-		void getPosition (int& _x, int& _y);
-
 	protected:
-		Point Location;
 		bool isAccessible;
-
-	private:
-
 };
 
 
