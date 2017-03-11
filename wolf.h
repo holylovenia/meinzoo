@@ -14,6 +14,8 @@ class Wolf: public Mammalia, public Carnivora, public BehaviorTame
 
 	private:
 		const int defID;
+		const int defRatioMeat;
+		const int defRatioPlant;
 };
 
 #endif

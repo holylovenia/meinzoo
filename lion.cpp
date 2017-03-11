@@ -1,15 +1,21 @@
 #include "lion.h"
 
-Lion::Lion(int _weight) : ID(2), ratioMeat(60), ratioPlant(0)
+Lion::Lion(int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0)
 {
+	ID = defID;
+	ratioMeat = defRatioMeat;
+	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
 }
 
-Lion::Lion(const Lion& W) : ID(2), ratioMeat(60), ratioPlant(0)
+Lion::Lion(const Lion& W) : defID(2), defRatioMeat(60), defRatioPlant(0)
 {
+	ID = defID;
+	ratioMeat = W.ratioMeat;
+	ratioPlant = W.ratioPlant;
 	isLandAnimal = W.isLandAnimal;
 	isWaterAnimal = W.isWaterAnimal;
 	isAirAnimal = W.isAirAnimal;

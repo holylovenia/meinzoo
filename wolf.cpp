@@ -1,17 +1,17 @@
 #include "wolf.h"
 
-Wolf::Wolf(int _weight) : defID(1)
+Wolf::Wolf(int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0)
 {
 	ID = defID;
-	ratioMeat = 50;
-	ratioPlant = 0;
+	ratioMeat = defRatioMeat;
+	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
 }
 
-Wolf::Wolf(const Wolf& W) : defID(1)
+Wolf::Wolf(const Wolf& W) : defID(1), defRatioMeat(50), defRatioPlant(0)
 {
 	ID = defID;
 	ratioMeat = W.ratioMeat;
