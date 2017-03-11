@@ -2,11 +2,10 @@
 #define MONKEY_H
 
 #include "mammalia.h"
-#include "omnivora.h"
-#include "behavior_tame.h"
+#include "../diet/omnivora.h"
+#include "../behavior/behavior_tame.h"
 
-class Monkey: public Mammalia, public Omnivora, public BehaviorTame
-{
+class Monkey: public Mammalia, public Omnivora, public BehaviorTame {
 	public:
 		Monkey(int _weight);
 		void Interact();

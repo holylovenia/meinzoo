@@ -1,5 +1,3 @@
-// File: behavior_wild.h
-
 #ifndef BEHAVIOR_WILD_H
 #define BEHAVIOR_WILD_H
 

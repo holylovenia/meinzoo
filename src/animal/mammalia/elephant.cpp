@@ -1,7 +1,6 @@
 #include "elephant.h"
 
-Elephant::Elephant(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80)
-{
+Elephant::Elephant(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80) {
 	ID = defID;
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
@@ -11,7 +10,6 @@ Elephant::Elephant(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80)
 	weight = _weight;
 }
 
-void Elephant::Interact()
-{
+void Elephant::Interact() {
 	std::cout << "The elephant is playing with its own trunk" << std::endl;
 }

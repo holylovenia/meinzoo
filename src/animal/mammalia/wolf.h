@@ -2,11 +2,10 @@
 #define WOLF_H
 
 #include "mammalia.h"
-#include "carnivora.h"
-#include "behavior_tame.h"
+#include "../diet/carnivora.h"
+#include "../behavior/behavior_tame.h"
 
-class Wolf: public Mammalia, public Carnivora, public BehaviorTame
-{
+class Wolf: public Mammalia, public Carnivora, public BehaviorTame {
 	public:
 		Wolf(int _weight);
 		void Interact();

@@ -2,11 +2,10 @@
 #define TIGER_H
 
 #include "mammalia.h"
-#include "carnivora.h"
-#include "behavior_tame.h"
+#include "../diet/carnivora.h"
+#include "../behavior/behavior_tame.h"
 
-class Tiger: public Mammalia, public Carnivora, public BehaviorTame
-{
+class Tiger: public Mammalia, public Carnivora, public BehaviorTame {
 	public:
 		Tiger(int _weight);
 		void Interact();

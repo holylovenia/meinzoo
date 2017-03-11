@@ -2,11 +2,10 @@
 #define ELEPHANT_H
 
 #include "mammalia.h"
-#include "herbivora.h"
-#include "behavior_tame.h"
+#include "../diet/herbivora.h"
+#include "../behavior/behavior_tame.h"
 
-class Elephant: public Mammalia, public Herbivora, public BehaviorTame
-{
+class Elephant: public Mammalia, public Herbivora, public BehaviorTame {
 	public:
 		Elephant(int _weight);
 		void Interact();

@@ -2,11 +2,10 @@
 #define GIRAFFE_H
 
 #include "mammalia.h"
-#include "herbivora.h"
-#include "behavior_tame.h"
+#include "../diet/herbivora.h"
+#include "../behavior/behavior_tame.h"
 
-class Giraffe: public Mammalia, public Herbivora, public BehaviorTame
-{
+class Giraffe: public Mammalia, public Herbivora, public BehaviorTame {
 	public:
 		Giraffe(int _weight);
 		void Interact();

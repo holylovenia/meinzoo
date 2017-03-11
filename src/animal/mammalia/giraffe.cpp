@@ -1,7 +1,6 @@
 #include "giraffe.h"
 
-Giraffe::Giraffe(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(60)
-{
+Giraffe::Giraffe(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(60) {
 	ID = defID;
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
@@ -11,7 +10,6 @@ Giraffe::Giraffe(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(60)
 	weight = _weight;
 }
 
-void Giraffe::Interact()
-{
-	std::cout << "The giraffe is banging its head to a nearby tree" << std::endl;
+void Giraffe::Interact() {
+	std::cout << "The giraffe is looking down to you, literally" << std::endl;
 }

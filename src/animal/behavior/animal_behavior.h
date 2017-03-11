@@ -1,5 +1,3 @@
-// File: animal_behavior.h
-
 #ifndef ANIMAL_BEHAVIOR_H
 #define ANIMAL_BEHAVIOR_H
 

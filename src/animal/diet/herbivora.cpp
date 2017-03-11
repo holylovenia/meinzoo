@@ -1,22 +1,15 @@
-// File: herbivora.cpp
-
-
 #include "herbivora.h"
 
-
-Herbivora::Herbivora(): defEatMeat(false), defEatPlant(true)
-{
+Herbivora::Herbivora(): defEatMeat(false), defEatPlant(true) {
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
 	totalReqPlant += getTotalPlant();
 }
 
-int Herbivora::getTotalMeat()
-{
+int Herbivora::getTotalMeat() {
 	return 0;
 }
 
-int Herbivora::getTotalPlant()
-{
+int Herbivora::getTotalPlant() {
 	return(ratioPlant * weight / 100);
 }

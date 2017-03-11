@@ -1,7 +1,6 @@
 #include "tiger.h"
 
-Tiger::Tiger(int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0)
-{
+Tiger::Tiger(int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0) {
 	ID = defID;
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
@@ -11,7 +10,6 @@ Tiger::Tiger(int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0)
 	weight = _weight;
 }
 
-void Tiger::Interact()
-{
-	std::cout << "The tiger is eating meat" << std::endl;
+void Tiger::Interact() {
+	std::cout << "The tiger is graciously lying on the patch of grass" << std::endl;
 }

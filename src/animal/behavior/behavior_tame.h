@@ -1,5 +1,3 @@
-// File: behavior_tame.h
-
 #ifndef BEHAVIOR_TAME_H
 #define BEHAVIOR_TAME_H
 

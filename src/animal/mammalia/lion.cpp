@@ -1,7 +1,6 @@
 #include "lion.h"
 
-Lion::Lion(int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0)
-{
+Lion::Lion(int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0) {
 	ID = defID;
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
@@ -11,7 +10,6 @@ Lion::Lion(int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0)
 	weight = _weight;
 }
 
-void Lion::Interact()
-{
+void Lion::Interact() {
 	std::cout << "The lion is roaring" << std::endl;
 }

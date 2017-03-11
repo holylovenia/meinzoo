@@ -1,5 +1,3 @@
-// File: mammalia.cpp
-
 #include "mammalia.h"
 
 // ctor
