@@ -15,7 +15,9 @@ class Aves: public Animal {
 		~Aves();
 
 	private:
-		const string skinType = "Feather";
+		const int defLimbCount;
+		const int defWeight;
+		const std::string defSkinType;
 }
 
 #endif
