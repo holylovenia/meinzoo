@@ -6,15 +6,7 @@
 class AirHabitat : public Habitat {
 	public:
 		// ctor
-		AirHabitat();
-		// ctor with parameter
-		AirHabitat(char type);
-		// cctor
-		AirHabitat(const AirHabitat& AH);
-		// operator=
-		AirHabitat& operator=(AirHabitat& AH);
-		// dtor
-		~AirHabitat();
+		AirHabitat(int _x, int _y, bool isAccessible);
 		
 	private:
 		char type = 'A';
