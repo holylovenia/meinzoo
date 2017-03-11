@@ -8,7 +8,7 @@ class Animal {
 		// ctor
 		Animal();
 		// ctor with parameter
-		Animal(bool _wild, int _limbCount, int _weight, std::string _skinType);
+		Animal(bool _wild);
 		// cctor
 		Animal(const Animal& A);
 		// operator=
@@ -25,10 +25,7 @@ class Animal {
 		std::string skinType;
 
 	private:
-		const int defLimbCount;
-		const int defWeight;
 		const bool defWild;
-		const std::string defSkinType;
 };
 
 #endif
