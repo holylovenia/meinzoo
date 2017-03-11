@@ -19,7 +19,7 @@ class Restaurant: public Facility {
 
 	private:
 		string name;
-}
+};
 
 
 #endif

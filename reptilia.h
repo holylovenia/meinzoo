@@ -11,6 +11,6 @@ class Reptilia: public Animal {
 	private:
 		const int defLimbCount;
 		const std::string defSkinType;
-}
+};
 
 #endif

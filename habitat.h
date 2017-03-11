@@ -6,6 +6,6 @@
 class Habitat: public Cell {
 	protected:
 		char type;
-}
+};
 
 #endif

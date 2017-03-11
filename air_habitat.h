@@ -18,6 +18,6 @@ class AirHabitat : public Habitat {
 		
 	private:
 		char type = 'A';
-}
+};
 
 #endif

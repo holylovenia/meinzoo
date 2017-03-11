@@ -19,7 +19,7 @@ class Park: public Facility {
 
 	private:
 		string name;
-}
+};
 
 
 #endif
