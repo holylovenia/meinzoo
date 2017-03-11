@@ -8,10 +8,6 @@ class Carnivora: public AnimalDiet {
 		// ctor
 		Carnivora();
 
-	protected:
-		bool eatMeat;
-		bool eatPlants;
-
 	private:
 		const bool defEatMeat;
 		const bool defEatPlants;
