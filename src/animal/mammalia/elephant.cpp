@@ -13,5 +13,5 @@ Elephant::Elephant(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80)
 
 void Elephant::Interact()
 {
-	std::cout << "The giraffe is banging its head to a nearby tree" << std::endl;
+	std::cout << "The elephant is playing with its own trunk" << std::endl;
 }

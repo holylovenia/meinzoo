@@ -1,9 +1,8 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
-#include "point.h"
+#include "../misc/point.h"
 #include <string>
-#include <set>
 #include <iostream>
 
 class Animal {
