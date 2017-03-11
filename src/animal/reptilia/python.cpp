@@ -1,5 +1,3 @@
-// File: python.cpp
-
 #include "python.h"
 
 Python::Python(int _weight) : defID(9), defRatioMeat(40), defRatioPlant(0) {

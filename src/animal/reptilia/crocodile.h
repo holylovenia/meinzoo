@@ -1,11 +1,9 @@
-// File: crocodile.h
-
 #ifndef CROCODILE_H
 #define CROCODILE_H
 
 #include "reptilia.h"
-#include "carnivora.h"
-#include "behavior_tame.h"
+#include "../diet/carnivora.h"
+#include "../behavior/behavior_tame.h"
 
 class Crocodile : public Reptilia, public Carnivora, public BehaviorTame {
 	public:

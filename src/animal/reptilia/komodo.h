@@ -1,11 +1,9 @@
-// File: komodo.h
-
 #ifndef KOMODO_H
-#ifndef KOMODO_H
+#define KOMODO_H
 
 #include "reptilia.h"
-#include "carnivora.h"
-#include "behavior_tame.h"
+#include "../diet/carnivora.h"
+#include "../behavior/behavior_tame.h"
 
 class Komodo : public Reptilia, public Carnivora, public BehaviorTame {
 	public:

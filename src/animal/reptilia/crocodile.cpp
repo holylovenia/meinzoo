@@ -1,5 +1,3 @@
-// File: crocodile.cpp
-
 #include "crocodile.h"
 
 Crocodile::Crocodile(int _weight) : defID(8), defRatioMeat(60), defRatioPlant(0) {
@@ -13,5 +11,5 @@ Crocodile::Crocodile(int _weight) : defID(8), defRatioMeat(60), defRatioPlant(0)
 }
 
 void Crocodile::Interact() {
-	std::cout << "The crocodile is laying still" << std::endl;
+	std::cout << "The crocodile is laying still on a slab of rock" << std::endl;
 }

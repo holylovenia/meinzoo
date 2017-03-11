@@ -1,7 +1,6 @@
 #include "wolf.h"
 
-Wolf::Wolf(int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0)
-{
+Wolf::Wolf(int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0) {
 	ID = defID;
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
@@ -11,7 +10,6 @@ Wolf::Wolf(int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0)
 	weight = _weight;
 }
 
-void Wolf::Interact()
-{
+void Wolf::Interact() {
 	std::cout << "The wolf is howling" << std::endl;
 }

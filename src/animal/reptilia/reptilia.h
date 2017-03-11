@@ -1,7 +1,7 @@
 #ifndef REPTILIA_H
 #define REPTILIA_H
 
-#include "animal.h"
+#include "../animal.h"
 
 class Reptilia: public Animal {
 	public:

@@ -1,5 +1,3 @@
-// File: komodo.cpp
-
 #include "komodo.h"
 
 Komodo::Komodo(int _weight) : defID(10), defRatioMeat(70), defRatioPlant(0) {

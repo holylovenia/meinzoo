@@ -1,5 +1,3 @@
-// File: chameleon.cpp
-
 #include "chameleon.h"
 
 Chameleon::Chameleon(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(50) {
@@ -13,5 +11,5 @@ Chameleon::Chameleon(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(5
 }
 
 void Chameleon::Interact() {
-	std::cout << "The komodo is looking at you intensely" << std::endl;
+	std::cout << "The chameleon is almost perfectly disguised with the leaves around him" << std::endl;
 }

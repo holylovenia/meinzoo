@@ -1,11 +1,9 @@
-// File: chameleon.h
-
 #ifndef CHAMELEON_H
-#ifndef CHAMELEON_H
+#define CHAMELEON_H
 
 #include "reptilia.h"
-#include "omnivora.h"
-#include "behavior_tame.h"
+#include "../diet/omnivora.h"
+#include "../behavior/behavior_tame.h"
 
 class Chameleon : public Reptilia, public Omnivora, public BehaviorTame {
 	public:

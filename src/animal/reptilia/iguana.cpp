@@ -1,5 +1,3 @@
-// File: iguana.cpp
-
 #include "iguana.h"
 
 Iguana::Iguana(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40) {
@@ -13,5 +11,5 @@ Iguana::Iguana(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40) {
 }
 
 void Iguana::Interact() {
-	std::cout << "The iguana is calmly perching on a tree." << std::endl;
+	std::cout << "The iguana is calmly sleeping on a tree." << std::endl;
 }

@@ -1,5 +1,3 @@
-// File: reptilia.cpp
-
 #include "reptilia.h"
 
 // ctor
