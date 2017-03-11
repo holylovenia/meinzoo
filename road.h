@@ -27,7 +27,7 @@ class Road: public Facility {
 	private:
 		const bool defIsEntrance = false;
 		const bool defIsExit = false;
-}
+};
 
 
 #endif

@@ -22,6 +22,6 @@ class Facility: public Cell {
 
 	private:
 		const string defFaciltyType = "Road";
-}
+};
 
 #endif

@@ -7,16 +7,10 @@ class Omnivora: public AnimalDiet {
 	public:
 		// ctor
 		Omnivora();
-		// cctor
-		Omnivora(Omnivora& O);
-		// operator=
-		Omnivora& operator=(Omnivora& O);
-		// dtor
-		~Omnivora();
 
-	protected:
-		bool eatMeat = true;
-		bool eatPlants = true;
-}
+	private:
+		const bool defEatMeat;
+		const bool defEatPlants;
+};
 
 #endif
