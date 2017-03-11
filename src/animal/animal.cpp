@@ -1,8 +1,6 @@
 #include "animal.h"
 
-
-void Animal::Move(int movement)
-{
+void Animal::Move(int movement) {
 	if (movement == 1) // Move up
 	{
 		position.setY(position.getY()-1);
@@ -21,17 +19,14 @@ void Animal::Move(int movement)
 	}
 }
 
-bool Animal::IsLandAnimal()
-{
+bool Animal::IsLandAnimal() {
 	return(isLandAnimal);
 }
 
-bool Animal::IsWaterAnimal()
-{
+bool Animal::IsWaterAnimal() {
 	return(isLandAnimal);
 }
 
-bool Animal::IsAirAnimal()
-{
+bool Animal::IsAirAnimal() {
 	return(isLandAnimal);
 }

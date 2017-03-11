@@ -1,7 +1,7 @@
 #ifndef PISCES_H
 #define PISCES_H
 
-#include "animal.h"
+#include "../animal.h"
 
 class Pisces: public Animal {
 	public:
