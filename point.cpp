@@ -9,10 +9,10 @@ void Point::setY(int _y) {
 }
 
 // Getter
-int Point::getX() {
+int Point::getX() const {
 	return x;
 }
-int Point::getY() {
+int Point::getY() const {
 	return y;
 }
 

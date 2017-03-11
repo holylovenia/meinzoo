@@ -6,19 +6,17 @@
 class Park: public Facility {
 	public:
 		// ctor with parameter
-		Park(string name);
+		Park(int _x, int _y, bool _isAccessible, std::string _name);
 		// cctor
-		Park(Park& P);
+		Park(const Park& P);
 		// operator=
-		Park& operator=(Park& P);
-		// dtor
-		~Park();
-
-	protected:
-		string facilityType = "Park";
+		Park& operator=(const Park& P);
+		// others
+		std::string getParkName();
 
 	private:
-		string name;
+		std::string name;
+		const std::string defFacilityType;
 };
 
 

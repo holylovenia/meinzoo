@@ -10,8 +10,8 @@ class Point {
 		void setY(int _y);
 
 		// Getter
-		int getX();
-		int getY();
+		int getX() const;
+		int getY() const;
 
 	private:
 		unsigned int x;
