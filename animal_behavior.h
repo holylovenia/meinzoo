@@ -10,6 +10,6 @@ class AnimalBehavior {
 
 	protected:
 		bool isWild;
-}
+};
 
 #endif

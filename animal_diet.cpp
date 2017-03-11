@@ -1,7 +1,7 @@
+#include "animal_diet.h"
+
 int AnimalDiet::totalReqMeat = 0;
 int AnimalDiet::totalReqPlant = 0;
-
-#include "animal_diet.h"
 
 bool AnimalDiet::isHerbivore() {
 	return (!eatMeat && eatPlant);

@@ -4,6 +4,7 @@
 #include "point.h"
 #include <string>
 #include <set>
+#include <iostream>
 
 class Animal {
 	public:
@@ -15,7 +16,7 @@ class Animal {
 		bool IsAirAnimal();
 
 	protected:
-		const int ID;
+		int ID;
 		int limbCount;
 		std::string skinType;
 		bool isLandAnimal;

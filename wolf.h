@@ -5,12 +5,15 @@
 #include "carnivora.h"
 #include "behavior_tame.h"
 
-class Wolf : public Mammalia, public Carnivora, public BehaviorTame
+class Wolf: public Mammalia, public Carnivora, public BehaviorTame
 {
-	public :
+	public:
 		Wolf(int _weight);
 		Wolf(const Wolf&);
-		void interact();
+		void Interact();
+
+	private:
+		const int defID;
 };
 
 #endif

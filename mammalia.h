@@ -9,6 +9,7 @@ class Mammalia: public Animal {
 		Mammalia();
 
 	private:
+		const int defLimbCount;
 		const std::string defSkinType;
 };
 

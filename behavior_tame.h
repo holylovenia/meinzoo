@@ -8,6 +8,6 @@
 class BehaviorTame : public AnimalBehavior {
 	public:
 		void setBehavior();
-}
+};
 
 #endif

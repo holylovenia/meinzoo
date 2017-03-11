@@ -11,12 +11,12 @@ Herbivora::Herbivora(): defEatMeat(false), defEatPlant(true)
 	totalReqPlant += getTotalPlant();
 }
 
-Herbivora::getTotalMeat()
+int Herbivora::getTotalMeat()
 {
 	return 0;
 }
 
-Herbivora::getTotalPlant()
+int Herbivora::getTotalPlant()
 {
 	return(ratioPlant * weight / 100);
 }
