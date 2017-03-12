@@ -3,11 +3,19 @@
 
 #include "habitat.h"
 
+/** @class LandHabitat
+	* Kelas LandHabitat mendefinisikan atribut untuk habitat darat.
+	*/
 class LandHabitat: public Habitat {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan habitat darat.
+			*/
 		LandHabitat();
 		
+		/** @brief Mengembalikan character untuk kelas render.
+			* @return Karakter untuk dirender.
+			*/
 		virtual char render();
 
 	private:
