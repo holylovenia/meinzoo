@@ -12,9 +12,11 @@ class Elephant: public Mammalia, public Herbivora, public BehaviorTame {
 	public:
 		/** @brief Constructor
 			* Menciptakan elephant default dengan berat sesuai _weight.
+			* @param _x Nilai posisi absis.
+			* @param _y Nilai posisi ordinat.
 			* @param _weight Nilai berat untuk elephant.
 			*/
-		Elephant(int _weight);
+		Elephant(int _x, int _y, int _weight);
 
 		/** @brief Menampilkan interaksi dengan elephant.
 			* Menuliskan interaksi ke layar.

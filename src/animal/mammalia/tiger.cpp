@@ -1,7 +1,9 @@
 #include "tiger.h"
 
-Tiger::Tiger(int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0) {
+Tiger::Tiger(int _x, int _y, int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0) {
 	ID = defID;
+	position.setX(_x);
+	position.setY(_x);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

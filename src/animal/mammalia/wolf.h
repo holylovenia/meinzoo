@@ -12,9 +12,11 @@ class Wolf: public Mammalia, public Carnivora, public BehaviorTame {
 	public:
 		/** @brief Constructor
 			* Menciptakan wolf default dengan berat sesuai _weight.
+			* @param _x Nilai posisi absis.
+			* @param _y Nilai posisi ordinat.
 			* @param _weight Nilai berat untuk wolf.
 			*/
-		Wolf(int _weight);
+		Wolf(int _x, int _y, int _weight);
 
 		/** @brief Menampilkan interaksi dengan wolf.
 			* Menuliskan interaksi ke layar.
