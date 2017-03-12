@@ -57,3 +57,11 @@ void Cage::MoveAnimal() {
 		} while (!movement_in_cage);
 	}
 }
+
+vector<Point> Cage::GetArea() {
+	return vector<Point>(area.begin(), area.end());
+}
+
+vector<Animal*> Cage::GetAnimal {
+	return animal;
+}
