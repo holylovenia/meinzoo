@@ -5,9 +5,20 @@
 #include "../diet/herbivora.h"
 #include "../behavior/behavior_tame.h"
 
+/** @class Giraffe
+	* Kelas Giraffe mendefinisikan atribut untuk giraffe.
+	*/
 class Giraffe: public Mammalia, public Herbivora, public BehaviorTame {
 	public:
+		/** @brief Constructor
+			* Menciptakan giraffe default dengan berat sesuai _weight.
+			* @param _weight Nilai berat untuk giraffe.
+			*/
 		Giraffe(int _weight);
+
+		/** @brief Menampilkan interaksi dengan giraffe.
+			* Menuliskan interaksi ke layar.
+			*/ 
 		void Interact();
 
 	private:

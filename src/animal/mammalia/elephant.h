@@ -5,9 +5,20 @@
 #include "../diet/herbivora.h"
 #include "../behavior/behavior_tame.h"
 
+/** @class Elephant
+	* Kelas Elephant mendefinisikan atribut untuk elephant.
+	*/
 class Elephant: public Mammalia, public Herbivora, public BehaviorTame {
 	public:
+		/** @brief Constructor
+			* Menciptakan elephant default dengan berat sesuai _weight.
+			* @param _weight Nilai berat untuk elephant.
+			*/
 		Elephant(int _weight);
+
+		/** @brief Menampilkan interaksi dengan elephant.
+			* Menuliskan interaksi ke layar.
+			*/
 		void Interact();
 
 	private:
