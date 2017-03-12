@@ -27,7 +27,7 @@ class Cage {
 		
 		void MoveAnimal();
 		
-		vector<Point> GetArea();
+		set<Point> GetArea();
 		vector<Animal*> GetAnimal();
 		
 	private:
