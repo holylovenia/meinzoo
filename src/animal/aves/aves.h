@@ -3,9 +3,14 @@
 
 #include "../animal.h"
 
+/** @class Kamus
+	* Kelas Aves mendefinisikan atribut untuk aves.
+	*/
 class Aves: public Animal {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan Aves dengan atribut default untuk aves pada umumnya.
+			*/
 		Aves();
 
 	private:
