@@ -4,27 +4,28 @@
 #define CAGE_H
 
 #include <set>
+#include <vector>
 #include "../misc/point.h"
+#include "../animal/animal.h"
 
 using namespace std;
 
 class Cage {
 	public:
-		// tidak perlu ctor dan dtor karena bitwise copy tidak apa-apa
+		Cage();
 		
-		void AddPoint(Point& p);
-		void RemovePoint(Point& p);
+		void AddPoint(const Point& p);
+		void RemovePoint(const Point& p);
+		
+		void AddAnimal(Animal& A);
+		Animal* RemoveAnimal(int i);
+		
+		void MoveAnimal();
 		
 	private:
 		set<Point> area;
+		vector<Animal*> animal;
+		int nbAnimal;
 };
-
-void Cage::AddPoint(Point& p) {
-	area.insert(p);
-}
-
-void Cage::RemovePoint(Point& p) {
-	//area.erase(p);
-}
 
 #endif
