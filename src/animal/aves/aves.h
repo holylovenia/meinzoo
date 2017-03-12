@@ -3,7 +3,7 @@
 
 #include "../animal.h"
 
-/** @class Kamus
+/** @class Aves
 	* Kelas Aves mendefinisikan atribut untuk aves.
 	*/
 class Aves: public Animal {

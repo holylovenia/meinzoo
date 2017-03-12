@@ -7,10 +7,10 @@ Omnivora::Omnivora(): defEatMeat(true), defEatPlant(true) {
 	totalReqPlant += getTotalPlant();
 }
 
-int Omnivora::getTotalMeat() {
+int Omnivora::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
-int Omnivora::getTotalPlant() {
+int Omnivora::getReqPlant() {
 	return (ratioPlant * weight / 100);
 }

@@ -7,7 +7,7 @@
 class AnimalBehavior {
 	public:
 		/** @brief Getter nilai isWild. 
-			* @return nilai isWild.
+			* @return Nilai isWild.
 			*/
 		bool getBehavior();
 

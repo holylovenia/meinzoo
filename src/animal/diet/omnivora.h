@@ -3,12 +3,25 @@
 
 #include "animal_diet.h"
 
+/** @class Omnivora
+	* Kelas Omnivora mendifinisikan hewan pemakan daging dan tumbuhan.
+	*/
 class Omnivora: public AnimalDiet {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan Omnivora (pemakan daging dan tumbuhan).
+			*/
 		Omnivora();
-		int getTotalMeat();
-		int getTotalPlant();
+
+		/** @brief Getter nilai kebutuhan makanan hewan dalam bentuk daging.
+			* @return Jumlah daging yang dibutuhkan untuk hewan tertentu.
+			*/
+		int getReqMeat();
+
+		/** @brief Getter nilai kebutuhan makanan hewan dalam bentuk tumbuhan.
+			* @return Jumlah tumbuhan yang dibutuhkan untuk hewan tertentu.
+			*/
+		int getReqPlant();
 
 	private:
 		const bool defEatMeat;

@@ -12,12 +12,12 @@ class Colibri : public Aves, public Herbivora, public BehaviorTame {
 	public :
 		/** @brief Constructor
 			* Menciptakan colibri default dengan berat sesuai _weight.
-			* @param _weight Nilai berat untuk hewan.
+			* @param _weight Nilai berat untuk colibri.
 			*/
 		Colibri(int _weight);
 
-		/** @brief Menampilkan interaksi dengan hewan tertentu.
-			* Menuliskan interaksi hewan ke layar.
+		/** @brief Menampilkan interaksi dengan colibri.
+			* Menuliskan interaksi ke layar.
 			*/
 		void Interact();
 
