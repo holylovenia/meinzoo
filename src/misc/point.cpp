@@ -1,4 +1,5 @@
 // File: point.cpp
+#include "point.h"
 
 // ctor
 Point::Point() {
@@ -25,4 +26,13 @@ int Point::getX() const {
 }
 int Point::getY() const {
 	return y;
+}
+
+bool Point::operator<(const Point& p) {
+	if (x < p.x)
+		return true;
+	else if (x == p.x && y < p.y)
+		return true;
+	else
+		return false;
 }
