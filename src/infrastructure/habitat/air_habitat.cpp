@@ -7,3 +7,7 @@
 AirHabitat::AirHabitat(): defType('A') {
 	type = defType;
 }
+
+char AirHabitat::render() {
+	return 'a';
+}

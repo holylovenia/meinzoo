@@ -7,3 +7,7 @@
 WaterHabitat::WaterHabitat(): defType('W') {
 	type = defType;
 }
+
+char WaterHabitat::render() {
+	return 'w';
+}

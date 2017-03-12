@@ -10,6 +10,8 @@ class Road: public Facility {
 		// others
 		bool IsEntrance();
 		bool IsExit();
+		
+		char render() override;
 
 	protected:
 		bool isEntrance;

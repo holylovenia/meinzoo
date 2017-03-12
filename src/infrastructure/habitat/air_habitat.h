@@ -8,9 +8,10 @@ class AirHabitat : public Habitat {
 		// ctor
 		AirHabitat();
 		
+		virtual char render();
+		
 	private:
 		const char defType;
-
 };
 
 #endif

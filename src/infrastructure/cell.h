@@ -1,7 +1,9 @@
 #ifndef CELL_H
 #define CELL_H
 
-class Cell {
+#include "../misc/renderable.h"
+
+class Cell: public Renderable {
 	public:
 		// ctor
 		Cell(bool Accessible);

@@ -1,8 +1,14 @@
+// cage.cpp
+
 #include <ctime>
 #include <random>
 #include "cage.h"
 
-Cage::Cage() {
+Cage::Cage(int _type) {
+	if (_type / 3 == 0)
+		type = _type;
+	else
+		type = LAND;
 	nbAnimal = 0;
 }
 

@@ -13,6 +13,8 @@ class Restaurant: public Facility {
 		Restaurant& operator=(const Restaurant& R);
 		// dtor
 		std::string getRestaurantName();
+		
+		char render() override;
 
 	private:
 		std::string name;
