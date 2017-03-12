@@ -12,9 +12,11 @@ class Clownfish: public Pisces, public Omnivora, public BehaviorTame {
     public:
         /** @brief Constructor
         	* Menciptakan clownfish default dengan berat sesuai _weight.
+            * @param _x Nilai posisi absis.
+            * @param _y Nilai posisi ordinat.
 			* @param _weight Nilai berat untuk clownfish.
         	*/
-        Clownfish(int _weight);
+        Clownfish(int _x, int _y, int _weight);
 
         /** @brief Menampilkan interaksi dengan clownfish.
         	* Menuliskan interaksi ke layar.
