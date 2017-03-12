@@ -31,6 +31,10 @@ bool Animal::IsAirAnimal() {
 	return(isLandAnimal);
 }
 
+char Animal::render() {
+	return 'O';
+}
+
 Point Animal::getPosition() {
 	return position;
 }
