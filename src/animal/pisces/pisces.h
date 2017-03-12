@@ -3,9 +3,14 @@
 
 #include "../animal.h"
 
+/** @class Pisces
+	* Kelas Pisces mendefinisikan atribut untuk pisces
+	*/
 class Pisces: public Animal {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan Pisces dengan atribut default untuk pisces pada umumnya.
+			*/
 		Pisces();
 
 	private:

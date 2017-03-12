@@ -5,9 +5,20 @@
 #include "../diet/carnivora.h"
 #include "../behavior/behavior_tame.h"
 
+/** @class SHark
+	* Kelas Shark mendefinisikan atribut untuk shark.
+	*/
 class Shark: public Pisces, public Carnivora, public BehaviorTame {
     public:
+        /** @brief Constructor
+        	* Menciptakan shark default dengan berat sesuai _weight
+        	* @param _weight Nilai berat untuk shark.
+        	*/
         Shark(int _weight);
+        
+        /** @brief Menampilkan interaksi dengan shark.
+        	* Menuliskan interaksi ke layar.
+        	*/
         void Interact();
 
     private:
