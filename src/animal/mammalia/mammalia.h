@@ -3,9 +3,14 @@
 
 #include "../animal.h"
 
+/** @class Mammalia
+	* Kelas Mammalia mendefinisikan atribut untuk mammalia
+	*/
 class Mammalia: public Animal {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan mammalia dengan atribut default untuk mammalia pada umumnya
+			*/
 		Mammalia();
 
 	private:
