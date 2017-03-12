@@ -3,6 +3,7 @@
 #include <ctime>
 #include <random>
 #include "cage.h"
+#include "../animal/behavior/behavior_wild.h"
 
 Cage::Cage(int _type) {
 	if (_type / 3 == 0)
@@ -22,8 +23,21 @@ void Cage::RemovePoint(const Point& p) {
 
 void Cage::AddAnimal(Animal& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {
-		animal.push_back(&A);
-		nbAnimal++;
+		AnimalBehavior* a = dynamic_cast<AnimalBehavior*>(&A);		
+		bool placeable;
+		
+		if (!(a->getBehavior())) {
+			BehaviorWild* b = dynamic_cast<BehaviorWild*>(a);
+			for (int i = 0; i < animal.size() && placeable; ++i) {
+				placeable = !(b->isEnemy(animal[i]->getID()));
+			}
+		} else {
+			placeable = true;
+		}
+		if (placeable) {
+			animal.push_back(&A);
+			nbAnimal++;
+		}
 	}
 }
 
@@ -62,6 +76,6 @@ vector<Point> Cage::GetArea() {
 	return vector<Point>(area.begin(), area.end());
 }
 
-vector<Animal*> Cage::GetAnimal {
+vector<Animal*> Cage::GetAnimal() {
 	return animal;
 }

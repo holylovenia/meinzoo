@@ -38,3 +38,7 @@ char Animal::render() {
 Point Animal::getPosition() {
 	return position;
 }
+
+int Animal::getID() {
+	return ID;
+}

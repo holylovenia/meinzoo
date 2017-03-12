@@ -17,6 +17,7 @@ class Animal: public Renderable {
 		bool IsAirAnimal();
 		char render();
 		Point getPosition();
+		int getID();
 
 	protected:
 		int ID;

@@ -7,7 +7,7 @@
 /** @class BehaviorWild
 	* Kelas BehaviorWild mendefinisikan perilaku hewan liar.
 	*/
-class BehaviorWild : public AnimalBehavior {
+class BehaviorWild {
 	public:
 		/** @brief Mengubah nilai perilaku hewan.
 			* Menetapkan nilai perilaku hewan menjadi liar.
