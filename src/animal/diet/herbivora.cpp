@@ -6,6 +6,10 @@ Herbivora::Herbivora(): defEatMeat(false), defEatPlant(true) {
 	totalReqPlant += getTotalPlant();
 }
 
+Herbivora::~Herbivora() {
+	totalReqPlant -= getTotalPlant();
+}
+
 int Herbivora::getReqMeat() {
 	return 0;
 }

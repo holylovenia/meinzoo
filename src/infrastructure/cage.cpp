@@ -53,7 +53,7 @@ void Cage::MoveAnimal() {
 	srand(time(NULL));	
 	for (int i = 0; i < animal.size(); ++i) {
 		char movement = rand() % 4;
-		bool movement_in_cage = false;
+		bool movement_in_cage;
 		int no_of_tries = 0;
 		do {			
 			animal[i]->Move(movement);			
