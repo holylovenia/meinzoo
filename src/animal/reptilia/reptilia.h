@@ -3,9 +3,14 @@
 
 #include "../animal.h"
 
+/** @class Reptilia
+	* Kelas Reptilia mendefinisikan atribut untuk reptilia.
+	*/
 class Reptilia: public Animal {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan Reptilia dengan atribut default untuk reptilia pada umumnya.
+			*/
 		Reptilia();
 
 	private:
