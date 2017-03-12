@@ -1,21 +1,21 @@
 #include "animal.h"
 
-void Animal::Move(int movement) {
+void Move(Animal& A, int movement) {
 	if (movement == 1) // Move up
 	{
-		position.setY(position.getY()-1);
+		A.position.setY(A.position.getY()-1);
 	}
 	else if (movement == 2) // Move right
 	{
-		position.setX(position.getX()+1);
+		A.position.setX(A.position.getX()+1);
 	}
 	else if (movement == 3) // Move down
 	{
-		position.setY(position.getY()+1);
+		A.position.setY(A.position.getY()+1);
 	}
 	else // Move left
 	{
-		position.setX(position.getX()-1);
+		A.position.setX(A.position.getX()-1);
 	}
 }
 

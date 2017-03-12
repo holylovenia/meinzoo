@@ -16,6 +16,8 @@ class Point {
 		// Getter
 		int getX() const;
 		int getY() const;
+		
+		bool operator<(const Point& p) const;
 
 	private:
 		unsigned int x;
