@@ -4,9 +4,15 @@
 #include <string>
 #include "../cell.h"
 
+/** @class Facility
+	* Kelas Facility mendefinisikan atribut untuk facility.
+	*/
 class Facility: public Cell {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan cell berisi fasilitas yang dapat/tidak dapat diakses.
+			* @param Accessible Nilai true/false apakah dapat diakses.
+			*/
 		Facility(bool Accessible);
 
 	protected:

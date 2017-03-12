@@ -3,17 +3,39 @@
 
 #include "facility.h"
 
+/** @class Park
+	* Kelas Park mendefinisikan atribut untuk park.
+	*/
 class Park: public Facility {
 	public:
-		// ctor with parameter
+		/** @brief Constructor
+			* Menciptakan cell berisi park yang dapat/tidak dapat diakses,
+			* dengan nama sesuai dengan _name.
+			* @param Accessible Nilai true/false apakah dapat diakses.
+			* @param _name Nama park.
+			*/
 		Park(bool Accessible, std::string _name);
-		// cctor
+		
+		/** @brief Copy Constructor
+			* Menciptakan park dengan tingkat aksesibilitas dan nama yang smaa.
+			* @param P Object Park yang sudah diciptakan.
+			*/
 		Park(const Park& P);
-		// operator=
+		
+		/** @brief Operator=
+			* Mengubah atribut suatu park menjadi sama dengan park lain.
+			* @param P Object Park yang sudah dciptakan.
+			*/
 		Park& operator=(const Park& P);
-		// others
+		
+		/** @brief Getter park name
+			* @return Nama park.
+			*/
 		std::string getParkName();
 		
+		/** @brief Mengembalikan character untuk kelas render.
+			* @return Karakter untuk dirender.
+			*/
 		char render() override;
 
 	private:
