@@ -1,11 +1,10 @@
 #ifndef CELL_H
 #define CELL_H
-#include "point.h"
 
 class Cell {
 	public:
 		// ctor
-		Cell(int _x, int _y, bool Accessible);
+		Cell(bool Accessible);
 		// cctor
 		Cell(Cell& C);
 		// operator=
