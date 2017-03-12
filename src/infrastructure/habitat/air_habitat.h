@@ -3,11 +3,19 @@
 
 #include "habitat.h"
 
+/** @class AirHabitat
+	* Kelas AirHabitat mendefinisikan atribut untuk habitat udara.
+	*/
 class AirHabitat : public Habitat {
 	public:
-		// ctor
+		/** @brief Constructor
+			* Menciptakan habitat udara.
+			*/
 		AirHabitat();
-		
+
+		/** @brief Mengembalikan character untuk kelas render.
+			* @return Karakter untuk dirender.
+			*/
 		virtual char render();
 		
 	private:
