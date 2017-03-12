@@ -1,7 +1,7 @@
 // cage.cpp
 
 #include <ctime>
-#include <random>
+#include <cstdlib>
 #include "cage.h"
 #include "../animal/behavior/behavior_wild.h"
 #include "../animal/diet/animal_diet.h"
@@ -50,20 +50,17 @@ Animal* Cage::RemoveAnimal(int i) {
 }
 
 void Cage::MoveAnimal() {
-	unsigned int seed = time(NULL);
-	subtract_with_carry_engine<unsigned,24,10,24> generator (seed);	
-	
-	for (auto iter = animal.begin(); iter < animal.end(); ++iter) {
-		char movement = generator() % 4;
+	srand(time(NULL));	
+	for (int i = 0; i < animal.size(); ++i) {
+		char movement = rand() % 4;
 		bool movement_in_cage = false;
 		int no_of_tries = 0;
 		do {			
-			(*iter)->Move(movement);
-			
-			movement_in_cage = area.find((*iter)->getPosition()) != area.end();
+			animal[i]->Move(movement);			
+			movement_in_cage = area.find(animal[i]->getPosition()) != area.end();
 			if (!movement_in_cage) {
 				movement = (movement + 2) % 4;
-				(*iter)->Move(movement);
+				animal[i]->Move(movement);
 				movement = (movement + 3) % 4;
 				no_of_tries++;
 			}

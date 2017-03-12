@@ -14,14 +14,13 @@ class Zoo {
 	public:
 		Zoo();
 		
-		void SetTile(Cell& c, int i, int j);		
+		void setTile(Cell& c, int i, int j);		
 		
-		void Render();
+		void render();		
+		void print();
 		
-		void Print();
-		
-		void GetVegConsumed();
-		void GetMeatConsumed();
+		void getTotalReqMeat();
+		void getTotalReqPlant();
 	
 	private:
 		Cell* map[WIDTH][LENGTH];

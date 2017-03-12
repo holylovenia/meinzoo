@@ -2,17 +2,18 @@
 
 #include <cctype>
 #include "zoo.h"
+#include "animal/diet/animal_diet.h"
 
 Zoo::Zoo() {
 	// Hardcode di sini
 	
 }
 
-void Zoo::SetTile(Cell& c, int i, int j) {
+void Zoo::setTile(Cell& c, int i, int j) {
 	map[i][j] = &c;
 }
 
-void Zoo::Render() {
+void Zoo::render() {
 	for (int i = 0; i < WIDTH; ++i) {
 		for (int j = 0; i < LENGTH; ++i) {
 			mapchar[i][j] = map[i][j]->render();
@@ -36,7 +37,7 @@ void Zoo::Render() {
 	}
 }
 
-void Zoo::Print() {
+void Zoo::print() {
 	for (int i = 0; i < WIDTH; ++i) {
 		for (int j = 0; j < LENGTH; ++j) {
 			cout << mapchar[i][j] << ' ';
@@ -45,6 +46,10 @@ void Zoo::Print() {
 	}
 }
 
-void Zoo::GetVegConsumed() {
-	
+void Zoo::getTotalReqMeat() {
+	return AnimalDiet::getTotalMeat();
+}
+
+void Zoo::getTotalReqPlant() {
+	return AnimalDiet::getTotalReqPlant();
 }
