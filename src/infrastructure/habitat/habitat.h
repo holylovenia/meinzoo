@@ -1,14 +1,17 @@
 #ifndef HABITAT_H
 #define HABITAT_H
 
-#include "cell.h"
+#include "../cell.h"
 
 class Habitat: public Cell {
 	public:
-		Habitat(int _x, int _y, bool isAccessible);
+		Habitat();
 		
 	protected:
 		char type;
+
+	private:
+		const bool defAccessible;
 };
 
 #endif
