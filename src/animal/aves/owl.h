@@ -5,9 +5,20 @@
 #include "../diet/carnivora.h"
 #include "../behavior/behavior_tame.h"
 
+/** @class Owl
+	* Kelas Owl mendefinisikan atribut untuk owl.
+	*/
 class Owl : public Aves, public Carnivora, public BehaviorTame {
 	public :
+		/** @brief Constructor
+			* Menciptakan owl default dengan berat sesuai _weight.
+			* @param _weight Nilai berat untuk owl.
+			*/	
 		Owl(int _weight);
+
+		/** @brief Menampilkan interaksi dengan owl.
+			* Menuliskan interaksi ke layar.
+			*/
 		void Interact();
 
 	private:

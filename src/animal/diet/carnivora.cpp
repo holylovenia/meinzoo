@@ -4,13 +4,13 @@
 Carnivora::Carnivora(): defEatMeat(true), defEatPlant(false) {
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
-	totalReqMeat += getTotalMeat();
+	totalReqMeat += getReqMeat();
 }
 
-int Carnivora::getTotalMeat() {
+int Carnivora::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
-int Carnivora::getTotalPlant() {
+int Carnivora::getReqPlant() {
 	return 0;
 }
