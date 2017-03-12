@@ -3,12 +3,11 @@
 #include "restaurant.h"
 
 // ctor with parameter
-Restaurant::Restaurant(bool Accessible, std::string _name): Facility(Accessible), defFacilityType("Restaurant") {
-	name = _name;
+Restaurant::Restaurant(bool Accessible, std::string _name): Facility(Accessible), defFacilityType("Restaurant"), name(_name) {
 	facilityType = defFacilityType;
 }
 // cctor
-Restaurant::Restaurant(const Restaurant& R): Facility(R.isAccessible), defFacilityType("Restaurant") {
+Restaurant::Restaurant(const Restaurant& R): Facility(R.isAccessible), defFacilityType("Restaurant"), name(R.name) {
 	name = R.name;
 	facilityType = R.facilityType;
 }

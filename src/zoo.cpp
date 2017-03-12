@@ -41,6 +41,10 @@ void Zoo::Print() {
 		for (int j = 0; j < LENGTH; ++j) {
 			cout << mapchar[i][j] << ' ';
 		}
-		cout << '\n';
+		cout << '\n\n';
 	}
+}
+
+void Zoo::GetVegConsumed() {
+	
 }

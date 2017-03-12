@@ -19,6 +19,9 @@ class Zoo {
 		void Render();
 		
 		void Print();
+		
+		void GetVegConsumed();
+		void GetMeatConsumed();
 	
 	private:
 		Cell* map[WIDTH][LENGTH];

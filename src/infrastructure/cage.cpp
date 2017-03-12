@@ -4,12 +4,9 @@
 #include <random>
 #include "cage.h"
 #include "../animal/behavior/behavior_wild.h"
+#include "../animal/diet/animal_diet.h"
 
-Cage::Cage(int _type) {
-	if (_type / 3 == 0)
-		type = _type;
-	else
-		type = LAND;
+Cage::Cage(int _type): type(_type) {
 	nbAnimal = 0;
 }
 
@@ -59,6 +56,7 @@ void Cage::MoveAnimal() {
 	for (auto iter = animal.begin(); iter < animal.end(); ++iter) {
 		char movement = generator() % 4;
 		bool movement_in_cage = false;
+		int no_of_tries = 0;
 		do {			
 			(*iter)->Move(movement);
 			
@@ -67,8 +65,9 @@ void Cage::MoveAnimal() {
 				movement = (movement + 2) % 4;
 				(*iter)->Move(movement);
 				movement = (movement + 3) % 4;
+				no_of_tries++;
 			}
-		} while (!movement_in_cage);
+		} while (!movement_in_cage && no_of_tries < 4);
 	}
 }
 
