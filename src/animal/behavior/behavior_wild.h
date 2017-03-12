@@ -23,6 +23,11 @@ class BehaviorWild : public AnimalBehavior {
 			* @param x ID hewan yang ingin dihapus.
 			*/
 		void removeEnemy(int x);
+		/** @brief Mengecek status hewan.
+			* Memeriksa apakah hewan dengan ID x merupakan musuh.
+			* @param x ID hewan yang ingin diperiksa.
+			*/
+		bool isEnemy(int x);
 
 	private:
 		std::set<int> enemy;

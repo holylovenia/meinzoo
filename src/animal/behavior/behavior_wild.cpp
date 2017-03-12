@@ -11,3 +11,7 @@ void BehaviorWild::addEnemy(int x) {
 void BehaviorWild::removeEnemy(int x) {
 	enemy.erase(x);
 }
+
+bool BehaviorWild::isEnemy(int x) {
+	return(enemy.find(x) != enemy.end());
+}
