@@ -16,7 +16,7 @@ class LandHabitat: public Habitat {
 		/** @brief Mengembalikan character untuk kelas render.
 			* @return Karakter untuk dirender.
 			*/
-		virtual char render();
+		char render();
 
 	private:
 		const char defType;

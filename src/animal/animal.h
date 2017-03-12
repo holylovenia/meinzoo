@@ -1,11 +1,12 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
+#include "../misc/renderable.h"
 #include "../misc/point.h"
 #include <string>
 #include <iostream>
 
-class Animal {
+class Animal: public Renderable {
 	public:
 		// others
 		Animal();
@@ -14,7 +15,7 @@ class Animal {
 		bool IsLandAnimal();
 		bool IsWaterAnimal();
 		bool IsAirAnimal();
-		
+		char render();
 		Point getPosition();
 
 	protected:
