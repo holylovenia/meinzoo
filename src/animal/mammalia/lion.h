@@ -13,8 +13,10 @@ class Lion: public Mammalia, public Carnivora, public BehaviorTame {
 		/** @brief Constructor
 			* Menciptakan lion default dengan berat sesuai _weight.
 			* @param _weight Nilai berat untuk lion.
+			* @param _x Nilai posisi absis.
+			* @param _y Nilai posisi ordinat.
 			*/
-		Lion(int _weight);
+		Lion(int _weight, int _x, int _y);
 
 		/** @brief Menampilkan interaksi dengan lion.
 			* Menuliskan interaksi ke layar.
