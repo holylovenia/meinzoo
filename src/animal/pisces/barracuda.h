@@ -12,9 +12,11 @@ class Barracuda: public Pisces, public Carnivora, public BehaviorTame {
     public:
     	/** @brief Constructor
     		* Menciptakan barracuda default dengan berat sesuai _weight.
+            * @param _x Nilai posisi absis.
+            * @param _y Nilai posisi ordinat.
     		* @param _weight Nilai berat untuk barracuda.
     		*/
-        Barracuda(int _weight);
+        Barracuda(int _x, int _y, int _weight);
         
         /** @brief Menampilkan interaksi dengan barracuda.
         	* Menuliskan interaksi ke layar.

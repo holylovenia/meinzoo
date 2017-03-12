@@ -1,7 +1,9 @@
 #include "shark.h"
 
-Shark::Shark(int _weight) : defID(13), defRatioMeat(70), defRatioPlant(0) {
+Shark::Shark(int _x, int _y, int _weight) : defID(13), defRatioMeat(70), defRatioPlant(0) {
     ID = defID;
+    position.setX(_x);
+	position.setY(_y);
     ratioMeat = defRatioMeat;
     ratioPlant = defRatioPlant;
     isLandAnimal = false;

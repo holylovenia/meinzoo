@@ -12,9 +12,11 @@ class Tiger: public Mammalia, public Carnivora, public BehaviorTame {
 	public:
 		/** @brief Constructor
 			* Menciptakan tiger default dengan berat sesuai _weight.
+			* @param _x Nilai posisi absis.
+			* @param _y Nilai posisi ordinat.
 			* @param _weight Nilai berat untuk tiger
 			*/
-		Tiger(int _weight);
+		Tiger(int _x, int _y, int _weight);
 
 		/** @brief Menampilkan interaksi dengan tiger.
 			* Menuliskan interaksi ke layar.

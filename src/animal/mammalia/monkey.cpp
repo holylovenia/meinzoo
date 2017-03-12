@@ -1,7 +1,9 @@
 #include "monkey.h"
 
-Monkey::Monkey(int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40) {
+Monkey::Monkey(int _x, int _y, int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40) {
 	ID = defID;
+	position.setX(_x);
+	position.setY(_x);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

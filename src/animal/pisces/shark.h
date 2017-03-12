@@ -13,8 +13,10 @@ class Shark: public Pisces, public Carnivora, public BehaviorTame {
         /** @brief Constructor
         	* Menciptakan shark default dengan berat sesuai _weight
         	* @param _weight Nilai berat untuk shark.
+            * @param _x Nilai posisi absis.
+            * @param _y Nilai posisi ordinat.
         	*/
-        Shark(int _weight);
+        Shark(int _x, int _y, int _weight);
         
         /** @brief Menampilkan interaksi dengan shark.
         	* Menuliskan interaksi ke layar.
