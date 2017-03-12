@@ -26,17 +26,3 @@ int Point::getX() const {
 int Point::getY() const {
 	return y;
 }
-
-// Movement
-void Point::moveUp() {
-	y += 1;
-}
-void Point::moveRight() {
-	x += 1;
-}
-void Point::moveDown() {
-	y -= 1;
-}
-void Point::moveLeft() {
-	x -= 1;
-}
