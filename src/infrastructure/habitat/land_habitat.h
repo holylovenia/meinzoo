@@ -7,6 +7,8 @@ class LandHabitat: public Habitat {
 	public:
 		// ctor
 		LandHabitat();
+		
+		virtual char render();
 
 	private:
 		const char defType;

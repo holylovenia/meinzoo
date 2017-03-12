@@ -13,6 +13,8 @@ class Park: public Facility {
 		Park& operator=(const Park& P);
 		// others
 		std::string getParkName();
+		
+		char render() override;
 
 	private:
 		std::string name;

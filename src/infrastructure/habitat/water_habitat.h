@@ -7,6 +7,8 @@ class WaterHabitat: public Habitat {
 	public:
 		// ctor
 		WaterHabitat();
+		
+		virtual char render();
 
 	private:
 		const char defType;

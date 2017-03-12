@@ -23,3 +23,7 @@ Restaurant& Restaurant::operator=(const Restaurant& R) {
 std::string Restaurant::getRestaurantName() {
 	return name;
 }
+
+char Restaurant::render() {
+	return 'R';
+}
