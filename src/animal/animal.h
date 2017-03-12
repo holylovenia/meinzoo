@@ -14,6 +14,8 @@ class Animal {
 		bool IsLandAnimal();
 		bool IsWaterAnimal();
 		bool IsAirAnimal();
+		
+		Point getPosition();
 
 	protected:
 		int ID;

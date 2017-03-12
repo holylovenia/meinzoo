@@ -30,3 +30,7 @@ bool Animal::IsWaterAnimal() {
 bool Animal::IsAirAnimal() {
 	return(isLandAnimal);
 }
+
+Point Animal::getPosition() {
+	return position;
+}
