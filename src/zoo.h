@@ -14,7 +14,7 @@ class Zoo {
 	public:
 		Zoo();
 		
-		void SetTile(const Cell& c, int i, int j);		
+		void SetTile(Cell& c, int i, int j);		
 		
 		void Render();
 		
@@ -22,7 +22,8 @@ class Zoo {
 	
 	private:
 		Cell* map[WIDTH][LENGTH];
+		char mapchar[WIDTH][LENGTH];
 		vector<Cage> cages;
-}
+};
 
 #endif
