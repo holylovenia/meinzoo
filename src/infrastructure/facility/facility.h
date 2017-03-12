@@ -2,12 +2,12 @@
 #define FACILITY_H
 
 #include <string>
-#include "cell.h"
+#include "../cell.h"
 
 class Facility: public Cell {
 	public:
 		// ctor
-		Facility(int _x, int _y, bool isAccessible);
+		Facility(bool Accessible);
 
 	protected:
 		std::string facilityType;
