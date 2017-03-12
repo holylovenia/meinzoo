@@ -8,8 +8,9 @@
 class Animal {
 	public:
 		// others
+		Animal();
 		virtual void Interact() = 0;
-		friend void Move(Animal& A, int movement);
+		void Move(int movement);
 		bool IsLandAnimal();
 		bool IsWaterAnimal();
 		bool IsAirAnimal();
