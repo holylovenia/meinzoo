@@ -15,7 +15,7 @@
 
 using namespace std;
 
-class Cage: public Renderable {
+class Cage {
 	public:
 		// 0: land, 1: water, 2: air
 		Cage(int _type);
