@@ -5,6 +5,10 @@
 
 class Point {
 	public:
+		// ctor
+		Point();
+		Point(int _x, int _y);
+		
 		// Setter
 		void setX(int _x);
 		void setY(int _y);
