@@ -23,7 +23,7 @@ void Cage::AddAnimal(Animal& A) {
     if (!(a->GetBehavior())) {
       BehaviorWild* b = dynamic_cast<BehaviorWild*>(a);
       for (int i = 0; i < animal.size() && placeable; ++i) {
-        placeable = !(b->is_enemy(animal[i]->GetID()));
+        placeable = !(b->IsEnemy(animal[i]->GetID()));
       }
     } else {
       placeable = true;

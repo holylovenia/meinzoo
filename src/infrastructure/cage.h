@@ -18,18 +18,14 @@ class Cage {
   public:
     // 0: land, 1: water, 2: air
     Cage(int _type = LAND);
-    
     void AddPoint(const Point& p);
     void RemovePoint(const Point& p);
-    
     void AddAnimal(Animal& A);
     Animal* RemoveAnimal(int i);
-    
     void MoveAnimal();
-    
     set<Point> GetArea();
     vector<Animal*> GetAnimal();
-    
+
   private:
     int type;
     set<Point> area;

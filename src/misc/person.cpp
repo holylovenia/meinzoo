@@ -3,7 +3,7 @@
 #include "person.h"
 
 Person::Person() {
-  SetPosition(-1,-1);
+  ResetPosition();
 }
 Point Person::GetPosition() const {
   return position;
@@ -28,4 +28,7 @@ void Person::Move(int movement) {
   } else { // Move left
     position.SetX(position.GetX()-1);
   }
+}
+void Person::ResetPosition() {
+  SetPosition(-1,-1);
 }

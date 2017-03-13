@@ -14,6 +14,7 @@ class Person: public Renderable {
     void SetPosition(int x, int y);
     char Render();
     void Move(int movement);
+    void ResetPosition();
 
   private:
     Point position;
