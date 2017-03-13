@@ -28,27 +28,11 @@ int Point::getY() const {
 	return y;
 }
 
-bool Point::operator<(const Point& p) const {
+bool Point::operator<(const Point& p) {
 	if (x < p.x)
 		return true;
 	else if (x == p.x && y < p.y)
 		return true;
 	else
 		return false;
-}
-
-Point Point::up() {
-	return Point(x,y+1);
-}
-
-Point Point::down() {
-	return Point(x,y-1);
-}
-
-Point Point::left() {
-	return Point(x-1,y);
-}
-
-Point Point::right() {
-	return Point(x+1,y);
 }

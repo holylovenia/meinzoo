@@ -41,7 +41,7 @@ void Cage::AddAnimal(Animal& A) {
 Animal* Cage::RemoveAnimal(int i) {
 	if (i < animal.size()) {
 		Animal* a = animal[i];
-		animal.erase(animal.begin() + i);
+		animal.erase(animal.begin() + i - 1);
 		nbAnimal--;
 		return a;
 	} else {
@@ -68,8 +68,8 @@ void Cage::MoveAnimal() {
 	}
 }
 
-set<Point> Cage::GetArea() {
-	return area;
+vector<Point> Cage::GetArea() {
+	return vector<Point>(area.begin(), area.end());
 }
 
 vector<Animal*> Cage::GetAnimal() {
