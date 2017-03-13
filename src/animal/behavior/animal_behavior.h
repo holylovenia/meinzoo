@@ -6,8 +6,8 @@
   */
 class AnimalBehavior {
   public:
-    /** @brief Getter nilai isWild. 
-      * @return Nilai isWild.
+    /** @brief Getter nilai is_wild. 
+      * @return Nilai is_wild.
       */
     bool GetBehavior();
     /** @brief Pure virtual method
