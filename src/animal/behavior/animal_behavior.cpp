@@ -1,5 +1,5 @@
 #include "animal_behavior.h"
 
-bool AnimalBehavior::getBehavior() {
-	return isWild;
+bool AnimalBehavior::GetBehavior() {
+  return is_wild;
 }

@@ -1,21 +1,21 @@
 #include "animal_diet.h"
 
-int AnimalDiet::totalReqMeat = 0;
-int AnimalDiet::totalReqPlant = 0;
+int AnimalDiet::total_req_meat = 0;
+int AnimalDiet::total_req_plant = 0;
 
-bool AnimalDiet::isHerbivore() {
-	return (!eatMeat && eatPlant);
+bool AnimalDiet::IsHerbivore() {
+  return (!eat_meat && eat_plant);
 }
-bool AnimalDiet::isCarnivore() {
-	return (eatMeat && !eatPlant);
+bool AnimalDiet::IsCarnivore() {
+  return (eat_meat && !eat_plant);
 }
-bool AnimalDiet::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool AnimalDiet::IsOmnivore() {
+  return (eat_meat && eat_plant);
 }
 
-int AnimalDiet::getTotalMeat() {
-	return totalReqMeat;
+int AnimalDiet::GetTotalMeat() {
+  return total_req_meat;
 }
-int AnimalDiet::getTotalPlant() {
-	return totalReqPlant;
+int AnimalDiet::GetTotalPlant() {
+  return total_req_plant;
 }
