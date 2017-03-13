@@ -1,3 +1,0 @@
-/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/build/CMakeFiles/rebuild_cache.dir
-/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/build/CMakeFiles/edit_cache.dir
-/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/build/CMakeFiles/VirtualZoo.dir
