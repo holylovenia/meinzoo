@@ -11,7 +11,7 @@
 class WildBunny: public Mammalia, public Herbivora, public BehaviorWild {
   public:
     /** @brief Constructor
-      * Menciptakan bunny default dengan berat sesuai _weight.
+      * Menciptakan wild bunny dengan posisi (_x,_y) dan berat _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk wild bunny.

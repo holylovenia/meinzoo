@@ -11,7 +11,7 @@
 class Peacock : public Aves, public Omnivora, public BehaviorTame {
   public :
     /** @brief Constructor
-      * Menciptakan peacock default dengan berat sesuai _weight.
+      * Menciptakan peacock dengan posisi (_x,_y) dan berat _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk peacock.

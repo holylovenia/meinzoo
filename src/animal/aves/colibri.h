@@ -11,7 +11,7 @@
 class Colibri : public Aves, public Herbivora, public BehaviorTame {
   public :
     /** @brief Constructor
-      * Menciptakan colibri default dengan berat sesuai _weight.
+      * Menciptakan colibri dengan posisi (_x,_y) dan berat _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk colibri.

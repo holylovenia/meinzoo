@@ -6,18 +6,18 @@
 #include "../behavior/behavior_wild.h"
 
 /** @class WildColibri
-  * Kelas WildColibri mendefinisikan atribut untuk wild bunny.
+  * Kelas WildColibri mendefinisikan atribut untuk wild colibri.
   */
 class WildColibri: public Aves, public Herbivora, public BehaviorWild {
   public:
     /** @brief Constructor
-      * Menciptakan bunny default dengan berat sesuai _weight.
+      * Menciptakan wild colibri dengan posisi (_x,_y) dan berat _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk wild bunny.
+      * @param _weight Nilai berat untuk wild colibri.
       */
     WildColibri(int _x, int _y, int _weight);
-    /** @brief Menampilkan interaksi dengan wild bunny.
+    /** @brief Menampilkan interaksi dengan wild colibri.
       * Menuliskan interaksi ke layar.
       */
     void Interact();

@@ -11,7 +11,7 @@
 class Zebra: public Mammalia, public Herbivora, public BehaviorTame {
   public:
     /** @brief Constructor
-      * Menciptakan zebra default dengan berat sesuai _weight.
+      * Menciptakan zebra dengan posisi (_x,_y) dan berat _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk zebra.
