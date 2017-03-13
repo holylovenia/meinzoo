@@ -220,19 +220,20 @@
 	"buffers":
 	[
 		{
-			"file": "/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/.gitattributes",
+			"file": "/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/CMakeLists.txt",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 1245,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "infrastructure/facility/park.h",
+			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 1175,
+				"buffer_size": 66,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -260,13 +261,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 450.0,
-		"last_filter": "materi",
+		"height": 189.0,
+		"last_filter": "cmakebi",
 		"selected_items":
 		[
 			[
-				"materi",
-				"Material Theme: Configuration"
+				"cmakebi",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax",
+				"Set Syntax: C++"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMake"
 			],
 			[
 				"install",
@@ -274,10 +287,14 @@
 			],
 			[
 				"package",
-				"Install Package Control"
+				"Package Control: Install Package"
+			],
+			[
+				"materi",
+				"Material Theme: Configuration"
 			]
 		],
-		"width": 538.0
+		"width": 465.0
 	},
 	"console":
 	{
@@ -299,22 +316,77 @@
 	[
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves"
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc"
 	],
 	"file_history":
 	[
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/elephant.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/python.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wild_bunny.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/CMakeLists.txt",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/Notes.txt",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/person.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/person.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/point.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/renderable.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/point.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cage.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/land_habitat.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/land_habitat.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/water_habitat.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/water_habitat.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road_exit.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/zebra.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/barracuda.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/barracuda.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cage.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/habitat.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/wild_colibri.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_tame.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/elephant.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/lion.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/monkey.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wild_bunny.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/chameleon.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/chameleon.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/crocodile.cpp",
@@ -324,66 +396,42 @@
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/komodo.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/komodo.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/python.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/reptilia.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/monkey.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/lion.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/python.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/habitat.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/carnivora.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/zebra.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/reptilia.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/reptilia.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/mammalia.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/elephant.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/.gitattributes",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/lion.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wild_bunny.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/zebra.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/monkey.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/mammalia.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/mammalia.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/carnivora.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/carnivora.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_tame.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_tame.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/wild_colibri.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/wild_colibri.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.h",
 		"/home/rionaldichandraseta/.config/sublime-text-3/Packages/ExpandTabsOnSave/ExpandTabsOnSave.py",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/cage.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/cage.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/facility/road.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cage.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/facility/road.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/point.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/point.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/CMakeLists.txt",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/CMakeLists.txt",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/zoo.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/zoo.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/main.cpp",
@@ -400,37 +448,15 @@
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/build/CMakeCache.txt",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/doc/html/doxygen.css",
 		"/home/rionaldichandraseta/.cache/.fr-9PelL6/Doxyfile",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc/renderable.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road_entrance.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/land_habitat.h",
 		"/home/rionaldichandraseta/Documents/air_habitat.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/habitat.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/crocodile.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/air_habitat.cpp",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/water_habitat.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/air_habitat.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/crocodile.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/land_habitat.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/wolf.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/wolf.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/animal.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/mammalia.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/animal.h\\",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/position.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/animal_behavior.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/behavior_tame.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/behavior_tame.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/behavior_wild.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/behavior_wild.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/animal_behavior.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/carnivora.cpp"
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/crocodile.cpp"
 	],
 	"find":
 	{
@@ -451,6 +477,30 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"SetY(_y)",
+			"SetY(_x)",
+			"{",
+			"flase",
+			"/** @brief",
+			"// file",
+			"flase",
+			"  *",
+			"Operator=",
+			"operator=",
+			"Operator=",
+			"  *",
+			"/t*",
+			"  *",
+			"hewan",
+			"renderable",
+			" :",
+			"render()",
+			"Render",
+			"render",
+			"defType",
+			"def_id",
+			"setY",
+			"setX",
 			"ratioPlant",
 			"defRatioPlant",
 			"defRatioMeat",
@@ -554,31 +604,7 @@
 			"defRatioPlant",
 			"defRatioMeat",
 			"ratioMeat",
-			"defRatioPlant",
-			"defRatioMeat",
-			"ratioMeat",
-			"defRatioPlant",
-			"defRatioMeat",
-			"defID",
-			"defRatioPlant",
-			"defRatioMeat",
-			"defID",
-			"defSkinType",
-			"defLimbCount",
-			"install",
-			")",
-			"getTotalMeat",
-			"Carnivora",
-			"getTotalMeat",
-			"totalReqMeat",
-			"herbivora",
-			"BehaviorTame",
-			"Colibri",
-			"colibri",
-			"Colibri",
-			"totalReqPlant",
-			"totalReqMeat",
-			"LandHabitat"
+			"defRatioPlant"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -586,6 +612,16 @@
 		"regex": false,
 		"replace_history":
 		[
+			"*",
+			"Renderable",
+			":",
+			"Render()",
+			"render",
+			"Render",
+			"def_type",
+			"def_ID",
+			"SetY",
+			"SetX",
 			"ratio_plant",
 			"def_ratio_plant",
 			"def_ratio_meat",
@@ -644,29 +680,34 @@
 	"groups":
 	[
 		{
+			"sheets":
+			[
+			]
+		},
+		{
 			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/.gitattributes",
+					"file": "/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/CMakeLists.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 1245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								226
+								254,
+								254
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CMake/CMake.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -677,37 +718,32 @@
 				},
 				{
 					"buffer": 1,
-					"file": "infrastructure/facility/park.h",
+					"file": "main.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1175,
+						"buffer_size": 66,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								52,
+								52
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
-						"translation.x": -0.0,
-						"translation.y": 38.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -739,7 +775,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.30810488677,
 			1.0
 		],
 		"rows":
@@ -751,7 +787,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 129.0
+		"height": 139.0
 	},
 	"output.find_results":
 	{
@@ -795,7 +831,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

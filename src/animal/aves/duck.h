@@ -10,7 +10,7 @@
   */
 class Duck : public Aves, public Omnivora, public BehaviorTame {
   public :
-    /** @
+    /** @brief Constructor
       * Menciptakan duck default dengan berat sesuai _weight.
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.

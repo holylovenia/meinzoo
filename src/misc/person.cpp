@@ -1,5 +1,3 @@
-// file person.cpp
-
 #include "person.h"
 
 Person::Person() {

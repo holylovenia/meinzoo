@@ -4,22 +4,21 @@
 #include "habitat.h"
 
 /** @class LandHabitat
-	* Kelas LandHabitat mendefinisikan atribut untuk habitat darat.
-	*/
+  * Kelas LandHabitat mendefinisikan atribut untuk habitat darat.
+  */
 class LandHabitat: public Habitat {
-	public:
-		/** @brief Constructor
-			* Menciptakan habitat darat.
-			*/
-		LandHabitat();
-		
-		/** @brief Mengembalikan character untuk kelas render.
-			* @return Karakter untuk dirender.
-			*/
-		char render();
+  public:
+    /** @brief Constructor
+      * Menciptakan habitat darat.
+      */
+    LandHabitat();
+    /** @brief Mengembalikan character untuk kelas render.
+      * @return Karakter untuk dirender.
+      */
+    char render();
 
-	private:
-		const char defType;
+  private:
+    const char defType;
 };
 
 #endif

@@ -7,15 +7,15 @@
 class AnimalDiet {
   public:
     /** @brief Menentukan apakah hewan merupakan herbivora.
-      * @return Nilai true/flase hewan merupakan herbivora. 
+      * @return Nilai true/false hewan merupakan herbivora. 
       */
     bool IsHerbivore();
     /** @brief Menentukan apakah hewan merupakan carnivora.
-      * @return Nilai true/flase hewan merupakan carnivora. 
+      * @return Nilai true/false hewan merupakan carnivora. 
       */
     bool IsCarnivore();
     /** @brief Menentukan apakah hewan merupakan omnivora.
-      * @return Nilai true/flase hewan merupakan omnivora. 
+      * @return Nilai true/false hewan merupakan omnivora. 
       */
     bool IsOmnivore();
     /** @brief Pure virtual method

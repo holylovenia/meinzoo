@@ -1,5 +1,3 @@
-// cage.cpp
-
 #include <ctime>
 #include <cstdlib>
 #include "cage.h"
@@ -34,7 +32,6 @@ void Cage::AddAnimal(Animal& A) {
     }
   }
 }
-
 Animal* Cage::RemoveAnimal(int i) {
   if (i < animal.size()) {
     Animal* a = animal[i];
@@ -45,7 +42,6 @@ Animal* Cage::RemoveAnimal(int i) {
     return NULL;
   }
 }
-
 void Cage::MoveAnimal() {
   srand(time(NULL));
   for (int i = 0; i < animal.size(); ++i) {
@@ -64,11 +60,9 @@ void Cage::MoveAnimal() {
     } while (!movement_in_cage && no_of_tries < 4);
   }
 }
-
 set<Point> Cage::GetArea() {
   return area;
 }
-
 vector<Animal*> Cage::GetAnimal() {
   return animal;
 }
