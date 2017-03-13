@@ -1,5 +1,3 @@
-// cage.cpp
-
 #include <ctime>
 #include <cstdlib>
 #include "cage.h"
