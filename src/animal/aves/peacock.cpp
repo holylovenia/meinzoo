@@ -1,15 +1,16 @@
 #include "peacock.h"
 
-Peacock::Peacock(int _weight) : defID(20), defRatioMeat(20), defRatioPlant(40) {
-	ID = defID;
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
+Peacock::Peacock(int _weight) : def_ID(20), def_ratio_meat(20), def_ratio_plant(40) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
 }
-
 void Peacock::Interact() {
-	std::cout << "The peacock is showing off its beautiful feather" << std::endl;
+  std::cout << "The peacock is showing off its beautiful feather" << std::endl;
 }

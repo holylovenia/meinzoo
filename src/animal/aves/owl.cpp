@@ -1,15 +1,16 @@
 #include "owl.h"
 
-Owl::Owl(int _weight) : defID(17), defRatioMeat(60), defRatioPlant(0) {
-	ID = defID;
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = true;
-	weight = _weight;
+Owl::Owl(int _weight) : def_ID(17), def_ratio_meat(60), def_ratio_plant(0) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = true;
+  weight = _weight;
 }
-
 void Owl::Interact() {
-	std::cout << "The owl is hooting randomly" << std::endl;
+  std::cout << "The owl is hooting randomly" << std::endl;
 }

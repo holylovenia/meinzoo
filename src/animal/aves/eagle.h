@@ -6,25 +6,26 @@
 #include "../behavior/behavior_tame.h"
 
 /** @class Eagle
-	* Kelas Eagle mendefinisikan atribut untuk eagle.
-	*/
+  * Kelas Eagle mendefinisikan atribut untuk eagle.
+  */
 class Eagle : public Aves, public Carnivora, public BehaviorTame {
-	public :
-		/** @brief Constructor
-			* Menciptakan eagle default dengan berat sesuai _weight.
-			* @param _weight Nilai berat untuk Eagle.
-			*/
-		Eagle(int _weight);
-		
-		/** @brief Menampilkan interaksi dengan eagle.
-			* Menuliskan interaksi ke layar.
-			*/
-		void Interact();
+  public :
+    /** @brief Constructor
+      * Menciptakan eagle default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk Eagle.
+      */
+    Eagle(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan eagle.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-	private:
-		const int defID;
-        const int defRatioMeat;
-        const int defRatioPlant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif

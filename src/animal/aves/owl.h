@@ -6,25 +6,26 @@
 #include "../behavior/behavior_tame.h"
 
 /** @class Owl
-	* Kelas Owl mendefinisikan atribut untuk owl.
-	*/
+  * Kelas Owl mendefinisikan atribut untuk owl.
+  */
 class Owl : public Aves, public Carnivora, public BehaviorTame {
-	public :
-		/** @brief Constructor
-			* Menciptakan owl default dengan berat sesuai _weight.
-			* @param _weight Nilai berat untuk owl.
-			*/	
-		Owl(int _weight);
+  public :
+    /** @brief Constructor
+      * Menciptakan owl default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk owl.
+      */  
+    Owl(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan owl.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-		/** @brief Menampilkan interaksi dengan owl.
-			* Menuliskan interaksi ke layar.
-			*/
-		void Interact();
-
-	private:
-		const int defID;
-        const int defRatioMeat;
-        const int defRatioPlant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif

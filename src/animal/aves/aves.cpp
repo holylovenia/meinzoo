@@ -1,9 +1,7 @@
-// File: aves.cpp
-
 #include "aves.h"
 
 // ctor
-Aves::Aves(): defLimbCount(2), defSkinType("Feather") {
-	limbCount = defLimbCount;
-	skinType = defSkinType;
+Aves::Aves(): def_limb_count(2), def_skin_type("Feather") {
+  limb_count = def_limb_count;
+  skin_type = def_skin_type;
 }
