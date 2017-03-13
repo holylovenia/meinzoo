@@ -14,7 +14,7 @@ void Person::SetPosition(int x, int y) {
   position.SetY(y);
 }
 char Person::Render() {
-  return 'i';
+  return '?';
 }
 void Person::Move(int movement) {
   if (movement == 1) { // Move up

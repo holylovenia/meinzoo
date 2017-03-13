@@ -1,4 +1,5 @@
 #include "animal_diet.h"
+#include <iostream>
 
 int AnimalDiet::total_req_meat = 0;
 int AnimalDiet::total_req_plant = 0;
