@@ -14,5 +14,5 @@ Tiger::Tiger(int _x, int _y, int _weight) : def_ID(3),
   weight = _weight;
 }
 void Tiger::Interact() {
-  std::cout << "The tiger is graciously lying on the patch of grass" << std::endl;
+  std::cout << "The tiger is graciously lying on the grass" << std::endl;
 }

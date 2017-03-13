@@ -12,10 +12,11 @@ class Python : public Reptilia, public Carnivora, public BehaviorTame {
   public:
     /** @brief Constructor
       * Menciptakan python default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk python.
       */
-    Python(int _weight);
-
+    Python(int _x, int _y, int _weight);
     /** @brief Menampilkan interaksi dengan python.
       * Menuliskan interaksi ke layar.
       */

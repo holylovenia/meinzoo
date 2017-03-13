@@ -23,7 +23,7 @@ class Colibri : public Aves, public Herbivora, public BehaviorTame {
     void Interact();
 
   private:
-    const int def_id;
+    const int def_ID;
     const int def_ratio_meat;
     const int def_ratio_plant;
 };

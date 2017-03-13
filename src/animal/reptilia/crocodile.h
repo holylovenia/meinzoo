@@ -12,10 +12,11 @@ class Crocodile : public Reptilia, public Carnivora, public BehaviorTame {
   public:
     /** @brief Constructor
       * Menciptakan crocodile default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk crocodile.
       */
-    Crocodile(int _weight);
-
+    Crocodile(int _x, int _y, int _weight);
     /** @brief Menampilkan interaksi dengan crocodile.
       * Menuliskan interaksi ke layar.
       */

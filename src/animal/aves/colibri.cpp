@@ -1,6 +1,8 @@
 #include "colibri.h"
 
-Colibri::Colibri(int _x, int _y, int _weight) : def_ID(19), def_ratio_meat(0), def_ratio_plant(60) {
+Colibri::Colibri(int _x, int _y, int _weight) : def_ID(19),
+                                                def_ratio_meat(0),
+                                                def_ratio_plant(60) {
   ID = def_ID;
   position.SetX(_x);
   position.SetY(_y);
