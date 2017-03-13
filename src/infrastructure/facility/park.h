@@ -28,15 +28,15 @@ class Park: public Facility {
     /** @brief Getter park name
       * @return Nama park.
       */
-    std::string getParkName();
+    std::string GetParkName();
     /** @brief Mengembalikan character untuk kelas render.
       * @return Karakter untuk dirender.
       */
-    char render() override;
+    char Render() override;
 
   private:
     std::string name;
-    const std::string defFacilityType;
+    const std::string def_facility_type;
 };
 
 #endif
