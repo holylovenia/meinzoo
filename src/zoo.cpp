@@ -1,12 +1,17 @@
-//file zoo.cpp
+#include <cstdio>
 
 #include <cctype>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 #include "zoo.h"
 
 Zoo::Zoo() {
+  printf("a\n");
+  getchar();
   map = new Cell**[WIDTH];
+  printf("b\n");
+  getchar();
   map_char = new char*[WIDTH];
   for (int i = 0; i < WIDTH; ++i) {
     map[i] = new Cell*[LENGTH];
@@ -16,6 +21,8 @@ Zoo::Zoo() {
       map_char[i][j] = ' ';
     }
   }
+  printf("a\n");
+  getchar();
 }
 Zoo::~Zoo() {
   for (int i = 0; i < WIDTH; ++i) {
