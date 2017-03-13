@@ -48,6 +48,23 @@ class Point {
 			* @param P Object Point yang sudah diciptakan.
 			*/
 		bool operator<(const Point& p) const;
+		
+		/** @brief Menggeser point satu petak ke atas
+			* @return Point yang telah digeser satu petak ke atas
+			*/
+		Point up();
+		/** @brief Menggeser point satu petak ke bawah
+			* @return Point yang telah digeser satu petak ke bawah
+			*/
+		Point down();
+		/** @brief Menggeser point satu petak ke kiri
+			* @return Point yang telah digeser satu petak ke kiri
+			*/
+		Point left();
+		/** @brief Menggeser point satu petak ke kanan
+			* @return Point yang telah digeser satu petak ke kanan
+			*/
+		Point right();
 
 	private:
 		unsigned int x;
