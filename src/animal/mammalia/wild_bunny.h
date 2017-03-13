@@ -6,27 +6,26 @@
 #include "../behavior/behavior_wild.h"
 
 /** @class WildBunny
-	* Kelas WildBunny mendefinisikan atribut untuk wild bunny.
-	*/
+  * Kelas WildBunny mendefinisikan atribut untuk wild bunny.
+  */
 class WildBunny: public Mammalia, public Herbivora, public BehaviorWild {
-	public:
-		/** @brief Constructor
-			* Menciptakan bunny default dengan berat sesuai _weight.
-			* @param _x Nilai posisi absis.
-			* @param _y Nilai posisi ordinat.
-			* @param _weight Nilai berat untuk wild bunny.
-			*/
-		WildBunny(int _x, int _y, int _weight);
+  public:
+    /** @brief Constructor
+      * Menciptakan bunny default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk wild bunny.
+      */
+    WildBunny(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan wild bunny.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-		/** @brief Menampilkan interaksi dengan wild bunny.
-			* Menuliskan interaksi ke layar.
-			*/
-		void Interact();
-
-	private:
-		const int defID;
-		const int defRatioMeat;
-		const int defRatioPlant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif

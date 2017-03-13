@@ -1,19 +1,19 @@
 #include "herbivora.h"
 
-Herbivora::Herbivora(): defEatMeat(false), defEatPlant(true) {
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	totalReqPlant += getTotalPlant();
+Herbivora::Herbivora(): def_eat_meat(false), def_eat_plant(true) {
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  total_req_meat += GetTotalPlant();
 }
 
 Herbivora::~Herbivora() {
-	totalReqPlant -= getTotalPlant();
+  total_req_meat -= GetTotalPlant();
 }
 
-int Herbivora::getReqMeat() {
-	return 0;
+int Herbivora::GetReqMeat() {
+  return 0;
 }
 
-int Herbivora::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Herbivora::GetReqPlant() {  
+  return (ratio_plant * weight / 100);
 }

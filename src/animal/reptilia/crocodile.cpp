@@ -1,15 +1,15 @@
 #include "crocodile.h"
 
-Crocodile::Crocodile(int _weight) : defID(8), defRatioMeat(60), defRatioPlant(0) {
-	ID = defID;
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = true;
-	isAirAnimal = false;
-	weight = _weight;
+Crocodile::Crocodile(int _weight) : def_ID(8), def_ratio_meat(60), def_ratio_plant(0) {
+  ID = def_ID;
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = true;
+  is_air_animal = false;
+  weight = _weight;
 }
 
 void Crocodile::Interact() {
-	std::cout << "The crocodile is laying still on a slab of rock" << std::endl;
+  std::cout << "The crocodile is laying still on a slab of rock" << std::endl;
 }

@@ -1,5 +1,5 @@
 #include "behavior_tame.h"
 
-void BehaviorTame::setBehavior() {
-	isWild = false;
+void BehaviorTame::SetBehavior() {
+  is_wild = false;
 }

@@ -4,18 +4,18 @@
 #include "../animal.h"
 
 /** @class Pisces
-	* Kelas Pisces mendefinisikan atribut untuk pisces
-	*/
+  * Kelas Pisces mendefinisikan atribut untuk pisces
+  */
 class Pisces: public Animal {
-	public:
-		/** @brief Constructor
-			* Menciptakan Pisces dengan atribut default untuk pisces pada umumnya.
-			*/
-		Pisces();
+  public:
+    /** @brief Constructor
+      * Menciptakan Pisces dengan atribut default untuk pisces pada umumnya.
+      */
+    Pisces();
 
-	private:
-		const int defLimbCount;
-		const std::string defSkinType;
+  private:
+    const int def_limb_count;
+    const std::string def_skin_type;
 };
 
 #endif

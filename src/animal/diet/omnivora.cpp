@@ -1,21 +1,18 @@
 #include "omnivora.h"
 
-Omnivora::Omnivora(): defEatMeat(true), defEatPlant(true) {
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	totalReqMeat += getTotalMeat();
-	totalReqPlant += getTotalPlant();
+Omnivora::Omnivora(): def_eat_meat(true), def_eat_plant(true) {
+  eat_meat = def_eat_meat;
+  eatPlant = def_eat_plant;
+  total_req_meat += GetTotalMeat();
+  total_req_plant += GetTotalPlant();
 }
-
 Omnivora::~Omnivora() {
-	totalReqMeat -= getTotalMeat();
-	totalReqPlant -= getTotalPlant();
+  total_req_meat -= GetTotalMeat();
+  total_req_plant -= GetTotalPlant();
 }
-
-int Omnivora::getReqMeat() {
-	return(ratioMeat * weight / 100);
+int Omnivora::GetReqMeat() {
+  return (ratio_meat * weight / 100);
 }
-
-int Omnivora::getReqPlant() {
-	return (ratioPlant * weight / 100);
+int Omnivora::GetReqPlant() {
+  return (ratio_plant * weight / 100);
 }

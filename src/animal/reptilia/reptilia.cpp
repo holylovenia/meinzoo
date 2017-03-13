@@ -1,8 +1,8 @@
 #include "reptilia.h"
 
 // ctor
-Reptilia::Reptilia(): defLimbCount(4), defSkinType("Scutes")
+Reptilia::Reptilia(): def_limb_count(4), def_skin_type("Scutes")
 {
-    limbCount = defLimbCount;
-    skinType = defSkinType;
+    limb_count = def_limb_count;
+    skin_type = def_skin_type;
 }

@@ -1,8 +1,7 @@
 #include "pisces.h"
 
-// ctor
-Pisces::Pisces(): defLimbCount(0), defSkinType("Scale")
+Pisces::Pisces(): def_limb_count(0), def_skin_type("Scale")
 {
-	limbCount = defLimbCount;
-	skinType = defSkinType;
+  limb_count = def_limb_count;
+  skin_type = def_skin_type;
 }
