@@ -4,18 +4,18 @@
 #include "../animal.h"
 
 /** @class Mammalia
-	* Kelas Mammalia mendefinisikan atribut untuk mammalia
-	*/
+  * Kelas Mammalia mendefinisikan atribut untuk mammalia
+  */
 class Mammalia: public Animal {
-	public:
-		/** @brief Constructor
-			* Menciptakan mammalia dengan atribut default untuk mammalia pada umumnya
-			*/
-		Mammalia();
+  public:
+    /** @brief Constructor
+      * Menciptakan mammalia dengan atribut default untuk mammalia pada umumnya
+      */
+    Mammalia();
 
-	private:
-		const int defLimbCount;
-		const std::string defSkinType;
+  private:
+    const int def_limb_count;
+    const std::string def_skin_type;
 };
 
 #endif

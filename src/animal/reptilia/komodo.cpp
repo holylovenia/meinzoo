@@ -1,15 +1,15 @@
 #include "komodo.h"
 
-Komodo::Komodo(int _weight) : defID(10), defRatioMeat(70), defRatioPlant(0) {
-	ID = defID;
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
+Komodo::Komodo(int _weight) : def_ID(10), def_ratio_meat(70), def_ratio_plant(0) {
+  ID = def_ID;
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
 }
 
 void Komodo::Interact() {
-	std::cout << "The komodo is looking at you intensely" << std::endl;
+  std::cout << "The komodo is looking at you intensely" << std::endl;
 }

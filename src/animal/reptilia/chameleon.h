@@ -6,25 +6,25 @@
 #include "../behavior/behavior_tame.h"
 
 /** @class Chameleon
-	* Kelas Chameleon mendefinisikan atribut untuk chameleon.
-	*/
+  * Kelas Chameleon mendefinisikan atribut untuk chameleon.
+  */
 class Chameleon : public Reptilia, public Omnivora, public BehaviorTame {
-	public:
-		/** @brief Constructor
-			* Menciptakan chameleon default dengan berat sesuai _weight.
-			* @param _weight Nilai berat untuk chameleon.
-			*/
-		Chameleon(int _weight);
-		
-		/** @brief Menampilkan interaksi dengan chameleon.
-			* Menuliskan interaksi ke layar.
-			*/
-		void Interact();
+  public:
+    /** @brief Constructor
+      * Menciptakan chameleon default dengan berat sesuai _weight.
+      * @param _weight Nilai berat untuk chameleon.
+      */
+    Chameleon(int _weight);
+    
+    /** @brief Menampilkan interaksi dengan chameleon.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-	private:
-		const int defID;
-		const int defRatioMeat;
-		const int defRatioPlant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif

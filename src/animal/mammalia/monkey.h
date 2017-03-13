@@ -6,27 +6,26 @@
 #include "../behavior/behavior_tame.h"
 
 /** @class Monkey
-	* Kelas Monkey mendefinisikan atribut untuk monkey.
-	*/
+  * Kelas Monkey mendefinisikan atribut untuk monkey.
+  */
 class Monkey: public Mammalia, public Omnivora, public BehaviorTame {
-	public:
-		/** @brief Constructor
-			* Menciptakan monkey default dengan berat sesuai _weight.
-			* @param _x Nilai posisi absis.
-			* @param _y Nilai posisi ordinat.
-			* @param _weight Nilai berat untuk monkey.
-			*/
-		Monkey(int _x, int _y, int _weight);
+  public:
+    /** @brief Constructor
+      * Menciptakan monkey default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk monkey.
+      */
+    Monkey(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan monkey.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-		/** @brief Menampilkan interaksi dengan monkey.
-			* Menuliskan interaksi ke layar.
-			*/
-		void Interact();
-
-	private:
-		const int defID;
-		const int defRatioMeat;
-		const int defRatioPlant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif
