@@ -3,6 +3,6 @@
 WaterHabitat::WaterHabitat(): defType('W') {
   type = defType;
 }
-char WaterHabitat::render() {
+char WaterHabitat::Render() {
   return 'w';
 }

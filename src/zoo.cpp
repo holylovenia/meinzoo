@@ -1,5 +1,3 @@
-#include <cstdio>
-
 #include <cctype>
 #include <cstdlib>
 #include <ctime>
@@ -7,22 +5,16 @@
 #include "zoo.h"
 
 Zoo::Zoo() {
-  printf("a\n");
-  getchar();
   map = new Cell**[WIDTH];
-  printf("b\n");
-  getchar();
   map_char = new char*[WIDTH];
   for (int i = 0; i < WIDTH; ++i) {
     map[i] = new Cell*[LENGTH];
     map_char[i] = new char[LENGTH];
-    for (int j = 0; i < LENGTH; ++i) {
+    for (int j = 0; j < LENGTH; ++j) {
       map[i][j] = NULL;
       map_char[i][j] = ' ';
     }
   }
-  printf("a\n");
-  getchar();
 }
 Zoo::~Zoo() {
   for (int i = 0; i < WIDTH; ++i) {
@@ -50,7 +42,7 @@ Cage Zoo::RemoveCage(int i) {
 }
 void Zoo::Render() {
   for (int i = 0; i < WIDTH; ++i) {
-    for (int j = 0; i < LENGTH; ++i) {
+    for (int j = 0; j < LENGTH; ++j) {
       map_char[i][j] = map[i][j]->Render();
     }
   }
@@ -69,11 +61,12 @@ void Zoo::Render() {
     }
   }
   Point loc = visitor.GetPosition();
-  map_char[loc.GetY()][loc.GetX()] = visitor.Render();
+  if (loc.GetX() >= 0 && loc.GetX() < LENGTH && loc.GetY() >= 0 && loc.GetY() < WIDTH)  
+    map_char[loc.GetY()][loc.GetX()] = visitor.Render();
 }
 void Zoo::Print(int ux, int uy, int lx, int ly) {
   for (int i = uy; i <= ly; ++i) {
-    for (int j = ux; j < lx; ++j) {
+    for (int j = ux; j <= lx; ++j) {
       cout << map_char[i][j];
     }
     cout << '\n';

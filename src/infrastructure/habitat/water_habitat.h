@@ -15,7 +15,7 @@ class WaterHabitat: public Habitat {
     /** @brief Mengembalikan character untuk kelas render.
       * @return Karakter untuk dirender.
       */
-    char render();
+    char Render();
 
   private:
     const char defType;

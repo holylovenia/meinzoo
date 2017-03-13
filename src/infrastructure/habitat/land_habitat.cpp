@@ -3,6 +3,6 @@
 LandHabitat::LandHabitat(): defType('L') {
   type = defType;
 }
-char LandHabitat::render() {
+char LandHabitat::Render() {
   return 'l';
 }

@@ -3,6 +3,6 @@
 AirHabitat::AirHabitat(): defType('A') {
   type = defType;
 }
-char AirHabitat::render() {
+char AirHabitat::Render() {
   return 'a';
 }
