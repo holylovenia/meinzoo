@@ -13,3 +13,6 @@ Cell& Cell::operator=(Cell& C) {
   is_accessible = C.is_accessible;
   return *this;
 }
+bool Cell::IsAccessible() const {
+  return is_accessible;
+}

@@ -5,9 +5,12 @@
 
 #include <set>
 #include <vector>
-#include "infrastructure/cell.h"
+#include "animal/diet/animal_diet.h"
 #include "infrastructure/cage.h"
+#include "infrastructure/cell.h"
+#include "infrastructure/facility/road.h"
 #include "misc/person.h"
+#include "misc/point.h"
 
 const int WIDTH = 20;
 const int LENGTH = 20;
@@ -15,7 +18,8 @@ const int LENGTH = 20;
 class Zoo {
   public:
     Zoo();
-    void SetTile(Cell& c, int i, int j);
+    ~Zoo();
+    void SetTile(Cell* c, int i, int j);
     Cell& GetTile(int i, int j);
     void InsertCage(const Cage& c);
     Cage RemoveCage(int i);
@@ -27,8 +31,8 @@ class Zoo {
     void Tour();
 
   private:
-    Cell* map[WIDTH][LENGTH];
-    char map_char[WIDTH][LENGTH];
+    Cell*** map;
+    char** map_char;
     vector<Cage> cages;
     Person visitor;
     set<Point> entrance;

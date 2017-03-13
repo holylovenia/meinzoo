@@ -11,6 +11,7 @@ class Cell: public Renderable {
     Cell(Cell& C);
     // operator=
     Cell& operator=(Cell& C);
+    bool IsAccessible() const;
 
   protected:
     bool is_accessible;

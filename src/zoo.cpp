@@ -4,20 +4,29 @@
 #include <cstdlib>
 #include <ctime>
 #include "zoo.h"
-#include "animal/diet/animal_diet.h"
-#include "misc/point.h"
-#include "infrastructure/facility/road.h"
 
 Zoo::Zoo() {
+  map = new Cell**[WIDTH];
+  map_char = new char*[WIDTH];
   for (int i = 0; i < WIDTH; ++i) {
+    map[i] = new Cell*[LENGTH];
+    map_char[i] = new char[LENGTH];
     for (int j = 0; i < LENGTH; ++i) {
       map[i][j] = NULL;
       map_char[i][j] = ' ';
     }
   }
 }
-void Zoo::SetTile(Cell& c, int i, int j) {
-  map[i][j] = &c;
+Zoo::~Zoo() {
+  for (int i = 0; i < WIDTH; ++i) {
+    delete [] map[i];
+    delete [] map_char[i];
+  }
+  delete [] map;
+  delete [] map_char;
+}
+void Zoo::SetTile(Cell* c, int i, int j) {
+  map[i][j] = c;
 }
 Cell& Zoo::GetTile(int i, int j) {
   return *map[i][j];
@@ -90,11 +99,7 @@ void Zoo::Tour() {
   bool visited[WIDTH][LENGTH];
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      if (Road* r = dynamic_cast<Road*>(map[i][j])) {
-        visited[i][j] = false;
-      } else {
-        visited[i][j] = true;
-      }
+      visited[i][j] = map[i][j]->IsAccessible();
     }
   }
 
