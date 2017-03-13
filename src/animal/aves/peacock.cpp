@@ -1,6 +1,8 @@
 #include "peacock.h"
 
-Peacock::Peacock(int _weight) : def_ID(20), def_ratio_meat(20), def_ratio_plant(40) {
+Peacock::Peacock(int _x, int _y, int _weight) : def_ID(20),
+                                                def_ratio_meat(20),
+                                                def_ratio_plant(40) {
   ID = def_ID;
   position.SetX(_x);
   position.SetY(_y);

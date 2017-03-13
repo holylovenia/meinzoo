@@ -12,10 +12,11 @@ class Iguana : public Reptilia, public Omnivora, public BehaviorTame {
   public:
     /** @brief Constructor
       * Menciptakan iguana default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk iguana.
       */
-    Iguana(int _weight);
-
+    Iguana(int _x, int _y, int _weight);
     /** @brief Menampilkan interaksi dengan iguana.
       * Menuliskan interaksi ke layar.
       */

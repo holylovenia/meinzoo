@@ -1,9 +1,11 @@
 #include "wolf.h"
 
-Wolf::Wolf(int _x, int _y, int _weight) : def_ID(1), def_ratio_meat(50), def_ratio_plant(0) {
+Wolf::Wolf(int _x, int _y, int _weight) : def_ID(1),
+                                          def_ratio_meat(50),
+                                          def_ratio_plant(0) {
   ID = def_ID;
-  position.setX(_x);
-  position.setY(_y);
+  position.SetX(_x);
+  position.SetY(_y);
   ratio_meat = def_ratio_meat;
   ratio_plant = def_ratio_plant;
   is_land_animal = true;
@@ -11,7 +13,6 @@ Wolf::Wolf(int _x, int _y, int _weight) : def_ID(1), def_ratio_meat(50), def_rat
   is_air_animal = false;
   weight = _weight;
 }
-
 void Wolf::Interact() {
   std::cout << "The wolf is howling" << std::endl;
 }

@@ -1,6 +1,8 @@
 #include "wild_colibri.h"
 
-WildColibri::WildColibri(int _x, int _y, int _weight) : def_ID(21), def_ratio_meat(0), def_ratio_plant(60) {
+WildColibri::WildColibri(int _x, int _y, int _weight) : def_ID(21),
+                                                        def_ratio_meat(0),
+                                                        def_ratio_plant(60) {
   ID = def_ID;
   position.SetX(_x);
   position.SetY(_y);

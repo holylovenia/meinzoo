@@ -2,8 +2,8 @@
 #define ZEBRA_H
 
 #include "mammalia.h"
-#include "herbivora.h"
-#include "behavior_tame.h"
+#include "../diet/herbivora.h"
+#include "../behavior/behavior_tame.h"
 
 /** @class Zebra
   * Kelas Zebra mendefinisikan atribut untuk zebra.

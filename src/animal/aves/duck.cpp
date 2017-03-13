@@ -1,6 +1,8 @@
 #include "duck.h"
 
-Duck::Duck(int _x, int _y, int _weight) : def_ID(16), def_ratio_meat(30), def_ratio_plant(30) {
+Duck::Duck(int _x, int _y, int _weight) : def_ID(16),
+                                          def_ratio_meat(30),
+                                          def_ratio_plant(30) {
   ID = def_ID;
   position.SetX(_x);
   position.SetY(_y);

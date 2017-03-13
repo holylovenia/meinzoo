@@ -4,8 +4,8 @@ WildBunny::WildBunny(int _x, int _y, int _weight) : def_ID(0),
                                                     def_ratio_meat(0),
                                                     def_ratio_plant(90) {
   ID = def_ID;
-  position.setX(_x);
-  position.setY(_y);
+  position.SetX(_x);
+  position.SetY(_y);
   ratio_meat = def_ratio_meat;
   ratio_plant = def_ratio_plant;
   is_land_animal = true;

@@ -1,6 +1,8 @@
 #include "owl.h"
 
-Owl::Owl(int _weight) : def_ID(17), def_ratio_meat(60), def_ratio_plant(0) {
+Owl::Owl(int _x, int _y, int _weight) : def_ID(17),
+                                      def_ratio_meat(60),
+                                      def_ratio_plant(0) {
   ID = def_ID;
   position.SetX(_x);
   position.SetY(_y);

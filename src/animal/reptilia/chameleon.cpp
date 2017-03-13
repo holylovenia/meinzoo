@@ -1,7 +1,11 @@
 #include "chameleon.h"
 
-Chameleon::Chameleon(int _weight) : def_ID(10), def_ratio_meat(20), def_ratio_plant(50) {
+Chameleon::Chameleon(int _x, int _y, int _weight) : def_ID(10),
+                                                    def_ratio_meat(20),
+                                                    def_ratio_plant(50) {
   ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
   ratio_meat = def_ratio_meat;
   ratio_plant = def_ratio_plant;
   is_land_animal = true;
@@ -9,7 +13,6 @@ Chameleon::Chameleon(int _weight) : def_ID(10), def_ratio_meat(20), def_ratio_pl
   is_air_animal = false;
   weight = _weight;
 }
-
 void Chameleon::Interact() {
-  std::cout << "The chameleon is almost perfectly disguised with the leaves around him" << std::endl;
+  std::cout << "The chameleon can be barely seen" << std::endl;
 }

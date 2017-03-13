@@ -17,7 +17,6 @@ class Barracuda: public Pisces, public Carnivora, public BehaviorTame {
             * @param _weight Nilai berat untuk barracuda.
             */
         Barracuda(int _x, int _y, int _weight);
-        
         /** @brief Menampilkan interaksi dengan barracuda.
             * Menuliskan interaksi ke layar.
             */

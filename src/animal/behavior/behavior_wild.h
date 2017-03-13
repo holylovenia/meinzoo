@@ -7,7 +7,7 @@
 /** @class BehaviorWild
   * Kelas BehaviorWild mendefinisikan perilaku hewan liar.
   */
-class BehaviorWild {
+class BehaviorWild : public AnimalBehavior {
   public:
     /** @brief Mengubah nilai perilaku hewan.
       * Menetapkan nilai perilaku hewan menjadi liar.
@@ -15,7 +15,7 @@ class BehaviorWild {
     void SetBehavior();
     /** @brief Menambah musuh hewan.
       * Menambahkan hewan dengan ID x dari set.
-      * @param x ID hewan yang ingin ditambah.
+      * @param x ID hewan yang ingin  ditambah.
       */
     void AddEnemy(int x);
     /** @brief Menghapus musuh hewan.
