@@ -22,7 +22,7 @@ class Road: public Facility {
       */
     bool IsExit();
     /** @brief Mengembalikan character untuk kelas Render.
-      * @return Karakter untuk diRender.
+      * @return Karakter untuk dirender.
       */
     char Render() override;
 

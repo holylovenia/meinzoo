@@ -296,14 +296,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/misc"
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src"
 	],
 	"file_history":
 	[
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cage.cpp",
@@ -429,9 +427,7 @@
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/wild_colibri.h",
 		"/home/rionaldichandraseta/.config/sublime-text-3/Packages/ExpandTabsOnSave/ExpandTabsOnSave.py",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/cage.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/cage.h",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/facility/road.cpp",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.h"
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/infrastructure/cage.h"
 	],
 	"find":
 	{
@@ -449,9 +445,10 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"diRender.",
 			"isWild",
 			"iswild.",
 			"setlocation",
@@ -578,8 +575,7 @@
 			"defLimbCount",
 			"defSkinType",
 			"defLimbCount",
-			"defRatioPlant",
-			"defRatioMeat"
+			"defRatioPlant"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -587,6 +583,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"dirender.",
 			"is_wild.",
 			"*",
 			"Renderable",
