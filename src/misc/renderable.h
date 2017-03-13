@@ -4,8 +4,8 @@
 #define RENDERABLE_H
 
 class Renderable {
-	public:
-		virtual char render() = 0;
+  public:
+    virtual char Render() = 0;
 };
 
 #endif

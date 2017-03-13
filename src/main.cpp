@@ -2,6 +2,6 @@
 #include "zoo.h"
 
 int main () {
-	Zoo();
-	return 0;
+  Zoo();
+  return 0;
 }

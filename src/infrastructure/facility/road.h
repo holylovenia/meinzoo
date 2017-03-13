@@ -4,39 +4,35 @@
 #include "facility.h"
 
 /** @class Road
-	* Kelas Road mendefinisikan atribut untuk road.
-	*/
+  * Kelas Road mendefinisikan atribut untuk road.
+  */
 class Road: public Facility {
-	public:
-		/** @brief Constructor
-			* Menciptakan cell berisi road yang dapat/tidak dapat diakses.
-			* @param Accessible Nilai true/false apakah dapat diakses.
-			*/
-		Road(bool Accessible);
-		
-		/** @brief Getter nilai isEntrance
-			* @return Nilai isEntrance.
-			*/
-		bool IsEntrance();
+  public:
+    /** @brief Constructor
+      * Menciptakan cell berisi road yang dapat/tidak dapat diakses.
+      * @param accessible Nilai true/false apakah dapat diakses.
+      */
+    Road(bool accessible);
+    /** @brief Getter nilai is_entrance
+      * @return Nilai is_entrance.
+      */
+    bool IsEntrance();
+    /** @brief Getter nilai is_exit
+      * @return Nilai is_exit.
+      */
+    bool IsExit();
+    /** @brief Mengembalikan character untuk kelas Render.
+      * @return Karakter untuk diRender.
+      */
+    char Render() override;
 
-		/** @brief Getter nilai isExit
-			* @return Nilai isExit.
-			*/
-		bool IsExit();
-		
-		/** @brief Mengembalikan character untuk kelas render.
-			* @return Karakter untuk dirender.
-			*/
-		char render() override;
+  protected:
+    bool is_entrance;
+    bool is_exit;
 
-	protected:
-		bool isEntrance;
-		bool isExit;
-
-	private:
-		const std::string defFacilityType;
-		const bool defRoad;
+  private:
+    const std::string def_facility_type;
+    const bool def_road;
 };
-
 
 #endif

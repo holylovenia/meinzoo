@@ -1,29 +1,23 @@
 // File: park.cpp
 
-
 #include "park.h"
 
-
-Park::Park(bool Accessible, std::string _name): Facility(Accessible), defFacilityType("Park"), name(_name) {
-	facilityType = defFacilityType;
+Park::Park(bool accessible, std::string _name): Facility(accessible), def_facility_type("Park"), name(_name) {
+  facility_type = def_facility_type;
 }
-
-Park::Park(const Park& P): Facility(P.isAccessible), defFacilityType("Park"), name(P.name) {
-	facilityType = P.facilityType;
-	isAccessible = P.isAccessible;
+Park::Park(const Park& P): Facility(P.is_accessible), def_facility_type("Park"), name(P.name) {
+  facility_type = P.facility_type;
+  is_accessible = P.is_accessible;
 }
-
 Park& Park::operator=(const Park& P) {
-	name = P.name;
-	facilityType = P.facilityType;
-	isAccessible = P.isAccessible;
-	return(*this);
+  name = P.name;
+  facility_type = P.facility_type;
+  is_accessible = P.is_accessible;
+  return(*this);
 }
-
-std::string Park::getParkName() {
-	return(name);
+std::string Park::GetParkName() {
+  return(name);
 }
-
-Park::render() {
-	return '*';
+Park::Render() {
+  return '*';
 }

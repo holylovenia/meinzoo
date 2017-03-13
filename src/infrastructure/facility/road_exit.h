@@ -4,19 +4,18 @@
 #include "road.h"
 
 /** @class RoadExit
-	* Kelas RoadExit mendefinisikan atribut untuk road exit.
-	*/
+  * Kelas RoadExit mendefinisikan atribut untuk road exit.
+  */
 class RoadExit: public Road {
-	public:
-		/** @brief Constructor
-			* 
-			* @param Accesible Nilai true/false apakah dapat diakses.
-			*/
-		RoadExit(bool Accessible);
+  public:
+    /** @brief Constructor
+      *
+      * @param Accesible Nilai true/false apakah dapat diakses.
+      */
+    RoadExit(bool accessible);
 
-	private:
-		const bool defRoadExit;
+  private:
+    const bool def_road_exit;
 };
-
 
 #endif

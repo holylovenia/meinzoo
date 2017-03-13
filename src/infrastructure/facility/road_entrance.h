@@ -4,19 +4,18 @@
 #include "road.h"
 
 /** @class RoadEntrance
-	* Kelas RoadEntrance mendefinisikan atribut untuk road entrance.
-	*/
+  * Kelas RoadEntrance mendefinisikan atribut untuk road entrance.
+  */
 class RoadEntrance: public Road {
-	public:
-		/** @brief Constructor
-			* Mendefinisikan road entrance.
-			* @param Accessible Nilai true/false apakah dapat diakses.
-			*/
-		RoadEntrance(bool Accessible);
+  public:
+    /** @brief Constructor
+      * Mendefinisikan road entrance.
+      * @param accessible Nilai true/false apakah dapat diakses.
+      */
+    RoadEntrance(bool accessible);
 
-	private:
-		const bool defRoadEntrance;
+  private:
+    const bool def_road_entrance;
 };
-
 
 #endif

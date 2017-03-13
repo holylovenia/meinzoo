@@ -1,20 +1,16 @@
 #include "road.h"
 
 
-Road::Road(bool Accessible): Facility(Accessible), defFacilityType("Road"), defRoad(false)
-{
-	isEntrance = defRoad;
-	isExit = defRoad;
+Road::Road(bool accessible): Facility(accessible), def_facility_type("Road"), def_road(false) {
+  is_entrance = def_road;
+  is_exit = def_road;
 }
-
 bool Road::IsEntrance() {
-	return(isEntrance);
+  return(is_entrance);
 }
-
 bool Road::IsExit() {
-	return(isExit);
+  return(is_exit);
 }
-
-char Road::render() {
-	return ' ';
+char Road::Render() {
+  return '.';
 }

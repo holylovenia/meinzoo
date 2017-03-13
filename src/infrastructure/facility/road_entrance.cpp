@@ -1,6 +1,5 @@
 #include "road_entrance.h"
 
-
-RoadEntrance::RoadEntrance(bool Accessible): Road(Accessible), defRoadEntrance(true) {
-	isEntrance = defRoadEntrance;
+RoadEntrance::RoadEntrance(bool accessible): Road(accessible), def_road_entrance(true) {
+  is_entrance = def_road_entrance;
 }

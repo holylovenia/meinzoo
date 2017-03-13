@@ -4,17 +4,16 @@
 #include "../misc/renderable.h"
 
 class Cell: public Renderable {
-	public:
-		// ctor
-		Cell(bool Accessible);
-		// cctor
-		Cell(Cell& C);
-		// operator=
-		Cell& operator=(Cell& C);
+  public:
+    // ctor
+    Cell(bool accessible);
+    // cctor
+    Cell(Cell& C);
+    // operator=
+    Cell& operator=(Cell& C);
 
-	protected:
-		bool isAccessible;
+  protected:
+    bool is_accessible;
 };
-
 
 #endif

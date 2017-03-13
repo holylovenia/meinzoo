@@ -3,34 +3,29 @@
 #include "person.h"
 
 Person::Person() {
-	setPosition(-1,-1);
+  SetPosition(-1,-1);
 }
-
-Point Person::getPosition() const {
-	return position;
+Point Person::GetPosition() const {
+  return position;
 }
-
-void Person::setPosition(const Point& p) {
-	position = p;
+void Person::SetPosition(const Point& p) {
+  position = p;
 }
-
-void Person::setPosition(int x, int y) {
-	position.setX(x);
-	position.setY(y);
+void Person::SetPosition(int x, int y) {
+  position.SetX(x);
+  position.SetY(y);
 }
-
-char Person::render() {
-	return 'i';
+char Person::Render() {
+  return 'i';
 }
-
-void Person::move(int movement) {
-	if (movement == 1) { // Move up
-		position.setY(position.getY()-1);
-	} else if (movement == 2) { // Move right
-		position.setX(position.getX()+1);
-	} else if (movement == 3) { // Move down
-		position.setY(position.getY()+1);
-	} else { // Move left
-		position.setX(position.getX()-1);
-	}
+void Person::Move(int movement) {
+  if (movement == 1) { // Move up
+    position.SetY(position.GetY()-1);
+  } else if (movement == 2) { // Move right
+    position.SetX(position.GetX()+1);
+  } else if (movement == 3) { // Move down
+    position.SetY(position.GetY()+1);
+  } else { // Move left
+    position.SetX(position.GetX()-1);
+  }
 }

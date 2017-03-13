@@ -1,18 +1,15 @@
 #include "cell.h"
 
 // ctor
-Cell::Cell(bool Accessible)
-{
-	isAccessible = Accessible;
+Cell::Cell(bool accessible) {
+  is_accessible = accessible;
 }
 // cctor
-Cell::Cell(Cell& C)
-{
-	isAccessible = C.isAccessible;
+Cell::Cell(Cell& C) {
+  is_accessible = C.is_accessible;
 }
 // operator=
-Cell& Cell::operator=(Cell& C)
-{
-	isAccessible = C.isAccessible;
-	return *this;
+Cell& Cell::operator=(Cell& C) {
+  is_accessible = C.is_accessible;
+  return *this;
 }
