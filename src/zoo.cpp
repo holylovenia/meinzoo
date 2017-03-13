@@ -9,7 +9,12 @@
 #include "infrastructure/facility/road.h"
 
 Zoo::Zoo() {
-
+  for (int i = 0; i < WIDTH; ++i) {
+    for (int j = 0; i < LENGTH; ++i) {
+      map[i][j] = NULL;
+      map_char[i][j] = ' ';
+    }
+  }
 }
 void Zoo::SetTile(Cell& c, int i, int j) {
   map[i][j] = &c;
@@ -149,5 +154,5 @@ void Zoo::Tour() {
   }
 
   // Reset visitor
-  visitor.SetPosition(-1,-1);
+  visitor.ResetPosition();
 }
