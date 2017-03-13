@@ -5,7 +5,7 @@
 #include "../diet/carnivora.h"
 #include "../behavior/behavior_tame.h"
 
-/** @class SHark
+/** @class Shark
 	* Kelas Shark mendefinisikan atribut untuk shark.
 	*/
 class Shark: public Pisces, public Carnivora, public BehaviorTame {
