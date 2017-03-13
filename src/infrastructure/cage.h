@@ -29,7 +29,7 @@ class Cage {
     void AddPoint(const Point& p);
     /** @brief Menghilangkan point P dari area dalam cage.
       * @param p Nilai point yang akan dihilangkan.
-      */    
+      */
     void RemovePoint(const Point& p);
     /** @brief Menambahkan animal ke dalam cage.
       * Akan dicek terlebih dahulu apakah cage sudah penuh.

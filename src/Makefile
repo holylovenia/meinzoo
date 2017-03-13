@@ -1,18 +1,21 @@
 CC = g++
 OPTIONS = -std=c++11
 SRC = $(wildcard *.cpp)
-OBJ = $(SRC:.cpp=.o) $(wildcard */*.o) $(wildcard */*/*.o)
+OBJS = $(SRC:.cpp=.o) $(wildcard */*.o) $(wildcard */*/*.o)
+SUBDIRS = misc infrastructure animal
 
-.PHONY: all clean	
+.PHONY: subdirs $(SUBDIRS) all clean
 
-all: $(OBJ)
-	cd misc && $(MAKE)
-	cd infrastructure && $(MAKE)
-	cd animal && $(MAKE)
-	$(CC) $(OPTIONS) $(OBJ) -o zoo.exe
+all: subdirs $(OBJS)
+	$(CC) $(OPTIONS) $(OBJS) -o ../bin/zoo.exe
+
+subdirs: $(SUBDIRS)
+
+$(SUBDIRS):
+	$(MAKE) -C $@	
 
 %.o: %.cpp
 	$(CC) $(OPTIONS) -c -o $@ $<
 
 clean:
-	rm -rf $(OBJ)
+	rm -rf $(OBJS)

@@ -58,7 +58,7 @@ void Zoo::Render() {
     }
   }
   Point loc = visitor.GetPosition();
-  if (loc.GetX() >= 0 && loc.GetX() < LENGTH && loc.GetY() >= 0 && loc.GetY() < WIDTH)  
+  if (loc.GetX() >= 0 && loc.GetX() < LENGTH && loc.GetY() >= 0 && loc.GetY() < WIDTH)
     map_char[loc.GetY()][loc.GetX()] = visitor.Render();
 }
 void Zoo::Print(int ux, int uy, int lx, int ly) {
@@ -100,7 +100,7 @@ set<Point>& Zoo::GetExit() {
 vector<Cage>& Zoo::GetCages() {
   return cages;
 }
-void Zoo::Tour() {  
+void Zoo::Tour() {
   // Matrix of visited
   bool visited[WIDTH][LENGTH];
   for (int i = 0; i < WIDTH; ++i) {
@@ -122,10 +122,10 @@ void Zoo::Tour() {
   do {
     // Output map
     if (system("CLS")) system("clear");
-    cout << "---TOUR ZOO---\n\n";        
+    cout << "---TOUR ZOO---\n\n";
     Render();
-    Print();    
-    
+    Print();
+
     // Interact
     for (auto &it: cages) {
       bool adjacent = it.GetArea().count(loc.Up()) + it.GetArea().count(loc.Down()) +
@@ -136,9 +136,9 @@ void Zoo::Tour() {
           it.GetAnimal()[j]->Interact();
         }
       }
-    }    
+    }
     cin.get();
-    
+
     on_exit = exit.find(visitor.GetPosition()) != exit.end();
     if (!on_exit) {
       // Move
@@ -165,14 +165,14 @@ void Zoo::Tour() {
           visited[loc.GetY()][loc.GetX()] = true;
         }
       } while (!movement_in_range && !no_more_moves);
-      
+
       // Move animals
       for (auto &it: cages) {
         it.MoveAnimal();
       }
-    }      
+    }
   } while (!on_exit && !no_more_moves);
-  
+
   if (on_exit) {
     cout << "\nPengunjung keluar dari pintu keluar\n";
   } else {

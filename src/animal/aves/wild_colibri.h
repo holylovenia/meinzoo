@@ -1,5 +1,5 @@
-#ifndef WILD_BUNNY_H
-#define WILD_BUNNY_H
+#ifndef WILD_COLIBRI_H
+#define WILD_COLIBRI_H
 
 #include "aves.h"
 #include "../diet/herbivora.h"

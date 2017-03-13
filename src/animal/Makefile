@@ -1,20 +1,20 @@
 CC = g++
 OPTIONS = -std=c++11
 SRC = $(wildcard *.cpp)
-OBJ = $(SRC:.cpp=.o)
+OBJS = $(SRC:.cpp=.o)
+SUBDIRS = behavior diet aves mammalia pisces reptilia
 
-.PHONY: all clean
+.PHONY: subdirs $(SUBDIRS) all clean
 
-all: $(OBJ)
-	cd behavior && $(MAKE)
-	cd diet && $(MAKE)
-	cd aves && $(MAKE)
-	cd mammalia && $(MAKE)
-	cd pisces && $(MAKE)
-	cd reptilia && $(MAKE)
+all: subdirs $(OBJS)
+
+subdirs: $(SUBDIRS)
+
+$(SUBDIRS):
+	$(MAKE) -C $@	
 
 %.o: %.cpp
 	$(CC) $(OPTIONS) -c -o $@ $<
 
 clean:
-	rm -rf $(OBJ)
+	rm -rf $(OBJS)

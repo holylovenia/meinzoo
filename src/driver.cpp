@@ -10,7 +10,7 @@ const string fname = "layout.in";
 
 Driver::Driver() {
   InitZoo();
-  
+
   int pil;
   do {
     if (system("CLS")) system("clear");
@@ -59,8 +59,8 @@ void Driver::InitZoo() {
   ifstream inf;
   inf.open(fname, ios::in);
   string instr;
-  
-  for (int i = 0; i < WIDTH; ++i) {        
+
+  for (int i = 0; i < WIDTH; ++i) {
     // Initialize cells
     getline(inf, instr);
     for (int j = 0; j < LENGTH; ++j) {
@@ -82,16 +82,16 @@ void Driver::InitZoo() {
         case 'R':
           zoo.SetTile(new Restaurant(false,""),i,j); break;
       }
-    }    
+    }
   }
-  
+
   // Initialize cage
   while (instr != "######") {
     Cage* c = new Cage(LAND);
     getline(inf,instr);
     while (instr[0] != '-') {
       int x, y;
-      istringstream(instr) >> y >> x;      
+      istringstream(instr) >> y >> x;
       c->AddPoint(Point(x,y));
       getline(inf,instr);
     }
@@ -144,10 +144,10 @@ void Driver::InitZoo() {
       } else if (species == "WildColibri") {
         a = new WildColibri(x,y,w);
       } else {
-        //a = new WildBunny(x,y,w);
+        a = new WildBunny(x,y,w);
       }
       c->AddAnimal(*a);
-      
+
       getline(inf,instr);
     }
     zoo.InsertCage(*c);

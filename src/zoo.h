@@ -55,7 +55,7 @@ class Zoo {
     void Print(int ux = 0, int uy = 0, int lx = LENGTH - 1, int ly = WIDTH - 1);
     int GetTotalReqMeat();
     int GetTotalReqPlant();
-    void ListAllEntranceExit();    
+    void ListAllEntranceExit();
     Cell*** GetMap();
     set<Point>& GetEntrance();
     set<Point>& GetExit();

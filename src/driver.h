@@ -5,11 +5,11 @@
 
 class Driver {
   public:
-    Driver();    
+    Driver();
     void DisplayZoo();
     void TourZoo();
     void ConsumedFood();
-		
+
   private:
     Zoo zoo;
     Person visitor;

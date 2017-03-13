@@ -15,11 +15,11 @@ void Cage::RemovePoint(const Point& p) {
   area.erase(p);
 }
 void Cage::AddAnimal(Animal& A) {
-  if (nb_animal < int(area.size() / 10 * 3)) {  
+  if (nb_animal < int(area.size() / 10 * 3)) {
     AnimalBehavior* a = dynamic_cast<AnimalBehavior*>(&A);
     a->SetBehavior();
     bool placeable = true;
-    
+
     if (!(a->GetBehavior())) {
       animal.push_back(&A);
       nb_animal++;
