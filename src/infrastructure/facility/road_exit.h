@@ -9,7 +9,7 @@
 class RoadExit: public Road {
   public:
     /** @brief Constructor
-      *
+      * Mendefinisikan road exit.
       * @param Accesible Nilai true/false apakah dapat diakses.
       */
     RoadExit(bool accessible);

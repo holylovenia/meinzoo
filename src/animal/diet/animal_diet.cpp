@@ -2,7 +2,6 @@
 
 int AnimalDiet::total_req_meat = 0;
 int AnimalDiet::total_req_plant = 0;
-
 bool AnimalDiet::IsHerbivore() {
   return (!eat_meat && eat_plant);
 }
@@ -12,7 +11,6 @@ bool AnimalDiet::IsCarnivore() {
 bool AnimalDiet::IsOmnivore() {
   return (eat_meat && eat_plant);
 }
-
 int AnimalDiet::GetTotalMeat() {
   return total_req_meat;
 }

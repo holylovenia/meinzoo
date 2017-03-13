@@ -1,5 +1,3 @@
-// File: park.cpp
-
 #include "park.h"
 
 Park::Park(bool accessible, std::string _name): Facility(accessible), def_facility_type("Park"), name(_name) {
@@ -13,10 +11,10 @@ Park& Park::operator=(const Park& P) {
   name = P.name;
   facility_type = P.facility_type;
   is_accessible = P.is_accessible;
-  return(*this);
+  return *this;
 }
 std::string Park::GetParkName() {
-  return(name);
+  return name;
 }
 char Park::Render() {
   return '*';

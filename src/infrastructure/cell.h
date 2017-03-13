@@ -26,7 +26,7 @@ class Cell: public Renderable {
     /** @brief Getter nilai is_accessible
       * @return Nilai is_accessible
       */
-    bool Cell::IsAccessible();
+    bool IsAccessible() const;
 
   protected:
     bool is_accessible;

@@ -4,22 +4,21 @@
 #include "habitat.h"
 
 /** @class WaterHabitat
-	* Kelas WaterHabitat mendefinisikan atribut untuk habitat air.
-	*/
+  * Kelas WaterHabitat mendefinisikan atribut untuk habitat air.
+  */
 class WaterHabitat: public Habitat {
-	public:
-		/** @brief Constructor
-			* Menciptakan habitat air.
-			*/
-		WaterHabitat();
-		
-		/** @brief Mengembalikan character untuk kelas render.
-			* @return Karakter untuk dirender.
-			*/
-		char render();
+  public:
+    /** @brief Constructor
+      * Menciptakan habitat air.
+      */
+    WaterHabitat();
+    /** @brief Mengembalikan character untuk kelas render.
+      * @return Karakter untuk dirender.
+      */
+    char render();
 
-	private:
-		const char defType;
+  private:
+    const char defType;
 };
 
 #endif

@@ -1,10 +1,8 @@
-// file person.h
-
 #ifndef PERSON_H
 #define PERSON_H
 
 #include "point.h"
-#include "Renderable.h"
+#include "renderable.h"
 
 class Person: public Renderable {
   public:

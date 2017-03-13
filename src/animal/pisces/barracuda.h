@@ -6,26 +6,26 @@
 #include "../behavior/behavior_tame.h"
 
 /** @class Barracuda
-    * Kelas Barracuda mendefinisikan atribut untuk barracuda.
-    */
+  * Kelas Barracuda mendefinisikan atribut untuk barracuda.
+  */
 class Barracuda: public Pisces, public Carnivora, public BehaviorTame {
-    public:
-        /** @brief Constructor
-            * Menciptakan barracuda default dengan berat sesuai _weight.
-            * @param _x Nilai posisi absis.
-            * @param _y Nilai posisi ordinat.
-            * @param _weight Nilai berat untuk barracuda.
-            */
-        Barracuda(int _x, int _y, int _weight);
-        /** @brief Menampilkan interaksi dengan barracuda.
-            * Menuliskan interaksi ke layar.
-            */
-        void Interact();
+  public:
+    /** @brief Constructor
+      * Menciptakan barracuda default dengan berat sesuai _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk barracuda.
+      */
+    Barracuda(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan barracuda.
+      * Menuliskan interaksi ke layar.
+      */
+    void Interact();
 
-    private:
-        const int def_ID;
-        const int def_ratio_meat;
-        const int def_ratio_plant;
+  private:
+    const int def_ID;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif
