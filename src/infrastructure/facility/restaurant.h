@@ -21,7 +21,7 @@ class Restaurant: public Facility {
       */
     Restaurant(const Restaurant& R);
     /** @brief Operator=
-      * Mengubah atribut suatu restaorant menjadi sama dengan restaurant lain.
+      * Mengubah atribut suatu restaurant menjadi sama dengan restaurant lain.
       * @param R Object Restaurant yang sudah diciptakan.
       */
     Restaurant& operator=(const Restaurant& R);
