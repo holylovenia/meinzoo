@@ -51,22 +51,18 @@ class Zoo {
     Cell& GetTile(int i, int j);
     void InsertCage(const Cage& c);
     Cage RemoveCage(int i);
-    void Render();
+    void Render(Person& visitor);
     void Print(int ux = 0, int uy = 0, int lx = LENGTH - 1, int ly = WIDTH - 1);
-    int GetTotalReqMeat();
-    int GetTotalReqPlant();
     void ListAllEntranceExit();
     Cell*** GetMap();
     set<Point>& GetEntrance();
     set<Point>& GetExit();
     vector<Cage>& GetCages();
-    void Tour();
 
   private:
     Cell*** map;
     char** map_char;
     vector<Cage> cages;
-    Person visitor;
     set<Point> entrance;
     set<Point> exit;
 };

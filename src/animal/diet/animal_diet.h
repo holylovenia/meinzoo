@@ -26,14 +26,6 @@ class AnimalDiet {
       * Didefinisikan pada kelas turunan.
       */
     virtual int GetReqPlant() = 0;
-    /** @brief Getter nilai totalReqMeat.
-      * @return Nilai totalReqMeat.
-      */
-    static int GetTotalMeat();
-    /** @brief Getter nilai totalReqPlant.
-      * @return Nilai totalReqPlant.
-      */    
-    static int GetTotalPlant();
 
   protected:
     int weight;
@@ -41,8 +33,6 @@ class AnimalDiet {
     bool eat_plant;
     int ratio_meat;
     int ratio_plant;
-    static int total_req_meat;
-    static int total_req_plant;
 };
 
 #endif

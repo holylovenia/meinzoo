@@ -40,7 +40,7 @@ Cage Zoo::RemoveCage(int i) {
     return c;
   }
 }
-void Zoo::Render() {
+void Zoo::Render(Person& visitor) {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
       map_char[i][j] = map[i][j]->Render();
@@ -69,12 +69,6 @@ void Zoo::Print(int ux, int uy, int lx, int ly) {
     cout << '\n';
   }
 }
-int Zoo::GetTotalReqMeat() {
-  return AnimalDiet::GetTotalMeat();
-}
-int Zoo::GetTotalReqPlant() {
-  return AnimalDiet::GetTotalPlant();
-}
 void Zoo::ListAllEntranceExit() {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
@@ -99,87 +93,4 @@ set<Point>& Zoo::GetExit() {
 }
 vector<Cage>& Zoo::GetCages() {
   return cages;
-}
-void Zoo::Tour() {
-  // Matrix of visited
-  bool visited[WIDTH][LENGTH];
-  for (int i = 0; i < WIDTH; ++i) {
-    for (int j = 0; j < LENGTH; ++j) {
-      visited[i][j] = !(map[i][j]->IsAccessible());
-    }
-  }
-  ListAllEntranceExit();
-
-  // Choose entrance
-  srand(time(NULL));
-  auto it = entrance.begin();
-  advance(it, rand() % entrance.size());
-  Point loc = *it;
-  visitor.SetPosition(loc);
-  visited[loc.GetY()][loc.GetX()] = true;
-
-  bool on_exit, no_more_moves = false;
-  do {
-    // Output map
-    if (system("CLS")) system("clear");
-    cout << "---TOUR ZOO---\n\n";
-    Render();
-    Print();
-
-    // Interact
-    for (auto &it: cages) {
-      bool adjacent = it.GetArea().count(loc.Up()) + it.GetArea().count(loc.Down()) +
-                      it.GetArea().count(loc.Left()) + it.GetArea().count(loc.Right()) > 0;
-      if (adjacent) {
-        cout << '\n';
-        for (int j = 0; j < it.GetAnimal().size(); ++j) {
-          it.GetAnimal()[j]->Interact();
-        }
-      }
-    }
-    cin.get();
-
-    on_exit = exit.find(visitor.GetPosition()) != exit.end();
-    if (!on_exit) {
-      // Move
-      srand(time(NULL));
-      char movement = rand() * rand() % 4;
-      bool movement_in_range;
-      int no_of_tries = 0;
-      do {
-        visitor.Move(movement);
-        loc = visitor.GetPosition();
-        movement_in_range = (visited[loc.GetY()][loc.GetX()] == false &&
-                              loc.GetY() >= 0 && loc.GetY() < WIDTH &&
-                              loc.GetX() >= 0 && loc.GetX() < LENGTH);
-        if (!movement_in_range) {
-          if (no_of_tries < 4) {
-            movement = (movement + 2) % 4;
-            visitor.Move(movement);
-            movement = (movement + 3) % 4;
-            no_of_tries++;
-          } else {
-            no_more_moves = true;
-          }
-        } else {
-          visited[loc.GetY()][loc.GetX()] = true;
-        }
-      } while (!movement_in_range && !no_more_moves);
-
-      // Move animals
-      for (auto &it: cages) {
-        it.MoveAnimal();
-      }
-    }
-  } while (!on_exit && !no_more_moves);
-
-  if (on_exit) {
-    cout << "\nPengunjung keluar dari pintu keluar\n";
-  } else {
-    cout << "\nPengunjung tidak dapat bergerak lagi\n";
-  }
-  cin.get();
-
-  // Reset visitor
-  visitor.ResetPosition();
 }

@@ -12,10 +12,6 @@ class Omnivora: public AnimalDiet {
       * Menciptakan Omnivora (pemakan daging dan tumbuhan).
       */
     Omnivora();
-    /** @brief Destructor
-      * Menghancurkan Omnivora (pemakan daging dan tumbuhan).
-      */
-    ~Omnivora();
     /** @brief Getter nilai kebutuhan makanan hewan dalam bentuk daging.
       * @return Jumlah daging yang dibutuhkan untuk hewan tertentu.
       */

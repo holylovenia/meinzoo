@@ -38,20 +38,36 @@ void Driver::DisplayZoo() {
   cin >> ux >> uy;
   cout << "Masukkan koordinat batas bawah kanan (X Y): ";
   cin >> lx >> ly;
-  zoo.Render();
+  ux = (ux < 0) ? 0 : ((ux >= LENGTH) ? LENGTH - 1 : ux);
+  uy = (uy < 0) ? 0 : ((uy >= WIDTH) ? WIDTH - 1 : uy);
+  lx = (lx < 0) ? 0 : ((lx >= LENGTH) ? LENGTH - 1 : lx);
+  ly = (ly < 0) ? 0 : ((ly >= WIDTH) ? WIDTH - 1 : ly);
+  zoo.Render(visitor);
   zoo.Print(ux,uy,lx,ly);
+  cin.get();
   cin.get();
 }
 void Driver::TourZoo() {
   if (system("CLS")) system("clear");
-  zoo.Tour();
+  Tour();
 }
 void Driver::ConsumedFood() {
+  int total_meat = 0, total_plant = 0;
+  vector<Cage> cages = zoo.GetCages();
+  for (auto &c: cages) {
+    vector<Animal*> animal = c.GetAnimal();
+    for (auto &a: animal) {
+      AnimalDiet* d = dynamic_cast<AnimalDiet*>(a);
+      total_meat += d->GetReqMeat();
+      total_plant += d->GetReqPlant();
+    }
+  }
+
   if (system("CLS")) system("clear");
   cout << "---MAKANAN DIKONSUMSI---\n\n"
        << "Jumlah makanan yang dikonsumsi semua hewan dalam zoo setiap hari:\n"
-       << "Daging:   " << zoo.GetTotalReqMeat() << '\n'
-       << "Tumbuhan: " << zoo.GetTotalReqPlant() << '\n';
+       << "Daging:   " << total_meat << "\t kg\n"
+       << "Tumbuhan: " << total_plant << "\t kg\n";
   cin.get();
   cin.get();
 }
@@ -154,4 +170,87 @@ void Driver::InitZoo() {
   }
 
   inf.close();
+}
+void Driver::Tour() {
+  // Matrix of visited
+  bool visited[WIDTH][LENGTH];
+  for (int i = 0; i < WIDTH; ++i) {
+    for (int j = 0; j < LENGTH; ++j) {
+      visited[i][j] = !(zoo.GetMap()[i][j]->IsAccessible());
+    }
+  }
+  zoo.ListAllEntranceExit();
+
+  // Choose entrance
+  srand(time(NULL));
+  auto it = zoo.GetEntrance().begin();
+  advance(it, rand() % zoo.GetEntrance().size());
+  Point loc = *it;
+  visitor.SetPosition(loc);
+  visited[loc.GetY()][loc.GetX()] = true;
+
+  bool on_exit, no_more_moves = false;
+  do {
+    // Output map
+    if (system("CLS")) system("clear");
+    cout << "---TOUR ZOO---\n\n";
+    zoo.Render(visitor);
+    zoo.Print();
+
+    // Interact
+    for (auto &it: zoo.GetCages()) {
+      bool adjacent = it.GetArea().count(loc.Up()) + it.GetArea().count(loc.Down()) +
+                      it.GetArea().count(loc.Left()) + it.GetArea().count(loc.Right()) > 0;
+      if (adjacent) {
+        cout << '\n';
+        for (int j = 0; j < it.GetAnimal().size(); ++j) {
+          it.GetAnimal()[j]->Interact();
+        }
+      }
+    }
+    cin.get();
+
+    on_exit = zoo.GetExit().find(visitor.GetPosition()) != zoo.GetExit().end();
+    if (!on_exit) {
+      // Move
+      srand(time(NULL));
+      char movement = rand() * rand() % 4;
+      bool movement_in_range;
+      int no_of_tries = 0;
+      do {
+        visitor.Move(movement);
+        loc = visitor.GetPosition();
+        movement_in_range = (visited[loc.GetY()][loc.GetX()] == false &&
+                              loc.GetY() >= 0 && loc.GetY() < WIDTH &&
+                              loc.GetX() >= 0 && loc.GetX() < LENGTH);
+        if (!movement_in_range) {
+          if (no_of_tries < 4) {
+            movement = (movement + 2) % 4;
+            visitor.Move(movement);
+            movement = (movement + 3) % 4;
+            no_of_tries++;
+          } else {
+            no_more_moves = true;
+          }
+        } else {
+          visited[loc.GetY()][loc.GetX()] = true;
+        }
+      } while (!movement_in_range && !no_more_moves);
+
+      // Move animals
+      for (auto &it: zoo.GetCages()) {
+        it.MoveAnimal();
+      }
+    }
+  } while (!on_exit && !no_more_moves);
+
+  if (on_exit) {
+    cout << "\nPengunjung keluar dari pintu keluar\n";
+  } else {
+    cout << "\nPengunjung tidak dapat bergerak lagi\n";
+  }
+  cin.get();
+
+  // Reset visitor
+  visitor.ResetPosition();
 }

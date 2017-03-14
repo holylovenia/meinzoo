@@ -12,10 +12,6 @@ class Herbivora: public AnimalDiet {
       * Menciptakan Herbivora (pemakan tumbuhan).
       */
     Herbivora();
-    /** @brief Destructor
-      * Menghancurkan Herbivora (pemakan tumbuhan).
-      */
-    ~Herbivora();
     /** @brief Getter nilai kebutuhan makanan hewan dalam bentuk daging.
       * @return Jumlah daging yang dibutuhkan untuk hewan tertentu.
       */

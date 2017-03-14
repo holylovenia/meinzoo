@@ -12,10 +12,6 @@ class Carnivora: public AnimalDiet {
       * Menciptakan Carnivora (pemakan daging).
       */
     Carnivora();
-    /** @brief Destructor
-      * Menghancurkan Carnivora (pemakan daging).
-      */
-    ~Carnivora();
     /** @brief Getter nilai kebutuhan makanan hewan dalam bentuk daging.
       * @return Jumlah daging yang dibutuhkan untuk hewan tertentu.
       */
