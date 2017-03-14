@@ -38,7 +38,7 @@ using namespace std;
 
 int main() {
   cout << "== Testing Animal-Colibri ==" << endl << endl;
-  cout << "Activating constructor for colibri(2, 2, 100)" << endl;
+  cout << "Activating constructor for Colibri(2, 2, 100)" << endl;
   Colibri obj_colibri(2, 2, 100);
   cout << "Testing methods:" << endl;
   cout << "1. Interact(): ";
@@ -111,7 +111,7 @@ int main() {
 
   ///////////////////////////////////////////////////////////////////
   cout << "== Testing Animal-WildColibri ==" << endl << endl;
-  cout << "Activating constructor for wild_colibri(5, 5, 100)" << endl;
+  cout << "Activating constructor for Wild_Colibri(5, 5, 100)" << endl;
   WildColibri obj_wild_colibri(5, 5, 100);
   cout << "Testing methods:" << endl;
   cout << "1. Interact(): ";
