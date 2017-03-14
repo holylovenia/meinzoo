@@ -14,7 +14,7 @@ class Park: public Facility {
       * @param Accessible Nilai true/false apakah dapat diakses.
       * @param _name Nama park.
       */
-    Park(bool Accessible, const std::string& _name);
+    Park(bool accessible, const std::string& _name);
     /** @brief Copy Constructor
       * Menciptakan park dengan tingkat aksesibilitas dan nama yang smaa.
       * @param P Object Park yang sudah diciptakan.
