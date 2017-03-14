@@ -7,7 +7,7 @@
 #include <string>
 #include "driver.h"
 
-const string fname = "layout.in";
+const string fname = "bin/layout.in";
 
 Driver::Driver() {
   InitZoo();
