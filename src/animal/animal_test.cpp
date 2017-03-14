@@ -33,185 +33,43 @@
 #include "reptilia/komodo.h"
 #include "reptilia/python.h"
 #include <iostream>
+#include <gtest/gtest.h>
 
 using namespace std;
 
-int main() {
-  cout << "== Testing Animal-Colibri ==" << endl << endl;
-  cout << "Activating constructor for Colibri(2, 2, 100)" << endl;
-  Colibri obj_colibri(2, 2, 100);
-  cout << "Testing methods:" << endl;
-  cout << "1. Interact(): ";
-  obj_colibri.Interact();
-  cout << "2. IsLandAnimal(): ";
-  if (obj_colibri.IsLandAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "3. IsWaterAnimal(): ";
-  if (obj_colibri.IsWaterAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "4. IsAirAnimal(): ";
-  if (obj_colibri.IsAirAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "5. IsHerbivore(): ";
-  if (obj_colibri.IsHerbivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "6. IsCarnivore(): ";
-  if (obj_colibri.IsCarnivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "7. IsOmnivore(): ";
-  if (obj_colibri.IsOmnivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "8. GetReqMeat(): " << obj_colibri.GetReqMeat() << endl;
-  cout << "9. GetReqPlant(): " << obj_colibri.GetReqPlant() << endl;
-  cout << "10. GetPosition(): ";
-  Point P = obj_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "11. Move(1): " <<  "Move Up, new position: ";
-  obj_colibri.Move(1);
-  P = obj_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "12. Move(2): " <<  "Move Right, new position: ";
-  obj_colibri.Move(2);
-  P = obj_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "13. Move(3): " <<  "Move Down, new position: ";
-  obj_colibri.Move(3);
-  P = obj_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "14. Move(4): " <<  "Move Left, new position: ";
-  obj_colibri.Move(4);
-  P = obj_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  char c = obj_colibri.Render();
-  cout << "15. Render(): " << c << endl << endl << endl;
+class AnimalTest : public ::testing::Test {
+  protected:
+    AnimalTest(){}
+};
 
-  ///////////////////////////////////////////////////////////////////
-  cout << "== Testing Animal-WildColibri ==" << endl << endl;
-  cout << "Activating constructor for Wild_Colibri(5, 5, 100)" << endl;
-  WildColibri obj_wild_colibri(5, 5, 100);
-  cout << "Testing methods:" << endl;
-  cout << "1. Interact(): ";
-  obj_wild_colibri.Interact();
-  cout << "2. IsLandAnimal(): ";
-  if (obj_wild_colibri.IsLandAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "3. IsWaterAnimal(): ";
-  if (obj_wild_colibri.IsWaterAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "4. IsAirAnimal(): ";
-  if (obj_wild_colibri.IsAirAnimal()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "5. IsHerbivore(): ";
-  if (obj_wild_colibri.IsHerbivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "6. IsCarnivore(): ";
-  if (obj_wild_colibri.IsCarnivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "7. IsOmnivore(): ";
-  if (obj_wild_colibri.IsOmnivore()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "8. GetReqMeat(): " << obj_wild_colibri.GetReqMeat() << endl;
-  cout << "9. GetReqPlant(): " << obj_wild_colibri.GetReqPlant() << endl;
-  cout << "10. GetPosition(): ";
-  P = obj_wild_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "11. Move(1): " <<  "Move Up, new position: ";
-  obj_wild_colibri.Move(1);
-  P = obj_wild_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "12. Move(2): " <<  "Move Right, new position: ";
-  obj_wild_colibri.Move(2);
-  P = obj_wild_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "13. Move(3): " <<  "Move Down, new position: ";
-  obj_wild_colibri.Move(3);
-  P = obj_wild_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  cout << "14. Move(4): " <<  "Move Left, new position: ";
-  obj_wild_colibri.Move(4);
-  P = obj_wild_colibri.GetPosition();
-  cout << "(" << P.GetX() << "," << P.GetY() << ")" << endl;
-  c = obj_wild_colibri.Render();
-  cout << "15. Render(): " << c << endl;
-  cout << "Wild animal special methods:" << endl;
-  cout << "16. IsEnemy(1): ";
-  if (obj_wild_colibri.IsEnemy(1)) {
-    cout << "Enemy of ID=1 (Wolf)" << endl;
-  }
-  else {
-    cout << "Not enemy of ID=1 (Wolf)" << endl;
-  }
-  cout << "17. IsEnemy(19): ";
-  if (obj_wild_colibri.IsEnemy(19)) {
-    cout << "Enemy of ID=19 (Colibri)" << endl;
-  }
-  else {
-    cout << "Not enemy of ID=19 (Colibri)" << endl;
-  }
-  cout << "18. AddEnemy(1), IsEnemy(1): ";
-  obj_wild_colibri.AddEnemy(1);
-  if (obj_wild_colibri.IsEnemy(1)) {
-    cout << "Enemy of ID=1 (Wolf)" << endl;
-  }
-  else {
-    cout << "Not enemy of ID=1 (Wolf)" << endl;
-  }
-  cout << "19. RemoveEnemy(19), IsEnemy(19): ";
-  obj_wild_colibri.RemoveEnemy(19);
-  if (obj_wild_colibri.IsEnemy(19)) {
-    cout << "Enemy of ID=19 (Colibri)" << endl;
-  }
-  else {
-    cout << "Not enemy of ID=19 (Colibri)" << endl;
-  }
-  cout << endl << endl;
-  return 0;
+TEST(AnimalTest, GetTextMethod) {
+    Colibri obj_colibri(2,4,100);
+    ASSERT_EQ(true, obj_colibri.IsLandAnimal());
+    ASSERT_EQ(false, obj_colibri.IsWaterAnimal());
+    ASSERT_EQ(true, obj_colibri.IsAirAnimal());
+    ASSERT_EQ(true, obj_colibri.IsHerbivore());
+    ASSERT_EQ(false, obj_colibri.IsCarnivore());
+    ASSERT_EQ(false, obj_colibri.IsOmnivore());
+    ASSERT_EQ(0, obj_colibri.GetReqMeat());
+    ASSERT_EQ(60, obj_colibri.GetReqPlant());
+    Point P1 = obj_colibri.GetPosition();
+    ASSERT_EQ(2, P1.GetX());
+    ASSERT_EQ(4, P1.GetY());
+    ASSERT_EQ('O', obj_colibri.Render());
+
+    WildColibri obj_wild_colibri(5,8,100);
+    ASSERT_EQ(true, obj_wild_colibri.IsLandAnimal());
+    ASSERT_EQ(false, obj_wild_colibri.IsWaterAnimal());
+    ASSERT_EQ(true, obj_wild_colibri.IsAirAnimal());
+    ASSERT_EQ(true, obj_wild_colibri.IsHerbivore());
+    ASSERT_EQ(false, obj_wild_colibri.IsCarnivore());
+    ASSERT_EQ(false, obj_wild_colibri.IsOmnivore());
+    ASSERT_EQ(0, obj_wild_colibri.GetReqMeat());
+    ASSERT_EQ(60, obj_wild_colibri.GetReqPlant());
+    Point P2 = obj_wild_colibri.GetPosition();
+    ASSERT_EQ(5, P2.GetX());
+    ASSERT_EQ(8, P2.GetY());
+    ASSERT_EQ('O', obj_wild_colibri.Render());
+    ASSERT_EQ(false, obj_wild_colibri.IsEnemy(1));
+    ASSERT_EQ(true, obj_wild_colibri.IsEnemy(19));
 }
