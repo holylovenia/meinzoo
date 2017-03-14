@@ -1,0 +1,7 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_animal.html#a37d68203bb766b31cf13f9e66be00727" title="Getter nilai is_land_animal. " alt="" coords="111,5,259,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#ab20a751ef3f9c39b591b36dec8a402ab" title="Getter nilai is_water_animal. " alt="" coords="108,56,263,83"/>
+<area shape="rect" id="node4" href="$class_animal.html#a0f0c0e3fdf0269a9b3bc112fde66d228" title="Getter nilai is_air_animal. " alt="" coords="117,107,253,133"/>
+<area shape="rect" id="node5" href="$class_animal.html#a6de753c081823cc1a00ad0904da67b91" title="Getter nilai point position. " alt="" coords="116,157,255,184"/>
+<area shape="rect" id="node6" href="$class_animal.html#a0c8bf63a558039095c06ccb369f1ddda" title="Mengembalikan character untuk kelas render. " alt="" coords="130,208,241,235"/>
+</map>

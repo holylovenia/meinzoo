@@ -1,0 +1,14 @@
+<map id="src/animal" name="src/animal">
+<area shape="rect" id="node2" href="dir_5d7918685911897871f210c57fd2a119.html" title="aves" alt="" coords="37,159,109,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000001_000002.html" title="6" alt="" coords="125,157,133,172"/>
+<area shape="rect" id="node3" href="dir_050c8cb730e441db69a199ea7a395794.html" title="mammalia" alt="" coords="133,159,216,207"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000001_000003.html" title="8" alt="" coords="214,145,222,160"/>
+<area shape="rect" id="node4" href="dir_84dc4be1a01e5db2b71959ccaccada46.html" title="pisces" alt="" coords="240,159,312,207"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000001_000004.html" title="4" alt="" coords="280,133,288,148"/>
+<area shape="rect" id="node5" href="dir_a638bfdba5625e765b7af4cf6f0d3888.html" title="reptilia" alt="" coords="336,159,408,207"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000001_000005.html" title="6" alt="" coords="337,132,345,147"/>
+<area shape="rect" id="node6" href="dir_88826aa2a10e1882b573f502bc7f4b55.html" title="misc" alt="" coords="440,159,512,207"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000001_000009.html" title="2" alt="" coords="423,142,431,156"/>
+<area shape="rect" id="clust2" href="dir_ce4d07e8f4adf65ff639bdd4fb209ca6.html" alt="" coords="27,52,419,217"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,429,228"/>
+</map>

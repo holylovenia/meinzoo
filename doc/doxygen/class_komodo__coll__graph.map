@@ -1,0 +1,6 @@
+<map id="Komodo" name="Komodo">
+<area shape="rect" id="node2" href="$class_reptilia.html" title="{Reptilia\n||+ Reptilia()\l}" alt="" coords="198,551,283,628"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="{Animal\n||+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="177,321,304,501"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="5,79,92,156"/>
+<area shape="rect" id="node8" href="$class_point.html" title="{Point\n||+ Point()\l+ Point()\l+ SetX()\l+ SetY()\l+ GetX()\l+ GetY()\l+ operator\&lt;()\l+ Up()\l+ Down()\l+ Left()\l+ Right()\l}" alt="" coords="424,5,521,229"/>
+</map>

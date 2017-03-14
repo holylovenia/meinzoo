@@ -1,0 +1,9 @@
+<map id="Reptilia" name="Reptilia">
+<area shape="rect" id="node4" href="$class_chameleon.html" title="{Chameleon\n||+ Chameleon()\l+ Interact()\l}" alt="" coords="5,572,112,664"/>
+<area shape="rect" id="node5" href="$class_crocodile.html" title="{Crocodile\n||+ Crocodile()\l+ Interact()\l}" alt="" coords="136,572,232,664"/>
+<area shape="rect" id="node6" href="$class_iguana.html" title="{Iguana\n||+ Iguana()\l+ Interact()\l}" alt="" coords="256,572,341,664"/>
+<area shape="rect" id="node7" href="$class_komodo.html" title="{Komodo\n||+ Komodo()\l+ Interact()\l}" alt="" coords="365,572,456,664"/>
+<area shape="rect" id="node8" href="$class_python.html" title="{Python\n||+ Python()\l+ Interact()\l}" alt="" coords="480,572,565,664"/>
+<area shape="rect" id="node2" href="$class_animal.html" title="{Animal\n|# ID\l# limb_count\l# skin_type\l# is_land_animal\l# is_water_animal\l# is_air_animal\l# position\l|+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="235,131,362,399"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="255,5,342,83"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Facility" name="Facility">
+<area shape="rect" id="node4" href="$class_park.html" title="{Park\n||+ Park()\l+ Park()\l+ operator=()\l+ GetParkName()\l+ Render()\l}" alt="" coords="5,425,129,561"/>
+<area shape="rect" id="node5" href="$class_restaurant.html" title="{Restaurant\n||+ Restaurant()\l+ Restaurant()\l+ operator=()\l+ GetRestaurantName()\l+ Render()\l}" alt="" coords="154,425,314,561"/>
+<area shape="rect" id="node6" href="$class_road.html" title="{Road\n|# is_entrance\l# is_exit\l|+ Road()\l+ IsEntrance()\l+ IsExit()\l+ Render()\l}" alt="" coords="338,425,442,561"/>
+<area shape="rect" id="node2" href="$class_cell.html" title="{Cell\n|# is_accessible\l|+ Cell()\l+ Cell()\l+ operator=()\l+ IsAccessible()\l}" alt="" coords="176,131,292,252"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="191,5,277,83"/>
+<area shape="rect" id="node7" href="$class_road_entrance.html" title="{RoadEntrance\n||+ RoadEntrance()\l}" alt="" coords="261,609,385,687"/>
+<area shape="rect" id="node8" href="$class_road_exit.html" title="{RoadExit\n||+ RoadExit()\l}" alt="" coords="409,609,504,687"/>
+</map>

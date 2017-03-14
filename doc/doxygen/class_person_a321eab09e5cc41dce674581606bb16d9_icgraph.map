@@ -1,0 +1,6 @@
+<map id="Person::Render" name="Person::Render">
+<area shape="rect" id="node2" href="$class_zoo.html#ad668a97f0a0457cb18e7c873a6acecba" title="Melakukan proses render untuk seisi zoo. " alt="" coords="165,31,257,57"/>
+<area shape="rect" id="node3" href="$class_driver.html#aa8b4e139b99aad4720ce86286783dcdb" title="Menampilkan area tertentu dalam zoo. Menampilkan area dalam zoo sesuai permintaan user..." alt="" coords="305,5,432,32"/>
+<area shape="rect" id="node5" href="$class_driver.html#aa56ed0eaa789f78765708e15032d6534" title="Melakukan tour dalam zoo. Melakukan tour sebagai Person di dalam virtual zoo. " alt="" coords="315,56,423,83"/>
+<area shape="rect" id="node4" href="$class_driver.html#af0658d103e3e810a8e9ef0a53bb2e261" title="Constructor Menciptakan driver yang berisi menu utama. " alt="" coords="480,31,575,57"/>
+</map>

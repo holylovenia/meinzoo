@@ -1,0 +1,4 @@
+<map id="Animal" name="Animal">
+<area shape="rect" id="node2" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="5,79,92,156"/>
+<area shape="rect" id="node6" href="$class_point.html" title="{Point\n||+ Point()\l+ Point()\l+ SetX()\l+ SetY()\l+ GetX()\l+ GetY()\l+ operator\&lt;()\l+ Up()\l+ Down()\l+ Left()\l+ Right()\l}" alt="" coords="424,5,521,229"/>
+</map>

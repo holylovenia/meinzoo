@@ -1,0 +1,9 @@
+<map id="Aves" name="Aves">
+<area shape="rect" id="node4" href="$class_colibri.html" title="{Colibri\n||+ Colibri()\l+ Interact()\l}" alt="" coords="5,572,91,664"/>
+<area shape="rect" id="node5" href="$class_duck.html" title="{Duck\n||+ Duck()\l+ Interact()\l}" alt="" coords="115,572,200,664"/>
+<area shape="rect" id="node6" href="$class_eagle.html" title="{Eagle\n||+ Eagle()\l+ Interact()\l}" alt="" coords="224,572,309,664"/>
+<area shape="rect" id="node7" href="$class_owl.html" title="{Owl\n||+ Owl()\l+ Interact()\l}" alt="" coords="333,572,419,664"/>
+<area shape="rect" id="node8" href="$class_peacock.html" title="{Peacock\n||+ Peacock()\l+ Interact()\l}" alt="" coords="443,572,536,664"/>
+<area shape="rect" id="node2" href="$class_animal.html" title="{Animal\n|# ID\l# limb_count\l# skin_type\l# is_land_animal\l# is_water_animal\l# is_air_animal\l# position\l|+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="203,131,330,399"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="223,5,310,83"/>
+</map>

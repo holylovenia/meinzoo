@@ -1,0 +1,5 @@
+<map id="Elephant" name="Elephant">
+<area shape="rect" id="node2" href="$class_mammalia.html" title="{Mammalia\n||+ Mammalia()\l}" alt="" coords="17,447,120,524"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="{Animal\n|# ID\l# limb_count\l# skin_type\l# is_land_animal\l# is_water_animal\l# is_air_animal\l# position\l|+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="5,131,132,399"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="25,5,112,83"/>
+</map>

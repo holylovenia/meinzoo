@@ -1,0 +1,11 @@
+<map id="Mammalia" name="Mammalia">
+<area shape="rect" id="node4" href="$class_elephant.html" title="{Elephant\n||+ Elephant()\l+ Interact()\l}" alt="" coords="5,572,99,664"/>
+<area shape="rect" id="node5" href="$class_giraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Interact()\l}" alt="" coords="123,572,208,664"/>
+<area shape="rect" id="node6" href="$class_lion.html" title="{Lion\n||+ Lion()\l+ Interact()\l}" alt="" coords="232,572,317,664"/>
+<area shape="rect" id="node7" href="$class_monkey.html" title="{Monkey\n||+ Monkey()\l+ Interact()\l}" alt="" coords="341,572,429,664"/>
+<area shape="rect" id="node8" href="$class_tiger.html" title="{Tiger\n||+ Tiger()\l+ Interact()\l}" alt="" coords="453,572,539,664"/>
+<area shape="rect" id="node9" href="$class_wolf.html" title="{Wolf\n||+ Wolf()\l+ Interact()\l}" alt="" coords="563,572,648,664"/>
+<area shape="rect" id="node10" href="$class_zebra.html" title="{Zebra\n||+ Zebra()\l+ Interact()\l}" alt="" coords="672,572,757,664"/>
+<area shape="rect" id="node2" href="$class_animal.html" title="{Animal\n|# ID\l# limb_count\l# skin_type\l# is_land_animal\l# is_water_animal\l# is_air_animal\l# position\l|+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="322,131,449,399"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="342,5,429,83"/>
+</map>

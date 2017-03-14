@@ -1,0 +1,6 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_cell.html#a0f5c1240f61ab9f3cf946b133cf4c76e" title="Getter nilai is_accessible. " alt="" coords="108,5,235,32"/>
+<area shape="rect" id="node3" href="$class_road.html#abb3945fc3cc4c9774949eac15984f32b" title="Getter nilai is_entrance. " alt="" coords="110,56,233,83"/>
+<area shape="rect" id="node4" href="$class_road.html#ac231fa8c9954f8a52560d72048d551f2" title="Getter nilai is_exit. " alt="" coords="125,107,218,133"/>
+<area shape="rect" id="node5" href="$class_road.html#a3540108a92a629da15d88305ef8e6914" title="Mengembalikan character untuk kelas Render. " alt="" coords="121,157,222,184"/>
+</map>

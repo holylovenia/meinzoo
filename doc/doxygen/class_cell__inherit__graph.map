@@ -1,0 +1,13 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node3" href="$class_facility.html" title="{Facility\n|# facility_type\l|+ Facility()\l}" alt="" coords="260,300,363,377"/>
+<area shape="rect" id="node9" href="$class_habitat.html" title="{Habitat\n|# type\l|+ Habitat()\l}" alt="" coords="538,300,621,377"/>
+<area shape="rect" id="node2" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="408,5,495,83"/>
+<area shape="rect" id="node4" href="$class_park.html" title="{Park\n||+ Park()\l+ Park()\l+ operator=()\l+ GetParkName()\l+ Render()\l}" alt="" coords="5,425,129,561"/>
+<area shape="rect" id="node5" href="$class_restaurant.html" title="{Restaurant\n||+ Restaurant()\l+ Restaurant()\l+ operator=()\l+ GetRestaurantName()\l+ Render()\l}" alt="" coords="154,425,314,561"/>
+<area shape="rect" id="node6" href="$class_road.html" title="{Road\n|# is_entrance\l# is_exit\l|+ Road()\l+ IsEntrance()\l+ IsExit()\l+ Render()\l}" alt="" coords="338,425,442,561"/>
+<area shape="rect" id="node7" href="$class_road_entrance.html" title="{RoadEntrance\n||+ RoadEntrance()\l}" alt="" coords="261,609,385,687"/>
+<area shape="rect" id="node8" href="$class_road_exit.html" title="{RoadExit\n||+ RoadExit()\l}" alt="" coords="409,609,504,687"/>
+<area shape="rect" id="node10" href="$class_air_habitat.html" title="{AirHabitat\n||+ AirHabitat()\l+ Render()\l}" alt="" coords="466,447,565,539"/>
+<area shape="rect" id="node11" href="$class_land_habitat.html" title="{LandHabitat\n||+ LandHabitat()\l+ Render()\l}" alt="" coords="589,447,700,539"/>
+<area shape="rect" id="node12" href="$class_water_habitat.html" title="{WaterHabitat\n||+ WaterHabitat()\l+ Render()\l}" alt="" coords="724,447,843,539"/>
+</map>
