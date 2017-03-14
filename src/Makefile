@@ -8,6 +8,7 @@ SUBDIRS = misc infrastructure animal
 
 all: subdirs $(OBJS)
 	$(CC) $(OPTIONS) $(OBJS) -o ../zoo.exe
+	$(CC) $(OPTIONS) $(OBJS) -o ../zoo
 
 subdirs: $(SUBDIRS)
 
