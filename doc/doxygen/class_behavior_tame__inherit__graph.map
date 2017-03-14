@@ -1,0 +1,23 @@
+<map id="BehaviorTame" name="BehaviorTame">
+<area shape="rect" id="node3" href="$class_barracuda.html" title="{Barracuda\n||+ Barracuda()\l+ Interact()\l}" alt="" coords="5,271,107,363"/>
+<area shape="rect" id="node4" href="$class_chameleon.html" title="{Chameleon\n||+ Chameleon()\l+ Interact()\l}" alt="" coords="131,271,237,363"/>
+<area shape="rect" id="node5" href="$class_clownfish.html" title="{Clownfish\n||+ Clownfish()\l+ Interact()\l}" alt="" coords="262,271,359,363"/>
+<area shape="rect" id="node6" href="$class_colibri.html" title="{Colibri\n||+ Colibri()\l+ Interact()\l}" alt="" coords="384,271,469,363"/>
+<area shape="rect" id="node7" href="$class_crocodile.html" title="{Crocodile\n||+ Crocodile()\l+ Interact()\l}" alt="" coords="493,271,589,363"/>
+<area shape="rect" id="node8" href="$class_duck.html" title="{Duck\n||+ Duck()\l+ Interact()\l}" alt="" coords="613,271,699,363"/>
+<area shape="rect" id="node9" href="$class_eagle.html" title="{Eagle\n||+ Eagle()\l+ Interact()\l}" alt="" coords="723,271,808,363"/>
+<area shape="rect" id="node10" href="$class_elephant.html" title="{Elephant\n||+ Elephant()\l+ Interact()\l}" alt="" coords="832,271,925,363"/>
+<area shape="rect" id="node11" href="$class_giraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Interact()\l}" alt="" coords="949,271,1035,363"/>
+<area shape="rect" id="node12" href="$class_iguana.html" title="{Iguana\n||+ Iguana()\l+ Interact()\l}" alt="" coords="1059,271,1144,363"/>
+<area shape="rect" id="node13" href="$class_komodo.html" title="{Komodo\n||+ Komodo()\l+ Interact()\l}" alt="" coords="1168,271,1259,363"/>
+<area shape="rect" id="node14" href="$class_lion.html" title="{Lion\n||+ Lion()\l+ Interact()\l}" alt="" coords="1283,271,1368,363"/>
+<area shape="rect" id="node15" href="$class_monkey.html" title="{Monkey\n||+ Monkey()\l+ Interact()\l}" alt="" coords="1392,271,1480,363"/>
+<area shape="rect" id="node16" href="$class_owl.html" title="{Owl\n||+ Owl()\l+ Interact()\l}" alt="" coords="1504,271,1589,363"/>
+<area shape="rect" id="node17" href="$class_peacock.html" title="{Peacock\n||+ Peacock()\l+ Interact()\l}" alt="" coords="1613,271,1707,363"/>
+<area shape="rect" id="node18" href="$class_python.html" title="{Python\n||+ Python()\l+ Interact()\l}" alt="" coords="1731,271,1816,363"/>
+<area shape="rect" id="node19" href="$class_shark.html" title="{Shark\n||+ Shark()\l+ Interact()\l}" alt="" coords="1840,271,1925,363"/>
+<area shape="rect" id="node20" href="$class_tiger.html" title="{Tiger\n||+ Tiger()\l+ Interact()\l}" alt="" coords="1949,271,2035,363"/>
+<area shape="rect" id="node21" href="$class_wolf.html" title="{Wolf\n||+ Wolf()\l+ Interact()\l}" alt="" coords="2059,271,2144,363"/>
+<area shape="rect" id="node22" href="$class_zebra.html" title="{Zebra\n||+ Zebra()\l+ Interact()\l}" alt="" coords="2168,271,2253,363"/>
+<area shape="rect" id="node2" href="$class_animal_behavior.html" title="{AnimalBehavior\n|# is_wild\l|+ GetBehavior()\l+ SetBehavior()\l}" alt="" coords="1101,5,1213,97"/>
+</map>

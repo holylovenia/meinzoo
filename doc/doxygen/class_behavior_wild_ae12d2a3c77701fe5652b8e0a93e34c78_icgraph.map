@@ -1,0 +1,4 @@
+<map id="BehaviorWild::AddEnemy" name="BehaviorWild::AddEnemy">
+<area shape="rect" id="node2" href="$class_wild_colibri.html#a581fa3a69f52758a71666d7b55b675a7" title="Constructor Menciptakan wild colibri dengan posisi (_x,_y) dan berat _weight. " alt="" coords="223,5,378,32"/>
+<area shape="rect" id="node3" href="$class_wild_bunny.html#a408908a23f644715b407e919f1df95a4" title="Constructor Menciptakan wild bunny dengan posisi (_x,_y) dan berat _weight. " alt="" coords="223,56,379,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Cage::AddAnimal" name="Cage::AddAnimal">
+<area shape="rect" id="node2" href="$class_animal_behavior.html#a7bba95beb98fa53bca79fb765e764c98" title="Pure virtual method Menetapkan nilai perilaku hewan. " alt="" coords="177,5,365,32"/>
+<area shape="rect" id="node3" href="$class_animal_behavior.html#af18001511410b2c8df3745343ed4fdc2" title="Getter nilai is_wild. " alt="" coords="176,56,365,83"/>
+<area shape="rect" id="node4" href="$class_behavior_wild.html#abcdaf8518f0dbe31edde3994523f7603" title="Mengecek status hewan. Memeriksa apakah hewan dengan ID x merupakan musuh. " alt="" coords="193,107,349,133"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="Point::SetX" name="Point::SetX">
+<area shape="rect" id="node2" href="$class_animal.html#a01e450f2b24c367f1d9087450dea6860" title="Menggerakkan animal dengan mengubah posisi. " alt="" coords="170,5,270,32"/>
+<area shape="rect" id="node3" href="$class_colibri.html#ad8e31266ef3f1dbde5dcb8dd7c7eca6c" title="Constructor Menciptakan colibri dengan posisi (_x,_y) dan berat _weight. " alt="" coords="169,56,271,83"/>
+<area shape="rect" id="node4" href="$class_duck.html#ade1eec2174e6eac1210791eea4ab450b" title="Constructor Menciptakan duck dengan posisi (_x,_y) dan berat _weight. " alt="" coords="175,107,265,133"/>
+<area shape="rect" id="node5" href="$class_eagle.html#a677426fa5468bbfdccfd251f114ad2d6" title="Constructor Menciptakan eagle dengan posisi (_x,_y) dan berat _weight. " alt="" coords="172,157,268,184"/>
+<area shape="rect" id="node6" href="$class_owl.html#a324c8e32c17ba961e37a8b10d6c43996" title="Constructor Menciptakan owl dengan posisi (_x,_y) dan berat _weight. " alt="" coords="183,208,257,235"/>
+<area shape="rect" id="node7" href="$class_peacock.html#a597a412fd02e58b52eeeaf1fd4a27af9" title="Constructor Menciptakan peacock dengan posisi (_x,_y) dan berat _weight. " alt="" coords="154,259,286,285"/>
+<area shape="rect" id="node8" href="$class_wild_colibri.html#a581fa3a69f52758a71666d7b55b675a7" title="Constructor Menciptakan wild colibri dengan posisi (_x,_y) dan berat _weight. " alt="" coords="143,309,297,336"/>
+<area shape="rect" id="node9" href="$class_elephant.html#a29817d2bac43e1520316968c1dcd4427" title="Constructor Menciptakan elephant dengan posisi (_x,_y) dan berat _weight. " alt="" coords="154,360,286,387"/>
+<area shape="rect" id="node10" href="$class_giraffe.html#ac304c0082fac604d34bbd24abf620fb6" title="Constructor Menciptakan giraffe dengan posisi (_x,_y) dan berat _weight. " alt="" coords="168,411,272,437"/>
+<area shape="rect" id="node11" href="$class_lion.html#a7d84e4a9d5b82f5cfcc4a8f2bc8644d5" title="Constructor Menciptakan lion dengan posisi (_x,_y) dan berat _weight. " alt="" coords="181,461,259,488"/>
+<area shape="rect" id="node12" href="$class_monkey.html#a85cf13481588f314ff4d6b398a60d771" title="Constructor Menciptakan monkey dengan posisi (_x,_y) dan berat _weight. " alt="" coords="159,512,281,539"/>
+<area shape="rect" id="node13" href="$class_tiger.html#a710a6075bf88dd895fc801fa4724431e" title="Constructor Menciptakan tiger dengan posisi (_x,_y) dan berat _weight. " alt="" coords="177,563,263,589"/>
+<area shape="rect" id="node14" href="$class_wild_bunny.html#a408908a23f644715b407e919f1df95a4" title="Constructor Menciptakan wild bunny dengan posisi (_x,_y) dan berat _weight. " alt="" coords="142,613,298,640"/>
+<area shape="rect" id="node15" href="$class_wolf.html#a32daec52e1596eee59f5f0c9572a47f6" title="Constructor Menciptakan wolf dengan posisi (_x,_y) dan berat _weight. " alt="" coords="179,664,261,691"/>
+<area shape="rect" id="node16" href="$class_zebra.html#a046f9c16afa11daf8ddbb32ca1b778f6" title="Constructor Menciptakan zebra dengan posisi (_x,_y) dan berat _weight. " alt="" coords="173,715,267,741"/>
+<area shape="rect" id="node17" href="$class_barracuda.html#a3fe3737c18aec51e51cddad50dbf70fd" title="Constructor Menciptakan barracuda dengan posisi (_x,_y) dan berat _weight. " alt="" coords="146,765,294,792"/>
+<area shape="rect" id="node18" href="$class_clownfish.html#ad4720e328a1216e2105d0199066d057d" title="Constructor Menciptakan clownfish dengan posisi (_x,_y) dan berat _weight. " alt="" coords="150,816,290,843"/>
+<area shape="rect" id="node19" href="$class_shark.html#a6ad7497300039ba1b180c0d1185a3a74" title="Constructor Menciptakan shark dengan posisi (_x,_y) dan berat _weight. " alt="" coords="171,867,269,893"/>
+<area shape="rect" id="node20" href="$class_chameleon.html#a6672bd63dc2753bc067f859726d16ae5" title="Constructor Menciptakan chameleon dengan posisi (_x,_y) dan berat _weight. " alt="" coords="140,917,300,944"/>
+<area shape="rect" id="node21" href="$class_crocodile.html#aac734faca8934f2cc8adabb40560ead3" title="Constructor Menciptakan crocodile dengan posisi (_x,_y) dan berat _weight. " alt="" coords="151,968,289,995"/>
+<area shape="rect" id="node22" href="$class_iguana.html#a38f99006adba8ae13e641ead93edca8d" title="Constructor Menciptakan iguana dengan posisi (_x,_y) dan berat _weight. " alt="" coords="167,1019,273,1045"/>
+<area shape="rect" id="node23" href="$class_komodo.html#a986c0972d2db84748bd8d2cad4ae10d7" title="Constructor Menciptakan komodo dengan posisi (_x,_y) dan berat _weight. " alt="" coords="157,1069,283,1096"/>
+<area shape="rect" id="node24" href="$class_python.html#ae1f3e6084c43f07cfed6665812a6467c" title="Constructor Menciptakan python dengan posisi (_x,_y) dan berat _weight. " alt="" coords="164,1120,276,1147"/>
+<area shape="rect" id="node25" href="$class_person.html#a7c5cf07ba41864e8e82b361f8613d3ad" title="Menetapkan nilai position berdasarkan x dan y. " alt="" coords="151,1171,289,1197"/>
+<area shape="rect" id="node26" href="$class_person.html#a0dcce299b3914e4b3af67a65d7837b0b" title="Menggerakkan person dengan mengubah posisi. " alt="" coords="169,1221,271,1248"/>
+<area shape="rect" id="node27" href="$class_driver.html#ad9677d7807a61f0a169268f3a30b40fc" title="Menghitung jumlah makanan yang dibutuhkan. Menghitung dan menampilkan jumlah makanan yang dikonsumsi ..." alt="" coords="348,1221,501,1248"/>
+<area shape="rect" id="node28" href="$class_driver.html#af0658d103e3e810a8e9ef0a53bb2e261" title="Constructor Menciptakan driver yang berisi menu utama. " alt="" coords="549,1221,644,1248"/>
+</map>

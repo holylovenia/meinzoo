@@ -1,0 +1,5 @@
+<map id="Road" name="Road">
+<area shape="rect" id="node2" href="$class_facility.html" title="{Facility\n||+ Facility()\l}" alt="" coords="90,344,174,421"/>
+<area shape="rect" id="node3" href="$class_cell.html" title="{Cell\n||+ Cell()\l+ Cell()\l+ operator=()\l+ IsAccessible()\l}" alt="" coords="181,145,297,267"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="195,5,282,83"/>
+</map>

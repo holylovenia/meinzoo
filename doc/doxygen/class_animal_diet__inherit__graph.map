@@ -1,0 +1,27 @@
+<map id="AnimalDiet" name="AnimalDiet">
+<area shape="rect" id="node2" href="$class_carnivora.html" title="{Carnivora\n||+ Carnivora()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="569,248,685,355"/>
+<area shape="rect" id="node13" href="$class_herbivora.html" title="{Herbivora\n||+ Herbivora()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="1402,248,1518,355"/>
+<area shape="rect" id="node20" href="$class_omnivora.html" title="{Omnivora\n||+ Omnivora()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="2073,248,2189,355"/>
+<area shape="rect" id="node3" href="$class_barracuda.html" title="{Barracuda\n||+ Barracuda()\l+ Interact()\l}" alt="" coords="5,403,107,495"/>
+<area shape="rect" id="node4" href="$class_crocodile.html" title="{Crocodile\n||+ Crocodile()\l+ Interact()\l}" alt="" coords="131,403,227,495"/>
+<area shape="rect" id="node5" href="$class_eagle.html" title="{Eagle\n||+ Eagle()\l+ Interact()\l}" alt="" coords="251,403,336,495"/>
+<area shape="rect" id="node6" href="$class_komodo.html" title="{Komodo\n||+ Komodo()\l+ Interact()\l}" alt="" coords="360,403,451,495"/>
+<area shape="rect" id="node7" href="$class_lion.html" title="{Lion\n||+ Lion()\l+ Interact()\l}" alt="" coords="475,403,560,495"/>
+<area shape="rect" id="node8" href="$class_owl.html" title="{Owl\n||+ Owl()\l+ Interact()\l}" alt="" coords="584,403,669,495"/>
+<area shape="rect" id="node9" href="$class_python.html" title="{Python\n||+ Python()\l+ Interact()\l}" alt="" coords="693,403,779,495"/>
+<area shape="rect" id="node10" href="$class_shark.html" title="{Shark\n||+ Shark()\l+ Interact()\l}" alt="" coords="803,403,888,495"/>
+<area shape="rect" id="node11" href="$class_tiger.html" title="{Tiger\n||+ Tiger()\l+ Interact()\l}" alt="" coords="912,403,997,495"/>
+<area shape="rect" id="node12" href="$class_wolf.html" title="{Wolf\n||+ Wolf()\l+ Interact()\l}" alt="" coords="1021,403,1107,495"/>
+<area shape="rect" id="node14" href="$class_colibri.html" title="{Colibri\n||+ Colibri()\l+ Interact()\l}" alt="" coords="1131,403,1216,495"/>
+<area shape="rect" id="node15" href="$class_elephant.html" title="{Elephant\n||+ Elephant()\l+ Interact()\l}" alt="" coords="1240,403,1333,495"/>
+<area shape="rect" id="node16" href="$class_giraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Interact()\l}" alt="" coords="1357,403,1443,495"/>
+<area shape="rect" id="node17" href="$class_wild_bunny.html" title="{WildBunny\n||+ WildBunny()\l+ Interact()\l}" alt="" coords="1467,403,1573,495"/>
+<area shape="rect" id="node18" href="$class_wild_colibri.html" title="{WildColibri\n||+ WildColibri()\l+ Interact()\l}" alt="" coords="1597,403,1701,495"/>
+<area shape="rect" id="node19" href="$class_zebra.html" title="{Zebra\n||+ Zebra()\l+ Interact()\l}" alt="" coords="1725,403,1811,495"/>
+<area shape="rect" id="node21" href="$class_chameleon.html" title="{Chameleon\n||+ Chameleon()\l+ Interact()\l}" alt="" coords="1835,403,1941,495"/>
+<area shape="rect" id="node22" href="$class_clownfish.html" title="{Clownfish\n||+ Clownfish()\l+ Interact()\l}" alt="" coords="1966,403,2063,495"/>
+<area shape="rect" id="node23" href="$class_duck.html" title="{Duck\n||+ Duck()\l+ Interact()\l}" alt="" coords="2088,403,2173,495"/>
+<area shape="rect" id="node24" href="$class_iguana.html" title="{Iguana\n||+ Iguana()\l+ Interact()\l}" alt="" coords="2197,403,2283,495"/>
+<area shape="rect" id="node25" href="$class_monkey.html" title="{Monkey\n||+ Monkey()\l+ Interact()\l}" alt="" coords="2307,403,2395,495"/>
+<area shape="rect" id="node26" href="$class_peacock.html" title="{Peacock\n||+ Peacock()\l+ Interact()\l}" alt="" coords="2419,403,2512,495"/>
+</map>
