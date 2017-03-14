@@ -12,7 +12,7 @@ class RoadExit: public Road {
       * Mendefinisikan road exit.
       * @param Accesible Nilai true/false apakah dapat diakses.
       */
-    RoadExit(bool accessible);
+    explicit RoadExit(bool accessible);
 
   private:
     const bool def_road_exit;

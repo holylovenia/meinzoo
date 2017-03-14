@@ -1,10 +1,11 @@
-#include "driver.h"
-#include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include <fstream>
+#include <iostream>
+#include <queue>
 #include <sstream>
 #include <string>
-#include <ctime>
-#include <cstdlib>
+#include "driver.h"
 
 const string fname = "layout.in";
 
@@ -112,11 +113,12 @@ void Driver::InitZoo() {
       getline(inf,instr);
     }
     getline(inf,instr);
+    queue<Animal*> wild;
     while (instr[0] != '#') {
       string species;
       int x, y, w;
       istringstream(instr) >> species >> y >> x >> w;
-      Animal* a;
+      Animal* a = NULL;
       if (species == "Wolf") {
         a = new Wolf(x,y,w);
       } else if (species == "Lion") {
@@ -158,13 +160,17 @@ void Driver::InitZoo() {
       } else if (species == "Duck") {
         a = new Duck(x,y,w);
       } else if (species == "WildColibri") {
-        a = new WildColibri(x,y,w);
+        wild.push(new WildColibri(x,y,w));
       } else {
-        a = new WildBunny(x,y,w);
+        wild.push(new WildBunny(x,y,w));
       }
-      c->AddAnimal(*a);
-
+      if (a != NULL)
+        c->AddAnimal(*a);
       getline(inf,instr);
+    }
+    while (!wild.empty()) {
+      c->AddAnimal(*wild.front());
+      wild.pop();
     }
     zoo.InsertCage(*c);
   }

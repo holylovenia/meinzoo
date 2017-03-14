@@ -18,16 +18,15 @@ void Cage::AddAnimal(Animal& A) {
   if (nb_animal < int(area.size() / 10 * 3)) {
     AnimalBehavior* a = dynamic_cast<AnimalBehavior*>(&A);
     a->SetBehavior();
-    bool placeable = true;
 
     if (!(a->GetBehavior())) {
       animal.push_back(&A);
       nb_animal++;
     } else {
-      placeable = false;
+      bool placeable = true;
       BehaviorWild* b = dynamic_cast<BehaviorWild*>(a);
-      for (auto &it: animal) {
-        placeable = !(b->IsEnemy(it->GetID()));
+      for (auto it = animal.begin(); it < animal.end() && placeable; ++it) {
+        placeable = b->IsEnemy((*it)->GetID());
       }
       if (placeable) {
         animal.push_back(&A);

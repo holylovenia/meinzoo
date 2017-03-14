@@ -12,7 +12,7 @@ class RoadEntrance: public Road {
       * Mendefinisikan road entrance.
       * @param accessible Nilai true/false apakah dapat diakses.
       */
-    RoadEntrance(bool accessible);
+    explicit RoadEntrance(bool accessible);
 
   private:
     const bool def_road_entrance;

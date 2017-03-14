@@ -12,7 +12,7 @@ class Road: public Facility {
       * Menciptakan cell berisi road yang dapat/tidak dapat diakses.
       * @param accessible Nilai true/false apakah dapat diakses.
       */
-    Road(bool accessible);
+    explicit Road(bool accessible);
     /** @brief Getter nilai is_entrance
       * @return Nilai is_entrance.
       */

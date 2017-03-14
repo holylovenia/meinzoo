@@ -1,10 +1,9 @@
 #include "restaurant.h"
 
-Restaurant::Restaurant(bool accessible, std::string _name): Facility(accessible), def_facility_type("Restaurant"), name(_name) {
+Restaurant::Restaurant(bool accessible, const std::string& _name): Facility(accessible), def_facility_type("Restaurant"), name(_name) {
   facility_type = def_facility_type;
 }
 Restaurant::Restaurant(const Restaurant& R): Facility(R.is_accessible), def_facility_type("Restaurant"), name(R.name) {
-  name = R.name;
   facility_type = R.facility_type;
 }
 Restaurant& Restaurant::operator=(const Restaurant& R) {

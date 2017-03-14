@@ -12,7 +12,7 @@ class Cell: public Renderable {
       * Menciptakan cell default yang dapat/tidak dapat diakses.
       * @param accessible Nilai true/false cell dapat diakses.
       */
-    Cell(bool accessible);
+    explicit Cell(bool accessible);
     /** @brief Copy Constructor
       * Menciptakan cell yang sama dengan cell yang sudah ada.
       * @param C Objek cell yang telah diciptakan.

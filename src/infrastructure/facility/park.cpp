@@ -1,6 +1,6 @@
 #include "park.h"
 
-Park::Park(bool accessible, std::string _name): Facility(accessible), def_facility_type("Park"), name(_name) {
+Park::Park(bool accessible, const std::string& _name): Facility(accessible), def_facility_type("Park"), name(_name) {
   facility_type = def_facility_type;
 }
 Park::Park(const Park& P): Facility(P.is_accessible), def_facility_type("Park"), name(P.name) {

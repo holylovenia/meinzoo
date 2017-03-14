@@ -14,7 +14,7 @@ class Restaurant: public Facility {
       * @param accessible Nilai true/false apakah dapat diakses.
       * @param _name Nama restaurant.
       */
-    Restaurant(bool accessible, std::string _name);
+    Restaurant(bool accessible, const std::string& _name);
     /** @brief Copy Constructor
       * Menciptakan restaurant dengan tingkat aksesibilitas dan nama ang sama.
       * @param R Object Restaurant yang sudah diciptakan

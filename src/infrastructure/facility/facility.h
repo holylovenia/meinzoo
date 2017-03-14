@@ -13,7 +13,7 @@ class Facility: public Cell {
       * Menciptakan cell berisi fasilitas yang dapat/tidak dapat diakses.
       * @param Accessible Nilai true/false apakah dapat diakses.
       */
-    Facility(bool Accessible);
+    explicit Facility(bool Accessible);
 
   protected:
     std::string facility_type;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.77"/>
+    <errors>
+        <error id="unusedScopedObject" severity="style" msg="Instance of &amp;#039;Driver&amp;#039; object is destroyed immediately." verbose="Instance of &amp;#039;Driver&amp;#039; object is destroyed immediately.">
+            <location file="main.cpp" line="4"/>
+        </error>
+        <error id="noCopyConstructor" severity="style" msg="class &amp;#039;Zoo&amp;#039; does not have a copy constructor which is recommended since the class contains a pointer to allocated memory." verbose="class &amp;#039;Zoo&amp;#039; does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.">
+            <location file0="zoo.cpp" file="zoo.h" line="46"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Habitat::type&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Habitat::type&amp;#039; is not initialized in the constructor.">
+            <location file0="infrastructure/habitat/habitat.cpp" file="infrastructure\habitat\habitat.cpp" line="3"/>
+        </error>
+    </errors>
+</results>
