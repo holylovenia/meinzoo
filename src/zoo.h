@@ -52,7 +52,7 @@ class Zoo {
       * Mengalokasikan Zoo kosong dengan ukuran WIDTH x LENGTH.
       */
     Zoo();
-    /** @brief Deconstructor
+    /** @brief Destructor
       * Mendealokasi Zoo.
       */
     ~Zoo();
@@ -74,6 +74,7 @@ class Zoo {
     void InsertCage(const Cage& c);
     /** @brief Menghilangkan cage pada indeks ke-i dari zoo.
       * @param i Indeks cage yang ingin dihilangkan.
+      * @return Cage yang dihapus
       */
     Cage RemoveCage(int i);
     /** @brief Melakukan proses render untuk seisi zoo.

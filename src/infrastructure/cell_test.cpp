@@ -9,155 +9,58 @@
 #include "habitat/air_habitat.h"
 #include "habitat/land_habitat.h"
 #include "habitat/water_habitat.h"
-#include <iostream>
+#include <gtest/gtest.h>
 
-using namespace std;
+class CellTest : public ::testing::Test {
+  protected:
+    CellTest(){}
+};
 
-int main() {
-  cout << "== Testing Cell-Park ==" << endl << endl;
-  cout << "Activating constructor for Park(false, 'Ji Sung')" << endl;
+TEST(CellTest, Park) {
   Park obj_park(false, "Ji Sung");
-  cout << "Testing methods: " << endl;
-  cout << "1. IsAccessible(): ";
-  if (obj_park.IsAccessible()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "2. GetParkName(): " << obj_park.GetParkName() << endl;
-  char c = obj_park.Render();
-  cout << "3. Render(): " << c << endl << endl << endl;
-  //////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Cell-Restaurant ==" << endl << endl;
-  cout << "Activating constructor for Restaurant(false, 'Queen')" << endl;
+  ASSERT_EQ(false, obj_park.IsAccessible());
+  EXPECT_NE("",obj_park.GetParkName());
+  ASSERT_EQ('*',obj_park.Render());
+}
+TEST(CellTest, Restaurant) {
   Restaurant obj_restaurant(false, "Queen");
-  cout << "Testing methods: " << endl;
-  cout << "1. IsAccessible(): ";
-  if (obj_restaurant.IsAccessible()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "2. GetRestaurantName(): " << obj_restaurant.GetRestaurantName() << endl;
-  c = obj_restaurant.Render();
-  cout << "3. Render(): " << c << endl << endl << endl; 
-  ////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Cell-Road ==" << endl << endl;
-  cout << "Activating constructor for Road(true)" << endl;
+  ASSERT_EQ(false, obj_restaurant.IsAccessible());
+  EXPECT_NE("",obj_restaurant.GetRestaurantName());
+  ASSERT_EQ('R',obj_restaurant.Render());
+}
+TEST(CellTest, Road) {
   Road obj_road(true);
-  cout << "Testing methods: " << endl;
-  cout << "1. IsAccessible(): ";
-  if (obj_road.IsAccessible()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "2. IsEntrance(): ";
-  if (obj_road.IsEntrance()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "3. IsExit(): ";
-  if (obj_road.IsExit()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  c = obj_road.Render();
-  cout << "3. Render(): " << c << endl << endl << endl;
-  ///////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Cell-Road-Entrance ==" << endl << endl;
-  cout << "Activating constructor for RoadEntrance(true)" << endl;
+  ASSERT_EQ(true, obj_road.IsAccessible());
+  ASSERT_EQ(false, obj_road.IsEntrance());
+  ASSERT_EQ(false, obj_road.IsExit());
+  ASSERT_EQ('.',obj_road.Render());
+}
+TEST(CellTest, RoadEntrance) {
   RoadEntrance obj_road_entrance(true);
-  cout << "Testing methods: " << endl;
-  cout << "1. IsAccessible(): ";
-  if (obj_road_entrance.IsAccessible()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "2. IsEntrance(): ";
-  if (obj_road_entrance.IsEntrance()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "3. IsExit(): ";
-  if (obj_road_entrance.IsExit()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  c = obj_road_entrance.Render();
-  cout << "3. Render(): " << c << endl << endl << endl;
-  ///////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Cell-Road-Exit ==" << endl << endl;
-  cout << "Activating constructor for RoadExit(true)" << endl;
+  ASSERT_EQ(true, obj_road_entrance.IsAccessible());
+  ASSERT_EQ(true, obj_road_entrance.IsEntrance());
+  ASSERT_EQ(false, obj_road_entrance.IsExit());
+  ASSERT_EQ('.',obj_road_entrance.Render());
+}
+TEST(CellTest, RoadExit) {
   RoadExit obj_road_exit(true);
-  cout << "Testing methods: " << endl;
-  cout << "1. IsAccessible(): ";
-  if (obj_road_exit.IsAccessible()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "2. IsEntrance(): ";
-  if (obj_road_exit.IsEntrance()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  cout << "3. IsExit(): ";
-  if (obj_road_exit.IsExit()) {
-    cout << "True" << endl;
-  }
-  else {
-    cout << "False" << endl;
-  }
-  c = obj_road_exit.Render();
-  cout << "3. Render(): " << c << endl << endl << endl;
-  ///////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Habitat-AirHabitat ==" << endl << endl;
-  cout << "Activating constructor for AirHabitat()" << endl;
+  ASSERT_EQ(true, obj_road_exit.IsAccessible());
+  ASSERT_EQ(false, obj_road_exit.IsEntrance());
+  ASSERT_EQ(true, obj_road_exit.IsExit());
+  ASSERT_EQ('.',obj_road_exit.Render());
+}
+TEST(CellTest, AirHabitat) {
   AirHabitat* obj_air_habitat = new AirHabitat;
-  cout << "Testing methods: " << endl;
-  c = obj_air_habitat->Render();
-  cout << "1. Render(): " << c << endl << endl << endl;
+  ASSERT_EQ('a',obj_air_habitat->Render());
   delete obj_air_habitat;
-  ///////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Habitat-LandHabitat ==" << endl << endl;
-  cout << "Activating constructor for LandHabitat()" << endl;
+}
+TEST(CellTest, LandHabitat) {
   LandHabitat* obj_land_habitat = new LandHabitat;
-  cout << "Testing methods: " << endl;
-  c = obj_land_habitat->Render();
-  cout << "1. Render(): " << c << endl << endl << endl;
+  ASSERT_EQ('l',obj_land_habitat->Render());
   delete obj_land_habitat;
-  ///////////////////////////////////////////////////////////////////////////
-
-  cout << "== Testing Habitat-WaterHabitat ==" << endl << endl;
-  cout << "Activating constructor for WaterHabitat()" << endl;
+}
+TEST(CellTest, WaterHabitat) {
   WaterHabitat* obj_water_habitat = new WaterHabitat;
-  cout << "Testing methods: " << endl;
-  c = obj_water_habitat->Render();
-  cout << "1. Render(): " << c << endl << endl << endl;
+  ASSERT_EQ('w',obj_water_habitat->Render());
   delete obj_water_habitat;
-
-  return 0;
 }
