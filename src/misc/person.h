@@ -26,11 +26,17 @@ class Person: public Renderable {
       * @param y Nilai posisi ordinat.
       */
     void SetPosition(int x, int y);
-    /** @brief
-      * 
+    /** @brief Mengembalikan character untuk kelas render.
+      * @return Karakter untuk dirender.
       */
     char Render();
+    /** @brief Menggerakkan person dengan mengubah posisi.
+      * @param movement Nilai menentukan arah gerak animal.
+      */
     void Move(int movement);
+    /** @brief Mengembalikan nilai posisi menjadi default.
+      * Mengubah posisi person menjadi (-1,-1)
+      */
     void ResetPosition();
 
   private:
