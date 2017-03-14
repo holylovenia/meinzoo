@@ -20,11 +20,6 @@ class Driver {
       * Melakukan tour sebagai Person di dalam virtual zoo.
       */
     void TourZoo();
-    /** @brief Menghitung jumlah makanan yang dibutuhkan.
-      * Menghitung dan menampilkan jumlah makanan yang dikonsumsi
-      * oleh semua hewan di dalam zoo per harinya.
-      */
-    void ConsumedFood();
 
   private:
     Zoo zoo;

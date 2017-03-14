@@ -2,8 +2,6 @@
 #include <cstdlib>
 #include <iostream>
 #include "cage.h"
-#include "../animal/behavior/behavior_wild.h"
-#include "../animal/diet/animal_diet.h"
 
 Cage::Cage(int _type): type(_type) {
   nb_animal = 0;
@@ -15,24 +13,9 @@ void Cage::RemovePoint(const Point& p) {
   area.erase(p);
 }
 void Cage::AddAnimal(Animal& A) {
-  if (nb_animal < int(area.size() / 10 * 3)) {
-    AnimalBehavior* a = dynamic_cast<AnimalBehavior*>(&A);
-    a->SetBehavior();
-
-    if (!(a->GetBehavior())) {
-      animal.push_back(&A);
-      nb_animal++;
-    } else {
-      bool placeable = true;
-      BehaviorWild* b = dynamic_cast<BehaviorWild*>(a);
-      for (auto it = animal.begin(); it < animal.end() && placeable; ++it) {
-        placeable = b->IsEnemy((*it)->GetID());
-      }
-      if (placeable) {
-        animal.push_back(&A);
-        nb_animal++;
-      }
-    }
+  if (nb_animal < int(area.size())) {
+    animal.push_back(&A);
+    nb_animal++;
   }
 }
 Animal* Cage::RemoveAnimal(int i) {

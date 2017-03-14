@@ -2,21 +2,18 @@
 #define SHARK_H
 
 #include "pisces.h"
-#include "../diet/carnivora.h"
-#include "../behavior/behavior_tame.h"
 
 /** @class Shark
   * Kelas Shark mendefinisikan atribut untuk shark.
   */
-class Shark: public Pisces, public Carnivora, public BehaviorTame {
+class Shark: public Pisces {
   public:
     /** @brief Constructor
-      * Menciptakan shark dengan posisi (_x,_y) dan berat _weight.
+      * Menciptakan shark dengan posisi (_x,_y).
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk shark.
       */
-    Shark(int _x, int _y, int _weight);
+    Shark(int _x, int _y);
     /** @brief Menampilkan interaksi dengan shark.
       * Menuliskan interaksi ke layar.
       */
@@ -24,8 +21,6 @@ class Shark: public Pisces, public Carnivora, public BehaviorTame {
 
   private:
     const int def_ID;
-    const int def_ratio_meat;
-    const int def_ratio_plant;
 };
 
 #endif

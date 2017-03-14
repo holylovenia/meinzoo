@@ -2,7 +2,7 @@ CC = g++
 OPTIONS = -std=c++11
 SRC = $(wildcard *.cpp)
 OBJS = $(SRC:.cpp=.o)
-SUBDIRS = behavior diet aves mammalia pisces reptilia
+SUBDIRS = aves mammalia pisces reptilia
 
 .PHONY: subdirs $(SUBDIRS) all clean
 

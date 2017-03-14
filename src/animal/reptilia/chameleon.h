@@ -2,21 +2,18 @@
 #define CHAMELEON_H
 
 #include "reptilia.h"
-#include "../diet/omnivora.h"
-#include "../behavior/behavior_tame.h"
 
 /** @class Chameleon
   * Kelas Chameleon mendefinisikan atribut untuk chameleon.
   */
-class Chameleon : public Reptilia, public Omnivora, public BehaviorTame {
+class Chameleon : public Reptilia {
   public:
     /** @brief Constructor
-      * Menciptakan chameleon dengan posisi (_x,_y) dan berat _weight.
+      * Menciptakan chameleon dengan posisi (_x,_y).
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk chameleon.
       */
-    Chameleon(int _x, int _y, int _weight);
+    Chameleon(int _x, int _y);
     /** @brief Menampilkan interaksi dengan chameleon.
       * Menuliskan interaksi ke layar.
       */
@@ -24,8 +21,6 @@ class Chameleon : public Reptilia, public Omnivora, public BehaviorTame {
 
   private:
     const int def_ID;
-    const int def_ratio_meat;
-    const int def_ratio_plant;
 };
 
 #endif

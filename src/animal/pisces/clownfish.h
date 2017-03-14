@@ -2,21 +2,18 @@
 #define CLOWNFISH_H
 
 #include "pisces.h"
-#include "../diet/omnivora.h"
-#include "../behavior/behavior_tame.h"
   
 /** @class Clownfish
   * Kelas Clownfish mendefinisikan atribut untuk clownfish.
   */
-class Clownfish: public Pisces, public Omnivora, public BehaviorTame {
+class Clownfish: public Pisces {
   public:
     /** @brief Constructor
-      * Menciptakan clownfish dengan posisi (_x,_y) dan berat _weight.
+      * Menciptakan clownfish dengan posisi (_x,_y).
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk clownfish.
       */
-    Clownfish(int _x, int _y, int _weight);
+    Clownfish(int _x, int _y);
     /** @brief Menampilkan interaksi dengan clownfish.
       * Menuliskan interaksi ke layar.
       */
@@ -24,8 +21,6 @@ class Clownfish: public Pisces, public Omnivora, public BehaviorTame {
 
   private:
     const int def_ID;
-    const int def_ratio_meat;
-    const int def_ratio_plant;
 };
 
 #endif

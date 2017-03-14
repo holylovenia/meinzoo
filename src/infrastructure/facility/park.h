@@ -11,10 +11,10 @@ class Park: public Facility {
     /** @brief Constructor
       * Menciptakan cell berisi park yang dapat/tidak dapat diakses,
       * dengan nama sesuai dengan _name.
-      * @param Accessible Nilai true/false apakah dapat diakses.
+      * @param accessible Nilai true/false apakah dapat diakses.
       * @param _name Nama park.
       */
-    Park(bool Accessible, const std::string& _name);
+    Park(bool accessible, const std::string& _name);
     /** @brief Copy Constructor
       * Menciptakan park dengan tingkat aksesibilitas dan nama yang smaa.
       * @param P Object Park yang sudah diciptakan.

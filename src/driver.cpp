@@ -19,7 +19,6 @@ Driver::Driver() {
       cout << "---VIRTUAL ZOO---\n\n"
            << "1. Display Virtual Zoo\n"
            << "2. Tour Virtual Zoo\n"
-           << "3. Jumlah Makanan Dikonsumsi\n"
            << "0. Keluar\n"
            << "Pilihan: ";
       cin >> pil;
@@ -27,7 +26,6 @@ Driver::Driver() {
     switch (pil) {
       case 1: DisplayZoo(); break;
       case 2: TourZoo(); break;
-      case 3: ConsumedFood(); break;
     }
   } while (pil != 0);
 }
@@ -51,26 +49,6 @@ void Driver::DisplayZoo() {
 void Driver::TourZoo() {
   if (system("CLS")) system("clear");
   Tour();
-}
-void Driver::ConsumedFood() {
-  int total_meat = 0, total_plant = 0;
-  vector<Cage> cages = zoo.GetCages();
-  for (auto &c: cages) {
-    vector<Animal*> animal = c.GetAnimal();
-    for (auto &a: animal) {
-      AnimalDiet* d = dynamic_cast<AnimalDiet*>(a);
-      total_meat += d->GetReqMeat();
-      total_plant += d->GetReqPlant();
-    }
-  }
-
-  if (system("CLS")) system("clear");
-  cout << "---MAKANAN DIKONSUMSI---\n\n"
-       << "Jumlah makanan yang dikonsumsi semua hewan dalam zoo setiap hari:\n"
-       << "Daging:   " << total_meat << "\t kg\n"
-       << "Tumbuhan: " << total_plant << "\t kg\n";
-  cin.get();
-  cin.get();
 }
 void Driver::InitZoo() {
   ifstream inf;
@@ -120,49 +98,45 @@ void Driver::InitZoo() {
       istringstream(instr) >> species >> y >> x >> w;
       Animal* a = NULL;
       if (species == "Wolf") {
-        a = new Wolf(x,y,w);
+        a = new Wolf(x,y);
       } else if (species == "Lion") {
-        a = new Lion(x,y,w);
+        a = new Lion(x,y);
       } else if (species == "Tiger") {
-        a = new Tiger(x,y,w);
+        a = new Tiger(x,y);
       } else if (species == "Zebra") {
-        a = new Zebra(x,y,w);
+        a = new Zebra(x,y);
       } else if (species == "Monkey") {
-        a = new Monkey(x,y,w);
+        a = new Monkey(x,y);
       } else if (species == "Giraffe") {
-        a = new Giraffe(x,y,w);
+        a = new Giraffe(x,y);
       } else if (species == "Elephant") {
-        a = new Elephant(x,y,w);
+        a = new Elephant(x,y);
       } else if (species == "Crocodile") {
-        a = new Crocodile(x,y,w);
+        a = new Crocodile(x,y);
       } else if (species == "Python") {
-        a = new Python(x,y,w);
+        a = new Python(x,y);
       } else if (species == "Komodo") {
-        a = new Komodo(x,y,w);
+        a = new Komodo(x,y);
       } else if (species == "Iguana") {
-        a = new Iguana(x,y,w);
+        a = new Iguana(x,y);
       } else if (species == "Chameleon") {
-        a = new Chameleon(x,y,w);
+        a = new Chameleon(x,y);
       } else if (species == "Shark") {
-        a = new Shark(x,y,w);
+        a = new Shark(x,y);
       } else if (species == "Clownfish") {
-        a = new Clownfish(x,y,w);
+        a = new Clownfish(x,y);
       } else if (species == "Barracuda") {
-        a = new Barracuda(x,y,w);
+        a = new Barracuda(x,y);
       } else if (species == "Owl") {
-        a = new Owl(x,y,w);
+        a = new Owl(x,y);
       } else if (species == "Eagle") {
-        a = new Eagle(x,y,w);
+        a = new Eagle(x,y);
       } else if (species == "Colibri") {
-        a = new Colibri(x,y,w);
+        a = new Colibri(x,y);
       } else if (species == "Peacock") {
-        a = new Peacock(x,y,w);
-      } else if (species == "Duck") {
-        a = new Duck(x,y,w);
-      } else if (species == "WildColibri") {
-        wild.push(new WildColibri(x,y,w));
+        a = new Peacock(x,y);
       } else {
-        wild.push(new WildBunny(x,y,w));
+        a = new Duck(x,y);
       }
       if (a != NULL)
         c->AddAnimal(*a);

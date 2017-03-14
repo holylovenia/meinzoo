@@ -2,21 +2,18 @@
 #define OWL_H
 
 #include "aves.h"
-#include "../diet/carnivora.h"
-#include "../behavior/behavior_tame.h"
 
 /** @class Owl
   * Kelas Owl mendefinisikan atribut untuk owl.
   */
-class Owl : public Aves, public Carnivora, public BehaviorTame {
+class Owl : public Aves {
   public :
     /** @brief Constructor
-      * Menciptakan owl dengan posisi (_x,_y) dan berat _weight.
+      * Menciptakan owl dengan posisi (_x,_y).
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk owl.
       */  
-    Owl(int _x, int _y, int _weight);
+    Owl(int _x, int _y);
     /** @brief Menampilkan interaksi dengan owl.
       * Menuliskan interaksi ke layar.
       */
@@ -24,8 +21,6 @@ class Owl : public Aves, public Carnivora, public BehaviorTame {
 
   private:
     const int def_ID;
-    const int def_ratio_meat;
-    const int def_ratio_plant;
 };
 
 #endif
