@@ -1,0 +1,10 @@
+<map id="src/animal/mammalia/giraffe.h" name="src/animal/mammalia/giraffe.h">
+<area shape="rect" id="node2" href="$mammalia_8h.html" title="mammalia.h" alt="" coords="225,102,318,129"/>
+<area shape="rect" id="node8" href="$herbivora_8h.html" title="../diet/herbivora.h" alt="" coords="343,102,464,129"/>
+<area shape="rect" id="node10" href="$behavior__tame_8h.html" title="../behavior/behavior\l_tame.h" alt="" coords="488,95,620,136"/>
+<area shape="rect" id="node3" href="$animal_8h.html" title="../animal.h" alt="" coords="230,184,313,211"/>
+<area shape="rect" id="node4" href="$renderable_8h.html" title="../misc/renderable.h" alt="" coords="5,259,143,285"/>
+<area shape="rect" id="node5" href="$point_8h.html" title="../misc/point.h" alt="" coords="167,259,272,285"/>
+<area shape="rect" id="node9" href="$animal__diet_8h.html" title="animal_diet.h" alt="" coords="354,184,453,211"/>
+<area shape="rect" id="node11" href="$animal__behavior_8h.html" title="animal_behavior.h" alt="" coords="491,184,617,211"/>
+</map>

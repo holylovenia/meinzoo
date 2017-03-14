@@ -1,0 +1,5 @@
+<map id="Restaurant" name="Restaurant">
+<area shape="rect" id="node2" href="$class_facility.html" title="{Facility\n|# facility_type\l|+ Facility()\l}" alt="" coords="34,300,137,377"/>
+<area shape="rect" id="node3" href="$class_cell.html" title="{Cell\n|# is_accessible\l|+ Cell()\l+ Cell()\l+ operator=()\l+ IsAccessible()\l}" alt="" coords="27,131,143,252"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="42,5,129,83"/>
+</map>

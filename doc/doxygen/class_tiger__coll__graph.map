@@ -1,0 +1,10 @@
+<map id="Tiger" name="Tiger">
+<area shape="rect" id="node2" href="$class_mammalia.html" title="{Mammalia\n||+ Mammalia()\l}" alt="" coords="239,565,341,643"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="{Animal\n||+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="200,321,327,501"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="84,79,171,156"/>
+<area shape="rect" id="node10" href="$class_animal_diet.html" title="{AnimalDiet\n||+ IsHerbivore()\l+ IsCarnivore()\l+ IsOmnivore()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="375,343,491,479"/>
+<area shape="rect" id="node12" href="$class_animal_behavior.html" title="{AnimalBehavior\n||+ GetBehavior()\l+ SetBehavior()\l}" alt="" coords="611,365,723,457"/>
+<area shape="rect" id="node8" href="$class_point.html" title="{Point\n||+ Point()\l+ Point()\l+ SetX()\l+ SetY()\l+ GetX()\l+ GetY()\l+ operator\&lt;()\l+ Up()\l+ Down()\l+ Left()\l+ Right()\l}" alt="" coords="195,5,292,229"/>
+<area shape="rect" id="node9" href="$class_carnivora.html" title="{Carnivora\n||+ Carnivora()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="375,551,491,657"/>
+<area shape="rect" id="node11" href="$class_behavior_tame.html" title="{BehaviorTame\n||+ SetBehavior()\l}" alt="" coords="539,565,649,643"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="WildBunny" name="WildBunny">
+<area shape="rect" id="node2" href="$class_mammalia.html" title="{Mammalia\n||+ Mammalia()\l}" alt="" coords="19,469,121,546"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="{Animal\n|# ID\l# limb_count\l# skin_type\l# is_land_animal\l# is_water_animal\l# is_air_animal\l# position\l|+ Interact()\l+ Move()\l+ IsLandAnimal()\l+ IsWaterAnimal()\l+ IsAirAnimal()\l+ Render()\l+ GetPosition()\l+ GetID()\l}" alt="" coords="5,131,132,399"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="{Renderable\n||+ Render()\l}" alt="" coords="25,5,112,83"/>
+<area shape="rect" id="node5" href="$class_herbivora.html" title="{Herbivora\n||+ Herbivora()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="152,454,268,561"/>
+<area shape="rect" id="node6" href="$class_animal_diet.html" title="{AnimalDiet\n|# weight\l# eat_meat\l# eat_plant\l# ratio_meat\l# ratio_plant\l|+ IsHerbivore()\l+ IsCarnivore()\l+ IsOmnivore()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="156,167,272,362"/>
+<area shape="rect" id="node7" href="$class_behavior_wild.html" title="{BehaviorWild\n||+ SetBehavior()\l+ AddEnemy()\l+ RemoveEnemy()\l+ IsEnemy()\l}" alt="" coords="292,447,421,568"/>
+<area shape="rect" id="node8" href="$class_animal_behavior.html" title="{AnimalBehavior\n|# is_wild\l|+ GetBehavior()\l+ SetBehavior()\l}" alt="" coords="301,219,413,311"/>
+</map>

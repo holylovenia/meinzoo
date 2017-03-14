@@ -1,0 +1,9 @@
+<map id="Herbivora" name="Herbivora">
+<area shape="rect" id="node3" href="$class_colibri.html" title="{Colibri\n||+ Colibri()\l+ Interact()\l}" alt="" coords="5,403,91,495"/>
+<area shape="rect" id="node4" href="$class_elephant.html" title="{Elephant\n||+ Elephant()\l+ Interact()\l}" alt="" coords="115,403,208,495"/>
+<area shape="rect" id="node5" href="$class_giraffe.html" title="{Giraffe\n||+ Giraffe()\l+ Interact()\l}" alt="" coords="232,403,317,495"/>
+<area shape="rect" id="node6" href="$class_wild_bunny.html" title="{WildBunny\n||+ WildBunny()\l+ Interact()\l}" alt="" coords="342,403,447,495"/>
+<area shape="rect" id="node7" href="$class_wild_colibri.html" title="{WildColibri\n||+ WildColibri()\l+ Interact()\l}" alt="" coords="472,403,576,495"/>
+<area shape="rect" id="node8" href="$class_zebra.html" title="{Zebra\n||+ Zebra()\l+ Interact()\l}" alt="" coords="600,403,685,495"/>
+<area shape="rect" id="node2" href="$class_animal_diet.html" title="{AnimalDiet\n|# weight\l# eat_meat\l# eat_plant\l# ratio_meat\l# ratio_plant\l|+ IsHerbivore()\l+ IsCarnivore()\l+ IsOmnivore()\l+ GetReqMeat()\l+ GetReqPlant()\l}" alt="" coords="277,5,393,200"/>
+</map>

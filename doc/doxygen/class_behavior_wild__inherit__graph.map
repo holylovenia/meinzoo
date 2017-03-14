@@ -1,0 +1,5 @@
+<map id="BehaviorWild" name="BehaviorWild">
+<area shape="rect" id="node3" href="$class_wild_bunny.html" title="{WildBunny\n||+ WildBunny()\l+ Interact()\l}" alt="" coords="5,315,111,407"/>
+<area shape="rect" id="node4" href="$class_wild_colibri.html" title="{WildColibri\n||+ WildColibri()\l+ Interact()\l}" alt="" coords="135,315,239,407"/>
+<area shape="rect" id="node2" href="$class_animal_behavior.html" title="{AnimalBehavior\n|# is_wild\l|+ GetBehavior()\l+ SetBehavior()\l}" alt="" coords="66,5,178,97"/>
+</map>

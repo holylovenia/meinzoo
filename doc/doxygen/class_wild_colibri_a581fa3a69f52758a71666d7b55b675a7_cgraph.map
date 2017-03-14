@@ -1,0 +1,5 @@
+<map id="WildColibri::WildColibri" name="WildColibri::WildColibri">
+<area shape="rect" id="node2" href="$class_point.html#a919355c70ffb8d6a97fabfbff301d541" title="Menetapkan nilai absis Mengganti nilai absis menjadi _x. " alt="" coords="249,5,336,32"/>
+<area shape="rect" id="node3" href="$class_point.html#a5f7931b69b7e2c34ec7dfab9ca82019c" title="Menetapkan nilai ordinat Mengganti nilai ordinat menjadi _y. " alt="" coords="248,56,337,83"/>
+<area shape="rect" id="node4" href="$class_behavior_wild.html#ae12d2a3c77701fe5652b8e0a93e34c78" title="Menambah musuh hewan. Menambahkan hewan dengan ID x dari set. " alt="" coords="208,107,377,133"/>
+</map>

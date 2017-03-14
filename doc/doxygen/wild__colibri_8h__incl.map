@@ -1,0 +1,10 @@
+<map id="src/animal/aves/wild_colibri.h" name="src/animal/aves/wild_colibri.h">
+<area shape="rect" id="node2" href="$aves_8h.html" title="aves.h" alt="" coords="242,102,301,129"/>
+<area shape="rect" id="node8" href="$herbivora_8h.html" title="../diet/herbivora.h" alt="" coords="325,102,447,129"/>
+<area shape="rect" id="node10" href="$behavior__wild_8h.html" title="../behavior/behavior\l_wild.h" alt="" coords="471,95,603,136"/>
+<area shape="rect" id="node3" href="$animal_8h.html" title="../animal.h" alt="" coords="230,184,313,211"/>
+<area shape="rect" id="node4" href="$renderable_8h.html" title="../misc/renderable.h" alt="" coords="5,259,143,285"/>
+<area shape="rect" id="node5" href="$point_8h.html" title="../misc/point.h" alt="" coords="167,259,272,285"/>
+<area shape="rect" id="node9" href="$animal__diet_8h.html" title="animal_diet.h" alt="" coords="337,184,435,211"/>
+<area shape="rect" id="node12" href="$animal__behavior_8h.html" title="animal_behavior.h" alt="" coords="551,184,677,211"/>
+</map>
