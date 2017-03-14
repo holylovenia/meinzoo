@@ -7,3 +7,4 @@
 *.h text
 
 *.exe binary
+*.pdf binary
