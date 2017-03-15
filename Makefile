@@ -1,12 +1,12 @@
 CC = g++
 OPTIONS = -std=c++11
-SRC = $(wildcard *.cpp)
-OBJS = $(SRC:.cpp=.o) $(wildcard */*.o) $(wildcard */*/*.o)
-SUBDIRS = misc infrastructure animal
+OBJS = $(wildcard */*.o) $(wildcard */*/*.o) $(wildcard */*/*/*.o)
+SUBDIRS = src
 
 .PHONY: subdirs $(SUBDIRS) all clean
 
 all: subdirs $(OBJS)
+	$(CC) $(OPTIONS) $(OBJS) -o zoo
 
 subdirs: $(SUBDIRS)
 
